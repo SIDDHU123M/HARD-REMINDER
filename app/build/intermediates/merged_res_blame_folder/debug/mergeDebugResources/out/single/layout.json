@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "com.hardreminder.app-mergeDebugResources-62:/layout/activity_alarm_ring.xml",
+        "source": "com.hardreminder.app-main-66:/layout/activity_alarm_ring.xml"
+    },
+    {
+        "merged": "com.hardreminder.app-mergeDebugResources-62:/layout/activity_add_edit_reminder.xml",
+        "source": "com.hardreminder.app-main-66:/layout/activity_add_edit_reminder.xml"
+    },
+    {
+        "merged": "com.hardreminder.app-mergeDebugResources-62:/layout/item_reminder.xml",
+        "source": "com.hardreminder.app-main-66:/layout/item_reminder.xml"
+    },
+    {
+        "merged": "com.hardreminder.app-mergeDebugResources-62:/layout/activity_settings.xml",
+        "source": "com.hardreminder.app-main-66:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "com.hardreminder.app-mergeDebugResources-62:/layout/activity_main.xml",
+        "source": "com.hardreminder.app-main-66:/layout/activity_main.xml"
+    }
+]

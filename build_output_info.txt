@@ -1,0 +1,247 @@
+﻿Initialized native services in: C:\Users\ritam\.gradle\native
+Initialized jansi services in: C:\Users\ritam\.gradle\native
+The client will now receive all logging from the daemon (pid: 25452). The daemon log file: C:\Users\ritam\.gradle\daemon\8.13\daemon-25452.out.log
+Starting 12th build in daemon [uptime: 27 mins 5.233 secs, performance: 99%, GC rate: 0.00/s, heap usage: 0% of 2 GiB]
+Using 12 worker leases.
+Now considering [C:\Users\ritam\Desktop\HARD-REMINDER] as hierarchies to watch
+Watching the file system is configured to be enabled if available
+File system watching is active
+Starting Build
+Settings evaluated using settings file 'C:\Users\ritam\Desktop\HARD-REMINDER\settings.gradle.kts'.
+Projects loaded. Root project using build file 'C:\Users\ritam\Desktop\HARD-REMINDER\build.gradle.kts'.
+Included projects: [root project 'HardReminder', project ':app']
+
+> Configure project :
+Evaluating root project 'HardReminder' using build file 'C:\Users\ritam\Desktop\HARD-REMINDER\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application', version: '8.7.3', apply: false]
+Resolved plugin [id: 'org.jetbrains.kotlin.android', version: '1.9.25', apply: false]
+Resolved plugin [id: 'com.google.devtools.ksp', version: '1.9.25-1.0.20', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file 'C:\Users\ritam\Desktop\HARD-REMINDER\app\build.gradle.kts'.
+Resolved plugin [id: 'com.android.application']
+Resolved plugin [id: 'org.jetbrains.kotlin.android']
+Resolved plugin [id: 'com.google.devtools.ksp']
+Using default execution profile
+Using Kotlin Gradle Plugin gradle82 variant
+All projects evaluated.
+Task path ':app:compileDebugKotlin' matched project ':app'
+Task name matched 'compileDebugKotlin'
+Selected primary task 'compileDebugKotlin' from project :app
+Tasks to be executed: [task ':app:checkKotlinGradlePluginConfigurationErrors', task ':app:preBuild', task ':app:preDebugBuild', task ':app:dataBindingMergeDependencyArtifactsDebug', task ':app:generateDebugResValues', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:dataBindingGenBaseClassesDebug', task ':app:generateDebugBuildConfig', task ':app:checkDebugAarMetadata', task ':app:mapDebugSourceSetPaths', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:kspDebugKotlin', task ':app:compileDebugKotlin']
+Tasks that were excluded: []
+Resolve mutations for :app:checkKotlinGradlePluginConfigurationErrors (Thread[#1461,Execution worker,5,main]) started.
+:app:checkKotlinGradlePluginConfigurationErrors (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+Caching disabled for task ':app:checkKotlinGradlePluginConfigurationErrors' because:
+  Build cache is disabled
+Task ':app:checkKotlinGradlePluginConfigurationErrors' is not up-to-date because:
+  Task has not declared any outputs despite executing actions.
+Resolve mutations for :app:preBuild (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:preBuild (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:preDebugBuild (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:dataBindingMergeDependencyArtifactsDebug (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:dataBindingMergeDependencyArtifactsDebug (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:dataBindingMergeDependencyArtifactsDebug UP-TO-DATE
+Caching disabled for task ':app:dataBindingMergeDependencyArtifactsDebug' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:dataBindingMergeDependencyArtifactsDebug' as it is up-to-date.
+Resolve mutations for :app:generateDebugResValues (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:generateDebugResValues (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:generateDebugResValues UP-TO-DATE
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResValues' as it is up-to-date.
+Resolve mutations for :app:generateDebugResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:generateDebugResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:generateDebugResources UP-TO-DATE
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugResources' as it is up-to-date.
+Resolve mutations for :app:mergeDebugResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:mergeDebugResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:mergeDebugResources UP-TO-DATE
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:mergeDebugResources' as it is up-to-date.
+Resolve mutations for :app:packageDebugResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:packageDebugResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:packageDebugResources UP-TO-DATE
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:packageDebugResources' as it is up-to-date.
+Resolve mutations for :app:parseDebugLocalResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:parseDebugLocalResources (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:parseDebugLocalResources UP-TO-DATE
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Skipping task ':app:parseDebugLocalResources' as it is up-to-date.
+Resolve mutations for :app:dataBindingGenBaseClassesDebug (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:dataBindingGenBaseClassesDebug (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:dataBindingGenBaseClassesDebug UP-TO-DATE
+Caching disabled for task ':app:dataBindingGenBaseClassesDebug' because:
+  Build cache is disabled
+Skipping task ':app:dataBindingGenBaseClassesDebug' as it is up-to-date.
+Resolve mutations for :app:generateDebugBuildConfig (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:generateDebugBuildConfig (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+Caching disabled for task ':app:generateDebugBuildConfig' because:
+  Build cache is disabled
+Skipping task ':app:generateDebugBuildConfig' as it is up-to-date.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:checkDebugAarMetadata (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:checkDebugAarMetadata' as it is up-to-date.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:mapDebugSourceSetPaths' as it is up-to-date.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Skipping task ':app:createDebugCompatibleScreenManifests' as it is up-to-date.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:extractDeepLinksDebug (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Skipping task ':app:extractDeepLinksDebug' as it is up-to-date.
+Resolve mutations for :app:processDebugMainManifest (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:processDebugMainManifest (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:processDebugMainManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugMainManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifest (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:processDebugManifest (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:processDebugManifest UP-TO-DATE
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifest' as it is up-to-date.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[#1468,Execution worker Thread 8,5,main]) started.
+:app:processDebugManifestForPackage (Thread[#1468,Execution worker Thread 8,5,main]) started.
+
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Skipping task ':app:processDebugManifestForPackage' as it is up-to-date.
+Resolve mutations for :app:processDebugResources (Thread[#1464,Execution worker Thread 4,5,main]) started.
+:app:processDebugResources (Thread[#1464,Execution worker Thread 4,5,main]) started.
+
+> Task :app:processDebugResources UP-TO-DATE
+Caching disabled for task ':app:processDebugResources' because:
+  Build cache is disabled
+Skipping task ':app:processDebugResources' as it is up-to-date.
+Resolve mutations for :app:kspDebugKotlin (Thread[#1464,Execution worker Thread 4,5,main]) started.
+:app:kspDebugKotlin (Thread[#1464,Execution worker Thread 4,5,main]) started.
+
+> Task :app:kspDebugKotlin UP-TO-DATE
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+Caching disabled for task ':app:kspDebugKotlin' because:
+  Build cache is disabled
+Skipping task ':app:kspDebugKotlin' as it is up-to-date.
+Resolve mutations for :app:compileDebugKotlin (Thread[#1464,Execution worker Thread 4,5,main]) started.
+:app:compileDebugKotlin (Thread[#1464,Execution worker Thread 4,5,main]) started.
+
+> Task :app:compileDebugKotlin
+Caching disabled for task ':app:compileDebugKotlin' because:
+  Build cache is disabled
+Task ':app:compileDebugKotlin' is not up-to-date because:
+  Task has failed previously.
+The input changes require a full rebuild for incremental task ':app:compileDebugKotlin'.
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\kotlin', not found
+file or directory 'C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\java', not found
+Kotlin source files: C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\alarm\AlarmScheduler.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\data\AppSettings.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\data\Reminder.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\data\ReminderDao.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\data\ReminderDatabase.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\data\RepeatType.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\HardReminderApp.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\receiver\AlarmReceiver.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\receiver\BootReceiver.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\receiver\CancelReminderReceiver.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\receiver\DismissReceiver.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\receiver\PriorAlarmReceiver.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\receiver\SnoozeReceiver.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\service\ReminderForegroundService.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\AboutActivity.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\AddEditReminderActivity.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\AlarmRingActivity.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\MainActivity.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\ReminderAdapter.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\SettingsActivity.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\theme\Theme.kt, C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\java\com\hardreminder\ui\ThemeHelper.kt
+Java source files: C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\ksp\debug\java\byRounds\1\com\hardreminder\data\ReminderDatabase_Impl.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\ksp\debug\java\com\hardreminder\data\ReminderDao_Impl.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\ksp\debug\java\com\hardreminder\data\ReminderDatabase_Impl.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\source\buildConfig\debug\com\hardreminder\BuildConfig.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\data_binding_base_class_source_out\debug\out\com\hardreminder\databinding\ActivityAboutBinding.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\data_binding_base_class_source_out\debug\out\com\hardreminder\databinding\ActivityAddEditReminderBinding.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\data_binding_base_class_source_out\debug\out\com\hardreminder\databinding\ActivityAlarmRingBinding.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\data_binding_base_class_source_out\debug\out\com\hardreminder\databinding\ActivityMainBinding.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\data_binding_base_class_source_out\debug\out\com\hardreminder\databinding\ActivitySettingsBinding.java, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\data_binding_base_class_source_out\debug\out\com\hardreminder\databinding\ItemReminderBinding.java
+Script source files: 
+Script file extensions: 
+Using Kotlin/JVM incremental compilation
+[KOTLIN] Kotlin compilation 'jdkHome' argument: null
+i: found daemon on port 17415 (1371290 ms old), trying to connect
+i: connected to the daemon
+Options for KOTLIN DAEMON: IncrementalCompilationOptions(super=CompilationOptions(compilerMode=INCREMENTAL_COMPILER, targetPlatform=JVM, reportCategories=[0, 3], reportSeverity=2, requestedCompilationResults=[0], kotlinScriptExtensions=[]), areFileChangesKnown=false, modifiedFiles=null, deletedFiles=null, classpathChanges=NotAvailableForNonIncrementalRun, workingDir=C:\Users\ritam\Desktop\HARD-REMINDER\app\build\kotlin\compileDebugKotlin\cacheable, multiModuleICSettings=MultiModuleICSettings(buildHistoryFile=C:\Users\ritam\Desktop\HARD-REMINDER\app\build\kotlin\compileDebugKotlin\local-state\build-history.bin, useModuleDetection=true), usePreciseJavaTracking=true, outputFiles=[C:\Users\ritam\Desktop\HARD-REMINDER\app\build\tmp\kotlin-classes\debug, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\kotlin\compileDebugKotlin\cacheable, C:\Users\ritam\Desktop\HARD-REMINDER\app\build\kotlin\compileDebugKotlin\local-state])
+
+> Task :app:compileDebugKotlin FAILED
+19 actionable tasks: 2 executed, 17 up-to-date
+Watched directory hierarchies: [C:\Users\ritam\Desktop\HARD-REMINDER]

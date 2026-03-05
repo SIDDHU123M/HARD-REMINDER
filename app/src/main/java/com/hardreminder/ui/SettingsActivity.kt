@@ -21,6 +21,7 @@ import com.hardreminder.data.AppSettings.startOnBoot
 import com.hardreminder.data.AppSettings.colorPalette
 import com.hardreminder.data.AppSettings.themeMode
 import com.hardreminder.data.AppSettings.use24HourFormat
+import com.hardreminder.data.AppSettings.useAmoledMode
 import com.hardreminder.databinding.ActivitySettingsBinding
 import com.hardreminder.service.ReminderForegroundService
 
@@ -54,7 +55,9 @@ class SettingsActivity : AppCompatActivity() {
 
         binding.textAboutVersion.text = "Version ${BuildConfig.VERSION_NAME} (build ${BuildConfig.VERSION_CODE})"
 
-        updateThemeLabel()
+        updateThemeToggleGroup()
+        binding.switchAmoled.isChecked = useAmoledMode
+
         updatePaletteLabel()
         updateSnoozeLabel()
         updatePriorLabel()
@@ -112,22 +115,32 @@ class SettingsActivity : AppCompatActivity() {
                 .show()
         }
 
-        // Theme picker
-        binding.layoutTheme.setOnClickListener {
-            val options = AppSettings.THEME_OPTIONS
-            val labels = options.map { it.second }.toTypedArray()
-            val currentIndex = options.indexOfFirst { it.first == themeMode }.coerceAtLeast(0)
-
-            MaterialAlertDialogBuilder(this)
-                .setTitle("App Theme")
-                .setSingleChoiceItems(labels, currentIndex) { dialog, which ->
-                    themeMode = options[which].first
-                    updateThemeLabel()
-                    dialog.dismiss()
+        // Theme picker via ToggleGroup
+        binding.toggleThemeGroup.addOnButtonCheckedListener { _, checkedId, isChecked ->
+            if (isChecked) {
+                val newMode = when (checkedId) {
+                    R.id.btnThemeSystem -> AppSettings.THEME_SYSTEM
+                    R.id.btnThemeDark -> AppSettings.THEME_DARK
+                    R.id.btnThemeLight -> AppSettings.THEME_LIGHT
+                    else -> AppSettings.THEME_SYSTEM
+                }
+                if (themeMode != newMode) {
+                    themeMode = newMode
                     ThemeHelper.applyGlobalTheme(this)
                     recreate()
                 }
-                .show()
+            }
+        }
+
+        // AMOLED toggle
+        binding.switchAmoled.setOnCheckedChangeListener { _, checked ->
+            if (useAmoledMode != checked) {
+                useAmoledMode = checked
+                recreate()
+            }
+        }
+        binding.layoutAmoled.setOnClickListener {
+            binding.switchAmoled.toggle()
         }
 
         // Snooze duration picker
@@ -198,9 +211,14 @@ class SettingsActivity : AppCompatActivity() {
         updateBatteryStatus()
     }
 
-    private fun updateThemeLabel() {
-        val label = AppSettings.THEME_OPTIONS.firstOrNull { it.first == themeMode }?.second ?: "Light"
-        binding.textThemeValue.text = label
+    private fun updateThemeToggleGroup() {
+        val buttonId = when (themeMode) {
+            AppSettings.THEME_SYSTEM -> R.id.btnThemeSystem
+            AppSettings.THEME_DARK -> R.id.btnThemeDark
+            AppSettings.THEME_LIGHT -> R.id.btnThemeLight
+            else -> R.id.btnThemeSystem
+        }
+        binding.toggleThemeGroup.check(buttonId)
     }
 
     private fun updatePaletteLabel() {

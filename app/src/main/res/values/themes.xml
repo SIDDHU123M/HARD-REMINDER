@@ -4,7 +4,7 @@
     <!-- ================================================================ -->
     <!-- DEFAULT PALETTE (Ruby Red) — Light / Dark / AMOLED               -->
     <!-- ================================================================ -->
-    <style name="Theme.HardReminder" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.HardReminder" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="colorAccent">@color/accent</item>
@@ -21,7 +21,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Dark" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Dark" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/accent</item>
@@ -38,7 +38,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Amoled" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Amoled" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/amoled_background</item>
         <item name="colorAccent">@color/accent</item>
@@ -58,7 +58,7 @@
     <!-- ================================================================ -->
     <!-- TONAL PALETTE (Warm Sage) — Light / Dark / AMOLED                -->
     <!-- ================================================================ -->
-    <style name="Theme.HardReminder.Tonal" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.HardReminder.Tonal" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/tonal_primary</item>
         <item name="colorPrimaryDark">@color/tonal_primary_dark</item>
         <item name="colorAccent">@color/tonal_accent</item>
@@ -75,7 +75,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Tonal.Dark" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Tonal.Dark" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/tonal_dark_primary</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/tonal_dark_accent</item>
@@ -92,7 +92,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Tonal.Amoled" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Tonal.Amoled" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/tonal_dark_primary</item>
         <item name="colorPrimaryDark">@color/amoled_background</item>
         <item name="colorAccent">@color/tonal_dark_accent</item>
@@ -112,7 +112,7 @@
     <!-- ================================================================ -->
     <!-- VIBRANT PALETTE (Electric Blue) — Light / Dark / AMOLED          -->
     <!-- ================================================================ -->
-    <style name="Theme.HardReminder.Vibrant" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.HardReminder.Vibrant" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/vibrant_primary</item>
         <item name="colorPrimaryDark">@color/vibrant_primary_dark</item>
         <item name="colorAccent">@color/vibrant_accent</item>
@@ -129,7 +129,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Vibrant.Dark" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Vibrant.Dark" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/vibrant_dark_primary</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/vibrant_dark_accent</item>
@@ -146,7 +146,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Vibrant.Amoled" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Vibrant.Amoled" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/vibrant_dark_primary</item>
         <item name="colorPrimaryDark">@color/amoled_background</item>
         <item name="colorAccent">@color/vibrant_dark_accent</item>
@@ -166,7 +166,7 @@
     <!-- ================================================================ -->
     <!-- EXPRESSIVE PALETTE (Royal Purple) — Light / Dark / AMOLED        -->
     <!-- ================================================================ -->
-    <style name="Theme.HardReminder.Expressive" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.HardReminder.Expressive" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/expressive_primary</item>
         <item name="colorPrimaryDark">@color/expressive_primary_dark</item>
         <item name="colorAccent">@color/expressive_accent</item>
@@ -183,7 +183,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Expressive.Dark" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Expressive.Dark" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/expressive_dark_primary</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/expressive_dark_accent</item>
@@ -200,7 +200,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Expressive.Amoled" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Expressive.Amoled" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/expressive_dark_primary</item>
         <item name="colorPrimaryDark">@color/amoled_background</item>
         <item name="colorAccent">@color/expressive_dark_accent</item>
@@ -220,7 +220,7 @@
     <!-- ================================================================ -->
     <!-- MONO PALETTE (Graphite) — Light / Dark / AMOLED                  -->
     <!-- ================================================================ -->
-    <style name="Theme.HardReminder.Mono" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.HardReminder.Mono" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/mono_primary</item>
         <item name="colorPrimaryDark">@color/mono_primary_dark</item>
         <item name="colorAccent">@color/mono_accent</item>
@@ -237,7 +237,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Mono.Dark" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Mono.Dark" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/mono_dark_primary</item>
         <item name="colorPrimaryDark">@color/dark_background</item>
         <item name="colorAccent">@color/mono_dark_accent</item>
@@ -254,7 +254,7 @@
         <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.HardReminder.MediumComponent</item>
     </style>
 
-    <style name="Theme.HardReminder.Mono.Amoled" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.HardReminder.Mono.Amoled" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/mono_dark_primary</item>
         <item name="colorPrimaryDark">@color/amoled_background</item>
         <item name="colorAccent">@color/mono_dark_accent</item>
@@ -274,7 +274,7 @@
     <!-- ================================================================ -->
     <!-- ALARM THEME (always same regardless of palette/theme)            -->
     <!-- ================================================================ -->
-    <style name="Theme.HardReminder.Alarm" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.HardReminder.Alarm" parent="Theme.Material3.Light.NoActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowNoTitle">true</item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="160dp"
+    android:height="160dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Outer ring -->
+    <path
+        android:fillColor="#1A000000"
+        android:pathData="M24,4C12.95,4 4,12.95 4,24s8.95,20 20,20 20,-8.95 20,-20S35.05,4 24,4zM24,40c-8.82,0 -16,-7.18 -16,-16S15.18,8 24,8s16,7.18 16,16 -7.18,16 -16,16z" />
+    <!-- Bell body -->
+    <path
+        android:fillColor="#40000000"
+        android:pathData="M24,38c1.65,0 3,-1.35 3,-3h-6c0,1.65 1.35,3 3,3zM33,28v-7.5c0,-4.6 -2.45,-8.46 -6.75,-9.48V10c0,-1.24 -1.01,-2.25 -2.25,-2.25S21.75,8.76 21.75,10v1.02C17.45,12.04 15,15.89 15,20.5V28l-3,3v1.5h24V31l-3,-3z" />
+    <!-- Plus circle -->
+    <path
+        android:fillColor="#60000000"
+        android:pathData="M36,20a6,6 0,1 0,0 12,6,6 0,1 0,0 -12zM39,27h-2v2h-2v-2h-2v-2h2v-2h2v2h2v2z" />
+</vector>

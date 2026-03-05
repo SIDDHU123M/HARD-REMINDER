@@ -18,12 +18,12 @@ object AppSettings {
     private const val KEY_FLASH_SCREEN = "flash_screen_on_alarm"
     private const val KEY_DISMISS_ON_UNLOCK = "dismiss_on_unlock"
     private const val KEY_THEME_MODE = "theme_mode"
+    private const val KEY_USE_AMOLED_MODE = "use_amoled_mode"
     private const val KEY_COLOR_PALETTE = "color_palette"
 
     // Theme modes
     const val THEME_LIGHT = 0
     const val THEME_DARK = 1
-    const val THEME_AMOLED = 2
     const val THEME_SYSTEM = 3
 
     // Color palettes
@@ -81,10 +81,15 @@ object AppSettings {
         get() = prefs(this).getBoolean(KEY_FLASH_SCREEN, true)
         set(value) = prefs(this).edit().putBoolean(KEY_FLASH_SCREEN, value).apply()
 
-    // App theme mode (0=Light, 1=Dark, 2=AMOLED, 3=System)
+    // App theme mode (0=Light, 1=Dark, 3=System)
     var Context.themeMode: Int
         get() = prefs(this).getInt(KEY_THEME_MODE, THEME_SYSTEM)
         set(value) = prefs(this).edit().putInt(KEY_THEME_MODE, value).apply()
+
+    // Use AMOLED mode when dark theme is active
+    var Context.useAmoledMode: Boolean
+        get() = prefs(this).getBoolean(KEY_USE_AMOLED_MODE, false)
+        set(value) = prefs(this).edit().putBoolean(KEY_USE_AMOLED_MODE, value).apply()
 
     // Color palette (0=Default, 1=Tonal, 2=Vibrant, 3=Expressive, 4=Mono)
     var Context.colorPalette: Int
@@ -94,7 +99,6 @@ object AppSettings {
     val THEME_OPTIONS = listOf(
         THEME_LIGHT to "Light",
         THEME_DARK to "Dark",
-        THEME_AMOLED to "AMOLED Black",
         THEME_SYSTEM to "Follow System"
     )
 
