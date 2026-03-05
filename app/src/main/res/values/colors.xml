@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ========== DEFAULT PALETTE (Ruby Red) ========== -->
+    <color name="primary">#C62828</color>
+    <color name="primary_dark">#8E0000</color>
+    <color name="primary_light">#FF5F52</color>
+    <color name="accent">#FF6D00</color>
+    <color name="background">#FAFAFA</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_primary_muted">#CCFFFFFF</color>
+    <color name="past_reminder">#BDBDBD</color>
+    <color name="status_ok">#2E7D32</color>
+    <color name="status_error">#C62828</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="section_bg">#F0F0F0</color>
+    <color name="ripple_primary">#33C62828</color>
+    <color name="card_stroke">#1A000000</color>
+
+    <!-- Dark mode base -->
+    <color name="dark_background">#121212</color>
+    <color name="dark_surface">#1E1E1E</color>
+    <color name="dark_text_primary">#FFFFFFDE</color>
+    <color name="dark_text_secondary">#FFFFFF99</color>
+    <color name="dark_divider">#2C2C2C</color>
+    <color name="dark_section_bg">#1A1A1A</color>
+    <color name="dark_card_stroke">#2C2C2C</color>
+
+    <!-- AMOLED base -->
+    <color name="amoled_background">#000000</color>
+    <color name="amoled_surface">#0A0A0A</color>
+    <color name="amoled_text_primary">#FFFFFFDE</color>
+
+    <!-- ========== TONAL PALETTE (Warm Sage) ========== -->
+    <color name="tonal_primary">#5C6B5C</color>
+    <color name="tonal_primary_dark">#3A4A3A</color>
+    <color name="tonal_primary_light">#8A9C8A</color>
+    <color name="tonal_accent">#8B7355</color>
+    <color name="tonal_background">#F8F6F2</color>
+    <color name="tonal_surface">#FFFFFF</color>
+    <color name="tonal_ripple">#335C6B5C</color>
+    <!-- Tonal dark -->
+    <color name="tonal_dark_primary">#8A9C8A</color>
+    <color name="tonal_dark_accent">#C4A882</color>
+
+    <!-- ========== VIBRANT PALETTE (Electric Blue) ========== -->
+    <color name="vibrant_primary">#1565C0</color>
+    <color name="vibrant_primary_dark">#003C8F</color>
+    <color name="vibrant_primary_light">#5E92F3</color>
+    <color name="vibrant_accent">#00BFA5</color>
+    <color name="vibrant_background">#F5F9FF</color>
+    <color name="vibrant_surface">#FFFFFF</color>
+    <color name="vibrant_ripple">#331565C0</color>
+    <!-- Vibrant dark -->
+    <color name="vibrant_dark_primary">#5E92F3</color>
+    <color name="vibrant_dark_accent">#64FFDA</color>
+
+    <!-- ========== EXPRESSIVE PALETTE (Royal Purple) ========== -->
+    <color name="expressive_primary">#6A1B9A</color>
+    <color name="expressive_primary_dark">#38006B</color>
+    <color name="expressive_primary_light">#9C4DCC</color>
+    <color name="expressive_accent">#F06292</color>
+    <color name="expressive_background">#FBF5FF</color>
+    <color name="expressive_surface">#FFFFFF</color>
+    <color name="expressive_ripple">#336A1B9A</color>
+    <!-- Expressive dark -->
+    <color name="expressive_dark_primary">#CE93D8</color>
+    <color name="expressive_dark_accent">#F48FB1</color>
+
+    <!-- ========== MONO PALETTE (Graphite) ========== -->
+    <color name="mono_primary">#37474F</color>
+    <color name="mono_primary_dark">#102027</color>
+    <color name="mono_primary_light">#62727B</color>
+    <color name="mono_accent">#78909C</color>
+    <color name="mono_background">#FAFAFA</color>
+    <color name="mono_surface">#FFFFFF</color>
+    <color name="mono_ripple">#3337474F</color>
+    <!-- Mono dark -->
+    <color name="mono_dark_primary">#90A4AE</color>
+    <color name="mono_dark_accent">#B0BEC5</color>
+</resources>

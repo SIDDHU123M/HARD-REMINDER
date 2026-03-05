@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode overrides for system "Follow System" mode -->
+    <color name="primary">#EF5350</color>
+    <color name="primary_dark">#1A1A1A</color>
+    <color name="primary_light">#FF867C</color>
+    <color name="accent">#FFB74D</color>
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="text_primary">#FFFFFFDE</color>
+    <color name="text_secondary">#FFFFFF99</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_primary_muted">#CCFFFFFF</color>
+    <color name="past_reminder">#616161</color>
+    <color name="status_ok">#66BB6A</color>
+    <color name="status_error">#EF5350</color>
+    <color name="divider">#2C2C2C</color>
+    <color name="section_bg">#1A1A1A</color>
+    <color name="ripple_primary">#33EF5350</color>
+    <color name="card_stroke">#2C2C2C</color>
+</resources>
