@@ -13,7 +13,7 @@ import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
-import com.google.android.material.switchmaterial.SwitchMaterial;
+import com.google.android.material.materialswitch.MaterialSwitch;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -84,10 +84,10 @@ public final class ActivityAddEditReminderBinding implements ViewBinding {
   public final MaterialAutoCompleteTextView spinnerRepeat;
 
   @NonNull
-  public final SwitchMaterial switchSound;
+  public final MaterialSwitch switchSound;
 
   @NonNull
-  public final SwitchMaterial switchVibration;
+  public final MaterialSwitch switchVibration;
 
   @NonNull
   public final MaterialToolbar toolbar;
@@ -101,8 +101,8 @@ public final class ActivityAddEditReminderBinding implements ViewBinding {
       @NonNull TextInputEditText editMessage, @NonNull TextInputEditText editTitle,
       @NonNull LinearLayout layoutCustomInterval, @NonNull ChipGroup layoutDayChips,
       @NonNull MaterialAutoCompleteTextView spinnerPrior,
-      @NonNull MaterialAutoCompleteTextView spinnerRepeat, @NonNull SwitchMaterial switchSound,
-      @NonNull SwitchMaterial switchVibration, @NonNull MaterialToolbar toolbar) {
+      @NonNull MaterialAutoCompleteTextView spinnerRepeat, @NonNull MaterialSwitch switchSound,
+      @NonNull MaterialSwitch switchVibration, @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
     this.btnDate = btnDate;
     this.btnSave = btnSave;
@@ -270,13 +270,13 @@ public final class ActivityAddEditReminderBinding implements ViewBinding {
       }
 
       id = R.id.switchSound;
-      SwitchMaterial switchSound = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchSound = ViewBindings.findChildViewById(rootView, id);
       if (switchSound == null) {
         break missingId;
       }
 
       id = R.id.switchVibration;
-      SwitchMaterial switchVibration = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchVibration = ViewBindings.findChildViewById(rootView, id);
       if (switchVibration == null) {
         break missingId;
       }

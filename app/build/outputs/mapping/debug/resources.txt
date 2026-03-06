@@ -41,7 +41,6 @@ EXTRA_DESCRIPTORS
 bottomRight
 emoji2.text.DefaultEmojiConfig
 H
-Tonal
 paddingStart
 targetVersion
 Surface
@@ -345,7 +344,6 @@ FragmentManager
 HandlerCompat
 phoneNumber
 Enter
-Vibrant
 INTERRUPTED_RCV
 font_variation_settings
 _isTerminated
@@ -537,7 +535,6 @@ Recomposer:animation
 context.noBackupFilesDir
 Wrap
 getEmojiConsistencySet
-Expressive
 getResPackage
 DROP_LATEST
 _exceptionsHolder
@@ -1454,7 +1451,6 @@ http://schemas.android.com/apk/res/an...
 suggest_text_2_url
 Ellipsis
 ensureImeVisible
-color_palette
 WindowInsetsCompat
 vibrator
 android.intent.action.PROCESS_TEXT
@@ -1848,7 +1844,6 @@ IsShowingTextSubstitution
 ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT
 config_showMenuShortcutsWhenKeyboardP...
 CONSUMED
-Mono
 refHolder
 baseline
 ShowKeyboard
@@ -1960,13 +1955,13 @@ emit
 LocalWindowInfo
 BackgroundColor
 Marking attr:sizePercent:2130904015 used because it matches string pool constant size
-Marking id:left:2131230995 used because it matches string pool constant left
-Marking id:leftToRight:2131230996 used because it matches string pool constant left
+Marking id:left:2131230994 used because it matches string pool constant left
+Marking id:leftToRight:2131230995 used because it matches string pool constant left
 Marking attr:paddingStart:2130903907 used because it matches string pool constant paddingStart
 Marking attr:paddingStartSystemWindowInsets:2130903908 used because it matches string pool constant paddingStart
-Marking id:standard:2131231185 used because it matches string pool constant standard
+Marking id:standard:2131231184 used because it matches string pool constant standard
 Marking attr:drawableLeftCompat:2130903434 used because it matches string pool constant drawableLeft
-Marking id:unchecked:2131231275 used because it matches string pool constant unchecked
+Marking id:unchecked:2131231273 used because it matches string pool constant unchecked
 Marking attr:listChoiceBackgroundIndicator:2130903738 used because it matches string pool constant list
 Marking attr:listChoiceIndicatorMultipleAnimated:2130903739 used because it matches string pool constant list
 Marking attr:listChoiceIndicatorSingleAnimated:2130903740 used because it matches string pool constant list
@@ -1982,21 +1977,21 @@ Marking attr:listPreferredItemPaddingEnd:2130903749 used because it matches stri
 Marking attr:listPreferredItemPaddingLeft:2130903750 used because it matches string pool constant list
 Marking attr:listPreferredItemPaddingRight:2130903751 used because it matches string pool constant list
 Marking attr:listPreferredItemPaddingStart:2130903752 used because it matches string pool constant list
-Marking id:listMode:2131231001 used because it matches string pool constant list
-Marking id:list_item:2131231002 used because it matches string pool constant list
+Marking id:listMode:2131231000 used because it matches string pool constant list
+Marking id:list_item:2131231001 used because it matches string pool constant list
 Marking attr:maxLines:2130903814 used because it matches string pool constant maxLines
 Marking attr:layoutDescription:2130903659 used because it matches string pool constant layoutDescription
 Marking id:blocking:2131230814 used because it matches string pool constant block
 Marking attr:topInsetScrimEnabled:2130904221 used because it matches string pool constant top
-Marking id:top:2131231264 used because it matches string pool constant top
-Marking id:topPanel:2131231265 used because it matches string pool constant top
+Marking id:top:2131231262 used because it matches string pool constant top
+Marking id:topPanel:2131231263 used because it matches string pool constant top
 Marking attr:drawableEndCompat:2130903433 used because it matches string pool constant drawableEnd
 Marking anim:linear_indeterminate_line1_head_interpolator:2130771997 used because it matches string pool constant linear
 Marking anim:linear_indeterminate_line1_tail_interpolator:2130771998 used because it matches string pool constant linear
 Marking anim:linear_indeterminate_line2_head_interpolator:2130771999 used because it matches string pool constant linear
 Marking anim:linear_indeterminate_line2_tail_interpolator:2130772000 used because it matches string pool constant linear
 Marking attr:linearProgressIndicatorStyle:2130903737 used because it matches string pool constant linear
-Marking id:linear:2131231000 used because it matches string pool constant linear
+Marking id:linear:2131230999 used because it matches string pool constant linear
 Marking attr:drawableRightCompat:2130903435 used because it matches string pool constant drawableRight
 Marking attr:constraintRotate:2130903345 used because it matches string pool constant constraint
 Marking attr:constraintSet:2130903346 used because it matches string pool constant constraint
@@ -2072,7 +2067,7 @@ Marking attr:passwordToggleDrawable:2130903915 used because it matches string po
 Marking attr:passwordToggleEnabled:2130903916 used because it matches string pool constant password
 Marking attr:passwordToggleTint:2130903917 used because it matches string pool constant password
 Marking attr:passwordToggleTintMode:2130903918 used because it matches string pool constant password
-Marking id:password_toggle:2131231108 used because it matches string pool constant password
+Marking id:password_toggle:2131231107 used because it matches string pool constant password
 Marking string:password_toggle_content_description:2131689694 used because it matches string pool constant password
 Marking attr:state_above_anchor:2130904040 used because it matches string pool constant state
 Marking attr:state_collapsed:2130904041 used because it matches string pool constant state
@@ -2122,12 +2117,12 @@ Marking attr:startIconMinSize:2130904036 used because it matches string pool con
 Marking attr:startIconScaleType:2130904037 used because it matches string pool constant start
 Marking attr:startIconTint:2130904038 used because it matches string pool constant start
 Marking attr:startIconTintMode:2130904039 used because it matches string pool constant start
-Marking id:start:2131231186 used because it matches string pool constant start
-Marking id:startHorizontal:2131231187 used because it matches string pool constant start
-Marking id:startToEnd:2131231188 used because it matches string pool constant start
-Marking id:startVertical:2131231189 used because it matches string pool constant start
+Marking id:start:2131231185 used because it matches string pool constant start
+Marking id:startHorizontal:2131231186 used because it matches string pool constant start
+Marking id:startToEnd:2131231187 used because it matches string pool constant start
+Marking id:startVertical:2131231188 used because it matches string pool constant start
 Marking attr:shortcutMatchRequired:2130903995 used because it matches string pool constant short
-Marking id:shortcut:2131231159 used because it matches string pool constant short
+Marking id:shortcut:2131231158 used because it matches string pool constant short
 Marking string:in_progress:2131689531 used because it matches string pool constant in_progress
 Marking attr:drawableStartCompat:2130903437 used because it matches string pool constant drawableStart
 Marking string:character_counter_content_description:2131689515 used because it matches string pool constant char
@@ -2160,16 +2155,16 @@ Marking attr:paddingTopNoTitle:2130903909 used because it matches string pool co
 Marking attr:paddingTopSystemWindowInsets:2130903910 used because it matches string pool constant padding
 Marking attr:pathMotionArc:2130903919 used because it matches string pool constant path
 Marking attr:path_percent:2130903920 used because it matches string pool constant path
-Marking id:path:2131231109 used because it matches string pool constant path
-Marking id:pathRelative:2131231110 used because it matches string pool constant path
+Marking id:path:2131231108 used because it matches string pool constant path
+Marking id:pathRelative:2131231109 used because it matches string pool constant path
 Marking string:path_password_eye:2131689695 used because it matches string pool constant path
 Marking string:path_password_eye_mask_strike_through:2131689696 used because it matches string pool constant path
 Marking string:path_password_eye_mask_visible:2131689697 used because it matches string pool constant path
 Marking string:path_password_strike_through:2131689698 used because it matches string pool constant path
-Marking id:right:2131231126 used because it matches string pool constant right
-Marking id:rightToLeft:2131231127 used because it matches string pool constant right
-Marking id:right_icon:2131231128 used because it matches string pool constant right
-Marking id:right_side:2131231129 used because it matches string pool constant right
+Marking id:right:2131231125 used because it matches string pool constant right
+Marking id:rightToLeft:2131231126 used because it matches string pool constant right
+Marking id:right_icon:2131231127 used because it matches string pool constant right
+Marking id:right_side:2131231128 used because it matches string pool constant right
 Marking attr:counterEnabled:2130903383 used because it matches string pool constant count
 Marking attr:counterMaxLength:2130903384 used because it matches string pool constant count
 Marking attr:counterOverflowTextAppearance:2130903385 used because it matches string pool constant count
@@ -2192,9 +2187,9 @@ Marking attr:titleTextAppearance:2130904208 used because it matches string pool 
 Marking attr:titleTextColor:2130904209 used because it matches string pool constant title
 Marking attr:titleTextEllipsize:2130904210 used because it matches string pool constant title
 Marking attr:titleTextStyle:2130904211 used because it matches string pool constant title
-Marking id:title:2131231258 used because it matches string pool constant title
-Marking id:titleDividerNoCustom:2131231259 used because it matches string pool constant title
-Marking id:title_template:2131231260 used because it matches string pool constant title
+Marking id:title:2131231256 used because it matches string pool constant title
+Marking id:titleDividerNoCustom:2131231257 used because it matches string pool constant title
+Marking id:title_template:2131231258 used because it matches string pool constant title
 Marking attr:alpha:2130903086 used because it matches string pool constant alpha
 Marking attr:alphabeticModifiers:2130903087 used because it matches string pool constant alpha
 Marking attr:selectorSize:2130903982 used because it matches string pool constant selector
@@ -2325,39 +2320,38 @@ Marking color:text_on_primary:2131034921 used because it matches string pool con
 Marking color:text_on_primary_muted:2131034922 used because it matches string pool constant text
 Marking color:text_primary:2131034923 used because it matches string pool constant text
 Marking color:text_secondary:2131034924 used because it matches string pool constant text
-Marking id:text:2131231228 used because it matches string pool constant text
-Marking id:text2:2131231229 used because it matches string pool constant text
-Marking id:textAboutVersion:2131231230 used because it matches string pool constant text
-Marking id:textAlarmMessage:2131231231 used because it matches string pool constant text
-Marking id:textAlarmTitle:2131231232 used because it matches string pool constant text
-Marking id:textBatteryStatus:2131231233 used because it matches string pool constant text
-Marking id:textDate:2131231234 used because it matches string pool constant text
-Marking id:textDateSmall:2131231235 used because it matches string pool constant text
-Marking id:textEnd:2131231236 used because it matches string pool constant text
-Marking id:textGreeting:2131231237 used because it matches string pool constant text
-Marking id:textMessage:2131231238 used because it matches string pool constant text
-Marking id:textPaletteValue:2131231239 used because it matches string pool constant text
-Marking id:textPriorValue:2131231240 used because it matches string pool constant text
-Marking id:textSnoozeValue:2131231241 used because it matches string pool constant text
-Marking id:textSpacerNoButtons:2131231242 used because it matches string pool constant text
-Marking id:textSpacerNoTitle:2131231243 used because it matches string pool constant text
-Marking id:textStart:2131231244 used because it matches string pool constant text
-Marking id:textTimeLarge:2131231245 used because it matches string pool constant text
-Marking id:textTitle:2131231246 used because it matches string pool constant text
-Marking id:textTop:2131231247 used because it matches string pool constant text
-Marking id:text_input_end_icon:2131231248 used because it matches string pool constant text
-Marking id:text_input_error_icon:2131231249 used because it matches string pool constant text
-Marking id:text_input_start_icon:2131231250 used because it matches string pool constant text
-Marking id:textinput_counter:2131231251 used because it matches string pool constant text
-Marking id:textinput_error:2131231252 used because it matches string pool constant text
-Marking id:textinput_helper_text:2131231253 used because it matches string pool constant text
-Marking id:textinput_placeholder:2131231254 used because it matches string pool constant text
-Marking id:textinput_prefix_text:2131231255 used because it matches string pool constant text
-Marking id:textinput_suffix_text:2131231256 used because it matches string pool constant text
+Marking id:text:2131231227 used because it matches string pool constant text
+Marking id:text2:2131231228 used because it matches string pool constant text
+Marking id:textAboutVersion:2131231229 used because it matches string pool constant text
+Marking id:textAlarmMessage:2131231230 used because it matches string pool constant text
+Marking id:textAlarmTitle:2131231231 used because it matches string pool constant text
+Marking id:textBatteryStatus:2131231232 used because it matches string pool constant text
+Marking id:textDate:2131231233 used because it matches string pool constant text
+Marking id:textDateSmall:2131231234 used because it matches string pool constant text
+Marking id:textEnd:2131231235 used because it matches string pool constant text
+Marking id:textGreeting:2131231236 used because it matches string pool constant text
+Marking id:textMessage:2131231237 used because it matches string pool constant text
+Marking id:textPriorValue:2131231238 used because it matches string pool constant text
+Marking id:textSnoozeValue:2131231239 used because it matches string pool constant text
+Marking id:textSpacerNoButtons:2131231240 used because it matches string pool constant text
+Marking id:textSpacerNoTitle:2131231241 used because it matches string pool constant text
+Marking id:textStart:2131231242 used because it matches string pool constant text
+Marking id:textTimeLarge:2131231243 used because it matches string pool constant text
+Marking id:textTitle:2131231244 used because it matches string pool constant text
+Marking id:textTop:2131231245 used because it matches string pool constant text
+Marking id:text_input_end_icon:2131231246 used because it matches string pool constant text
+Marking id:text_input_error_icon:2131231247 used because it matches string pool constant text
+Marking id:text_input_start_icon:2131231248 used because it matches string pool constant text
+Marking id:textinput_counter:2131231249 used because it matches string pool constant text
+Marking id:textinput_error:2131231250 used because it matches string pool constant text
+Marking id:textinput_helper_text:2131231251 used because it matches string pool constant text
+Marking id:textinput_placeholder:2131231252 used because it matches string pool constant text
+Marking id:textinput_prefix_text:2131231253 used because it matches string pool constant text
+Marking id:textinput_suffix_text:2131231254 used because it matches string pool constant text
 Marking id:TOP_END:2131230732 used because it matches string pool constant TOP
 Marking id:TOP_START:2131230733 used because it matches string pool constant TOP
-Marking id:skipCollapsed:2131231164 used because it matches string pool constant skip
-Marking id:skipped:2131231165 used because it matches string pool constant skip
+Marking id:skipCollapsed:2131231163 used because it matches string pool constant skip
+Marking id:skipped:2131231164 used because it matches string pool constant skip
 Marking attr:maxAcceleration:2130903808 used because it matches string pool constant max
 Marking attr:maxActionInlineWidth:2130903809 used because it matches string pool constant max
 Marking attr:maxButtonHeight:2130903810 used because it matches string pool constant max
@@ -2372,7 +2366,7 @@ Marking attr:menu:2130903819 used because it matches string pool constant menu
 Marking attr:menuAlignmentMode:2130903820 used because it matches string pool constant menu
 Marking attr:menuGravity:2130903821 used because it matches string pool constant menu
 Marking id:accelerate:2131230734 used because it matches string pool constant accelerate
-Marking id:selected:2131231155 used because it matches string pool constant selected
+Marking id:selected:2131231154 used because it matches string pool constant selected
 Marking string:selected:2131689705 used because it matches string pool constant selected
 Marking attr:background:2130903111 used because it matches string pool constant background
 Marking attr:backgroundColor:2130903112 used because it matches string pool constant background
@@ -2390,7 +2384,7 @@ Marking color:background_floating_material_dark:2131034146 used because it match
 Marking color:background_floating_material_light:2131034147 used because it matches string pool constant background
 Marking color:background_material_dark:2131034148 used because it matches string pool constant background
 Marking color:background_material_light:2131034149 used because it matches string pool constant background
-Marking id:position:2131231115 used because it matches string pool constant position
+Marking id:position:2131231114 used because it matches string pool constant position
 Marking attr:transformPivotTarget:2130904237 used because it matches string pool constant transform
 Marking attr:height:2130903570 used because it matches string pool constant height
 Marking attr:minHeight:2130903823 used because it matches string pool constant min
@@ -2398,8 +2392,8 @@ Marking attr:minHideDelay:2130903824 used because it matches string pool constan
 Marking attr:minSeparation:2130903825 used because it matches string pool constant min
 Marking attr:minTouchTargetSize:2130903826 used because it matches string pool constant min
 Marking attr:minWidth:2130903827 used because it matches string pool constant min
-Marking id:mini:2131231031 used because it matches string pool constant min
-Marking id:ratio:2131231121 used because it matches string pool constant ratio
+Marking id:mini:2131231030 used because it matches string pool constant min
+Marking id:ratio:2131231120 used because it matches string pool constant ratio
 Marking attr:layout:2130903658 used because it matches string pool constant layout
 Marking attr:layoutDescription:2130903659 used because it matches string pool constant layout
 Marking attr:layoutDuringTransition:2130903660 used because it matches string pool constant layout
@@ -2481,8 +2475,7 @@ Marking id:layoutCustomInterval:2131230989 used because it matches string pool c
 Marking id:layoutDayChips:2131230990 used because it matches string pool constant layout
 Marking id:layoutDefaultPrior:2131230991 used because it matches string pool constant layout
 Marking id:layoutNotifSettings:2131230992 used because it matches string pool constant layout
-Marking id:layoutPalette:2131230993 used because it matches string pool constant layout
-Marking id:layoutSnooze:2131230994 used because it matches string pool constant layout
+Marking id:layoutSnooze:2131230993 used because it matches string pool constant layout
 Marking attr:prefixText:2130903936 used because it matches string pool constant prefix
 Marking attr:prefixTextAppearance:2130903937 used because it matches string pool constant prefix
 Marking attr:prefixTextColor:2130903938 used because it matches string pool constant prefix
@@ -2572,7 +2565,7 @@ Marking attr:labelBehavior:2130903652 used because it matches string pool consta
 Marking attr:labelStyle:2130903653 used because it matches string pool constant label
 Marking attr:labelVisibilityMode:2130903654 used because it matches string pool constant label
 Marking id:labeled:2131230984 used because it matches string pool constant label
-Marking id:message:2131231029 used because it matches string pool constant message
+Marking id:message:2131231028 used because it matches string pool constant message
 Marking attr:indeterminateAnimationType:2130903605 used because it matches string pool constant indeterminate
 Marking attr:indeterminateProgressStyle:2130903606 used because it matches string pool constant indeterminate
 Marking id:indeterminate:2131230974 used because it matches string pool constant indeterminate
@@ -2698,53 +2691,53 @@ Marking style:TextAppearance_MaterialComponents_Tooltip:2131755533 used because 
 Marking style:TextAppearance_Widget_AppCompat_ExpandedMenu_Item:2131755534 used because it matches string pool constant Text
 Marking style:TextAppearance_Widget_AppCompat_Toolbar_Subtitle:2131755535 used because it matches string pool constant Text
 Marking style:TextAppearance_Widget_AppCompat_Toolbar_Title:2131755536 used because it matches string pool constant Text
-Marking style:Theme_MaterialComponents:2131755608 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_BottomSheetDialog:2131755609 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Bridge:2131755610 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_CompactMenu:2131755611 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight:2131755612 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_BottomSheetDialog:2131755613 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Bridge:2131755614 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_DarkActionBar:2131755615 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_DarkActionBar_Bridge:2131755616 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog:2131755617 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_Alert:2131755618 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge:2131755619 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_Bridge:2131755620 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_FixedSize:2131755621 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge:2131755622 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_MinWidth:2131755623 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge:2131755624 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_DialogWhenLarge:2131755625 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_NoActionBar:2131755626 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DayNight_NoActionBar_Bridge:2131755627 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog:2131755628 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_Alert:2131755629 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_Alert_Bridge:2131755630 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_Bridge:2131755631 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_FixedSize:2131755632 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_FixedSize_Bridge:2131755633 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_MinWidth:2131755634 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Dialog_MinWidth_Bridge:2131755635 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_DialogWhenLarge:2131755636 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light:2131755637 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_BottomSheetDialog:2131755638 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Bridge:2131755639 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_DarkActionBar:2131755640 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_DarkActionBar_Bridge:2131755641 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog:2131755642 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_Alert:2131755643 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_Alert_Bridge:2131755644 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_Bridge:2131755645 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_FixedSize:2131755646 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge:2131755647 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_MinWidth:2131755648 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge:2131755649 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_DialogWhenLarge:2131755650 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_NoActionBar:2131755651 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_Light_NoActionBar_Bridge:2131755652 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_NoActionBar:2131755653 used because it matches string pool constant Theme.MaterialComponents
-Marking style:Theme_MaterialComponents_NoActionBar_Bridge:2131755654 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents:2131755596 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_BottomSheetDialog:2131755597 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Bridge:2131755598 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_CompactMenu:2131755599 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight:2131755600 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_BottomSheetDialog:2131755601 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Bridge:2131755602 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_DarkActionBar:2131755603 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_DarkActionBar_Bridge:2131755604 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog:2131755605 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_Alert:2131755606 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge:2131755607 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_Bridge:2131755608 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_FixedSize:2131755609 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge:2131755610 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_MinWidth:2131755611 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge:2131755612 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_DialogWhenLarge:2131755613 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_NoActionBar:2131755614 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DayNight_NoActionBar_Bridge:2131755615 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog:2131755616 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_Alert:2131755617 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_Alert_Bridge:2131755618 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_Bridge:2131755619 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_FixedSize:2131755620 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_FixedSize_Bridge:2131755621 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_MinWidth:2131755622 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Dialog_MinWidth_Bridge:2131755623 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_DialogWhenLarge:2131755624 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light:2131755625 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_BottomSheetDialog:2131755626 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Bridge:2131755627 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_DarkActionBar:2131755628 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_DarkActionBar_Bridge:2131755629 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog:2131755630 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_Alert:2131755631 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_Alert_Bridge:2131755632 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_Bridge:2131755633 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_FixedSize:2131755634 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge:2131755635 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_MinWidth:2131755636 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge:2131755637 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_DialogWhenLarge:2131755638 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_NoActionBar:2131755639 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_Light_NoActionBar_Bridge:2131755640 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_NoActionBar:2131755641 used because it matches string pool constant Theme.MaterialComponents
+Marking style:Theme_MaterialComponents_NoActionBar_Bridge:2131755642 used because it matches string pool constant Theme.MaterialComponents
 Marking attr:emojiCompatEnabled:2130903456 used because it matches string pool constant emojiCompat
 Marking attr:paddingEnd:2130903904 used because it matches string pool constant paddingEnd
 Marking attr:navigationIcon:2130903882 used because it matches string pool constant navigationIcon
@@ -2755,12 +2748,12 @@ Marking attr:viewTransitionMode:2130904255 used because it matches string pool c
 Marking attr:viewTransitionOnCross:2130904256 used because it matches string pool constant view
 Marking attr:viewTransitionOnNegativeCross:2130904257 used because it matches string pool constant view
 Marking attr:viewTransitionOnPositiveCross:2130904258 used because it matches string pool constant view
-Marking id:view_offset_helper:2131231281 used because it matches string pool constant view
-Marking id:view_transition:2131231282 used because it matches string pool constant view
-Marking id:view_tree_lifecycle_owner:2131231283 used because it matches string pool constant view
-Marking id:view_tree_on_back_pressed_dispatcher_owner:2131231284 used because it matches string pool constant view
-Marking id:view_tree_saved_state_registry_owner:2131231285 used because it matches string pool constant view
-Marking id:view_tree_view_model_store_owner:2131231286 used because it matches string pool constant view
+Marking id:view_offset_helper:2131231279 used because it matches string pool constant view
+Marking id:view_transition:2131231280 used because it matches string pool constant view
+Marking id:view_tree_lifecycle_owner:2131231281 used because it matches string pool constant view
+Marking id:view_tree_on_back_pressed_dispatcher_owner:2131231282 used because it matches string pool constant view
+Marking id:view_tree_saved_state_registry_owner:2131231283 used because it matches string pool constant view
+Marking id:view_tree_view_model_store_owner:2131231284 used because it matches string pool constant view
 Marking attr:color:2130903282 used because it matches string pool constant color
 Marking attr:colorAccent:2130903283 used because it matches string pool constant color
 Marking attr:colorBackgroundFloating:2130903284 used because it matches string pool constant color
@@ -2904,19 +2897,19 @@ Marking drawable:notification_oversize_large_icon_bg:2131165415 used because it 
 Marking drawable:notification_template_icon_bg:2131165416 used because it matches string pool constant notification
 Marking drawable:notification_template_icon_low_bg:2131165417 used because it matches string pool constant notification
 Marking drawable:notification_tile_bg:2131165418 used because it matches string pool constant notification
-Marking id:notification_background:2131231079 used because it matches string pool constant notification
-Marking id:notification_main_column:2131231080 used because it matches string pool constant notification
-Marking id:notification_main_column_container:2131231081 used because it matches string pool constant notification
+Marking id:notification_background:2131231078 used because it matches string pool constant notification
+Marking id:notification_main_column:2131231079 used because it matches string pool constant notification
+Marking id:notification_main_column_container:2131231080 used because it matches string pool constant notification
 Marking layout:notification_action:2131427430 used because it matches string pool constant notification
 Marking layout:notification_action_tombstone:2131427431 used because it matches string pool constant notification
 Marking layout:notification_template_custom_big:2131427432 used because it matches string pool constant notification
 Marking layout:notification_template_icon_group:2131427433 used because it matches string pool constant notification
 Marking layout:notification_template_part_chronometer:2131427434 used because it matches string pool constant notification
 Marking layout:notification_template_part_time:2131427435 used because it matches string pool constant notification
-Marking id:parent:2131231104 used because it matches string pool constant parent
-Marking id:parentPanel:2131231105 used because it matches string pool constant parent
-Marking id:parentRelative:2131231106 used because it matches string pool constant parent
-Marking id:parent_matrix:2131231107 used because it matches string pool constant parent
+Marking id:parent:2131231103 used because it matches string pool constant parent
+Marking id:parentPanel:2131231104 used because it matches string pool constant parent
+Marking id:parentRelative:2131231105 used because it matches string pool constant parent
+Marking id:parent_matrix:2131231106 used because it matches string pool constant parent
 Marking attr:arcMode:2130903096 used because it matches string pool constant ar
 Marking attr:arrowHeadLength:2130903097 used because it matches string pool constant ar
 Marking attr:arrowShaftLength:2130903098 used because it matches string pool constant ar
@@ -3088,19 +3081,19 @@ Marking dimen:tooltip_y_offset_non_touch:2131100442 used because it matches stri
 Marking dimen:tooltip_y_offset_touch:2131100443 used because it matches string pool constant to
 Marking drawable:tooltip_frame_dark:2131165421 used because it matches string pool constant to
 Marking drawable:tooltip_frame_light:2131165422 used because it matches string pool constant to
-Marking id:toggle:2131231261 used because it matches string pool constant to
-Marking id:toggleThemeGroup:2131231262 used because it matches string pool constant to
-Marking id:toolbar:2131231263 used because it matches string pool constant to
-Marking id:top:2131231264 used because it matches string pool constant to
-Marking id:topPanel:2131231265 used because it matches string pool constant to
-Marking id:touch_outside:2131231266 used because it matches string pool constant to
+Marking id:toggle:2131231259 used because it matches string pool constant to
+Marking id:toggleThemeGroup:2131231260 used because it matches string pool constant to
+Marking id:toolbar:2131231261 used because it matches string pool constant to
+Marking id:top:2131231262 used because it matches string pool constant to
+Marking id:topPanel:2131231263 used because it matches string pool constant to
+Marking id:touch_outside:2131231264 used because it matches string pool constant to
 Marking string:tooltip_description:2131689712 used because it matches string pool constant to
 Marking string:tooltip_label:2131689713 used because it matches string pool constant to
 Marking attr:horizontalOffset:2130903586 used because it matches string pool constant horizontal
 Marking attr:horizontalOffsetWithText:2130903587 used because it matches string pool constant horizontal
 Marking id:horizontal_only:2131230965 used because it matches string pool constant horizontal
 Marking attr:upDuration:2130904247 used because it matches string pool constant up
-Marking id:up:2131231278 used because it matches string pool constant up
+Marking id:up:2131231276 used because it matches string pool constant up
 Marking attr:queryBackground:2130903946 used because it matches string pool constant query
 Marking attr:queryHint:2130903947 used because it matches string pool constant query
 Marking attr:queryPatterns:2130903948 used because it matches string pool constant query
@@ -3225,7 +3218,7 @@ Marking style:TextAppearance_MaterialComponents_Tooltip:2131755533 used because 
 Marking style:TextAppearance_Widget_AppCompat_ExpandedMenu_Item:2131755534 used because it matches string pool constant TextAppearance
 Marking style:TextAppearance_Widget_AppCompat_Toolbar_Subtitle:2131755535 used because it matches string pool constant TextAppearance
 Marking style:TextAppearance_Widget_AppCompat_Toolbar_Title:2131755536 used because it matches string pool constant TextAppearance
-Marking id:none:2131231076 used because it matches string pool constant none
+Marking id:none:2131231075 used because it matches string pool constant none
 Marking attr:content:2130903352 used because it matches string pool constant cont
 Marking attr:contentDescription:2130903353 used because it matches string pool constant cont
 Marking attr:contentInsetEnd:2130903354 used because it matches string pool constant cont
@@ -3260,11 +3253,11 @@ Marking anim:linear_indeterminate_line2_tail_interpolator:2130772000 used becaus
 Marking attr:lineHeight:2130903735 used because it matches string pool constant line
 Marking attr:lineSpacing:2130903736 used because it matches string pool constant line
 Marking attr:linearProgressIndicatorStyle:2130903737 used because it matches string pool constant line
-Marking id:line1:2131230998 used because it matches string pool constant line
-Marking id:line3:2131230999 used because it matches string pool constant line
-Marking id:linear:2131231000 used because it matches string pool constant line
+Marking id:line1:2131230997 used because it matches string pool constant line
+Marking id:line3:2131230998 used because it matches string pool constant line
+Marking id:linear:2131230999 used because it matches string pool constant line
 Marking attr:scaleFromTextSize:2130903970 used because it matches string pool constant scale
-Marking id:scale:2131231136 used because it matches string pool constant scale
+Marking id:scale:2131231135 used because it matches string pool constant scale
 Marking anim:fragment_fast_out_extra_slow_in:2130771996 used because it matches string pool constant fragment
 Marking animator:fragment_close_enter:2130837507 used because it matches string pool constant fragment
 Marking animator:fragment_close_exit:2130837508 used because it matches string pool constant fragment
@@ -4254,7 +4247,7 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
 @attr/materialSearchViewStyle : reachable=false
 @attr/materialSearchViewToolbarHeight : reachable=false
 @attr/materialSearchViewToolbarStyle : reachable=false
-@attr/materialSwitchStyle : reachable=false
+@attr/materialSwitchStyle : reachable=true
 @attr/materialThemeOverlay : reachable=true
 @attr/materialTimePickerStyle : reachable=false
 @attr/materialTimePickerTheme : reachable=false
@@ -4522,7 +4515,7 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
 @attr/suggestionRowLayout : reachable=false
 @attr/switchMinWidth : reachable=false
 @attr/switchPadding : reachable=false
-@attr/switchStyle : reachable=true
+@attr/switchStyle : reachable=false
 @attr/switchTextAppearance : reachable=false
 @attr/tabBackground : reachable=false
 @attr/tabContentStart : reachable=false
@@ -7224,7 +7217,7 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
 @dimen/mtrl_snackbar_message_margin_horizontal : reachable=false
 @dimen/mtrl_snackbar_padding_horizontal : reachable=false
 @dimen/mtrl_switch_text_padding : reachable=false
-@dimen/mtrl_switch_thumb_elevation : reachable=true
+@dimen/mtrl_switch_thumb_elevation : reachable=false
 @dimen/mtrl_switch_thumb_icon_size : reachable=false
 @dimen/mtrl_switch_thumb_size : reachable=false
 @dimen/mtrl_switch_track_height : reachable=false
@@ -8177,7 +8170,6 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
 @id/layoutDayChips : reachable=true
 @id/layoutDefaultPrior : reachable=true
 @id/layoutNotifSettings : reachable=true
-@id/layoutPalette : reachable=true
 @id/layoutSnooze : reachable=true
 @id/left : reachable=true
 @id/leftToRight : reachable=true
@@ -8423,7 +8415,6 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
 @id/textEnd : reachable=true
 @id/textGreeting : reachable=true
 @id/textMessage : reachable=true
-@id/textPaletteValue : reachable=true
 @id/textPriorValue : reachable=true
 @id/textSnoozeValue : reachable=true
 @id/textSpacerNoButtons : reachable=true
@@ -13834,11 +13825,11 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
     @attr/cornerSizeBottomLeft
     @attr/cornerSizeBottomRight
 @style/ShapeAppearance_HardReminder_MediumComponent : reachable=false
-    @style/ShapeAppearance_MaterialComponents_MediumComponent
+    @style/ShapeAppearance_Material3_MediumComponent
     @attr/cornerFamily
     @attr/cornerSize
 @style/ShapeAppearance_HardReminder_SmallComponent : reachable=false
-    @style/ShapeAppearance_MaterialComponents_SmallComponent
+    @style/ShapeAppearance_Material3_SmallComponent
     @attr/cornerFamily
     @attr/cornerSize
 @style/ShapeAppearance_M3_Comp_Badge_Large_Shape : reachable=false
@@ -14084,7 +14075,7 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
     @color/mtrl_tabs_legacy_text_color_selector
     @attr/textAllCaps
 @style/TextAppearance_HardReminder_SectionHeader : reachable=true
-    @style/TextAppearance_MaterialComponents_Caption
+    @style/TextAppearance_Material3_LabelSmall
     @attr/colorPrimary
 @style/TextAppearance_M3_Sys_Typescale_BodyLarge : reachable=true
     @style/TextAppearance_AppCompat_Body2
@@ -15354,250 +15345,6 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
     @attr/shapeAppearanceMediumComponent
     @style/ShapeAppearance_HardReminder_SmallComponent
     @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Expressive : reachable=true
-    @style/Theme_Material3_Light_NoActionBar
-    @color/expressive_background
-    @style/WindowAnimationTransition
-    @color/expressive_primary_dark
-    @color/expressive_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/text_primary
-    @attr/colorOnSurface
-    @color/expressive_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/expressive_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Expressive_Amoled : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/amoled_background
-    @style/WindowAnimationTransition
-    @color/expressive_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/amoled_text_primary
-    @attr/colorOnSurface
-    @color/expressive_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/amoled_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Expressive_Dark : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/dark_background
-    @style/WindowAnimationTransition
-    @color/expressive_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/dark_text_primary
-    @attr/colorOnSurface
-    @color/expressive_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/dark_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Mono : reachable=true
-    @style/Theme_Material3_Light_NoActionBar
-    @color/mono_background
-    @style/WindowAnimationTransition
-    @color/mono_primary_dark
-    @color/mono_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/text_primary
-    @attr/colorOnSurface
-    @color/mono_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/mono_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Mono_Amoled : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/amoled_background
-    @style/WindowAnimationTransition
-    @color/mono_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/amoled_text_primary
-    @attr/colorOnSurface
-    @color/mono_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/amoled_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Mono_Dark : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/dark_background
-    @style/WindowAnimationTransition
-    @color/mono_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/dark_text_primary
-    @attr/colorOnSurface
-    @color/mono_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/dark_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Tonal : reachable=true
-    @style/Theme_Material3_Light_NoActionBar
-    @color/tonal_background
-    @style/WindowAnimationTransition
-    @color/tonal_primary_dark
-    @color/tonal_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/text_primary
-    @attr/colorOnSurface
-    @color/tonal_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/tonal_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Tonal_Amoled : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/amoled_background
-    @style/WindowAnimationTransition
-    @color/tonal_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/amoled_text_primary
-    @attr/colorOnSurface
-    @color/tonal_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/amoled_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Tonal_Dark : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/dark_background
-    @style/WindowAnimationTransition
-    @color/tonal_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/dark_text_primary
-    @attr/colorOnSurface
-    @color/tonal_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/dark_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Vibrant : reachable=true
-    @style/Theme_Material3_Light_NoActionBar
-    @color/vibrant_background
-    @style/WindowAnimationTransition
-    @color/vibrant_primary_dark
-    @color/vibrant_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/text_primary
-    @attr/colorOnSurface
-    @color/vibrant_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/vibrant_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Vibrant_Amoled : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/amoled_background
-    @style/WindowAnimationTransition
-    @color/vibrant_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/amoled_text_primary
-    @attr/colorOnSurface
-    @color/vibrant_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/amoled_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
-@style/Theme_HardReminder_Vibrant_Dark : reachable=true
-    @style/Theme_Material3_Dark_NoActionBar
-    @color/dark_background
-    @style/WindowAnimationTransition
-    @color/vibrant_dark_accent
-    @attr/colorAccent
-    @color/text_on_primary
-    @attr/colorOnPrimary
-    @color/dark_text_primary
-    @attr/colorOnSurface
-    @color/vibrant_dark_primary
-    @attr/colorPrimary
-    @attr/colorPrimaryDark
-    @attr/colorSecondary
-    @color/dark_surface
-    @attr/colorSurface
-    @style/ShapeAppearance_HardReminder_MediumComponent
-    @attr/shapeAppearanceMediumComponent
-    @style/ShapeAppearance_HardReminder_SmallComponent
-    @attr/shapeAppearanceSmallComponent
 @style/Theme_Material3_Dark : reachable=false
     @style/Base_Theme_Material3_Dark
 @style/Theme_Material3_Dark_BottomSheetDialog : reachable=false
@@ -16318,13 +16065,13 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
     @attr/suffixTextAppearance
     @attr/suffixTextColor
 @style/Widget_HardReminder_ExposedDropdown : reachable=false
-    @style/Widget_MaterialComponents_TextInputLayout_OutlinedBox_ExposedDropdownMenu
+    @style/Widget_Material3_TextInputLayout_OutlinedBox_ExposedDropdownMenu
     @attr/boxCornerRadiusBottomEnd
     @attr/boxCornerRadiusBottomStart
     @attr/boxCornerRadiusTopEnd
     @attr/boxCornerRadiusTopStart
 @style/Widget_HardReminder_Toolbar : reachable=false
-    @style/Widget_MaterialComponents_Toolbar_Primary
+    @style/Widget_Material3_Toolbar
     @attr/colorPrimary
     @color/text_on_primary
     @attr/navigationIconTint
@@ -16864,7 +16611,7 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
 @style/Widget_Material3_CompoundButton_CheckBox : reachable=false
     @style/Base_Widget_Material3_CompoundButton_CheckBox
     @drawable/m3_selection_control_ripple
-@style/Widget_Material3_CompoundButton_MaterialSwitch : reachable=false
+@style/Widget_Material3_CompoundButton_MaterialSwitch : reachable=true
     @style/Widget_AppCompat_CompoundButton_Switch
     @attr/textAppearanceBodyMedium
     @attr/minTouchTargetSize
@@ -17897,7 +17644,7 @@ Marking id:fragment_container_view_tag:2131230946 used because it matches string
     @attr/minTouchTargetSize
     @attr/enforceMaterialTheme
     @attr/useMaterialThemeColors
-@style/Widget_MaterialComponents_CompoundButton_Switch : reachable=true
+@style/Widget_MaterialComponents_CompoundButton_Switch : reachable=false
     @style/Widget_AppCompat_CompoundButton_Switch
     @attr/minTouchTargetSize
     @attr/enforceMaterialTheme
@@ -18831,6 +18578,7 @@ The root reachable resources are:
  attr:materialCalendarStyle:2130903782
  attr:materialCardViewStyle:2130903788
  attr:materialClockStyle:2130903790
+ attr:materialSwitchStyle:2130903803
  attr:materialThemeOverlay:2130903804
  attr:maxAcceleration:2130903808
  attr:maxActionInlineWidth:2130903809
@@ -18928,7 +18676,6 @@ The root reachable resources are:
  attr:suffixText:2130904065
  attr:suffixTextAppearance:2130904066
  attr:suffixTextColor:2130904067
- attr:switchStyle:2130904071
  attr:targetId:2130904102
  attr:textAllCaps:2130904106
  attr:textAppearanceBody1:2130904107
@@ -19159,7 +18906,6 @@ The root reachable resources are:
  dimen:mtrl_min_touch_target_size:2131100348
  dimen:mtrl_shape_corner_size_small_component:2131100382
  dimen:mtrl_snackbar_background_corner_radius:2131100394
- dimen:mtrl_switch_thumb_elevation:2131100400
  dimen:mtrl_textinput_box_label_cutout_padding:2131100407
  dimen:mtrl_textinput_box_stroke_width_default:2131100408
  dimen:mtrl_textinput_box_stroke_width_focused:2131100409
@@ -19414,176 +19160,174 @@ The root reachable resources are:
  id:layoutDayChips:2131230990
  id:layoutDefaultPrior:2131230991
  id:layoutNotifSettings:2131230992
- id:layoutPalette:2131230993
- id:layoutSnooze:2131230994
- id:left:2131230995
- id:leftToRight:2131230996
- id:line1:2131230998
- id:line3:2131230999
- id:linear:2131231000
- id:listMode:2131231001
- id:list_item:2131231002
- id:material_clock_display:2131231008
- id:material_clock_face:2131231010
- id:material_clock_hand:2131231011
- id:material_clock_level:2131231012
- id:material_clock_period_toggle:2131231015
- id:material_hour_tv:2131231017
- id:material_label:2131231018
- id:material_minute_tv:2131231020
- id:material_value_index:2131231027
- id:message:2131231029
- id:mini:2131231031
- id:month_grid:2131231032
- id:month_navigation_fragment_toggle:2131231034
- id:month_navigation_next:2131231035
- id:month_navigation_previous:2131231036
- id:month_title:2131231037
- id:mtrl_calendar_day_selector_frame:2131231040
- id:mtrl_calendar_days_of_week:2131231041
- id:mtrl_calendar_frame:2131231042
- id:mtrl_calendar_main_pane:2131231043
- id:mtrl_calendar_months:2131231044
- id:mtrl_calendar_year_selector_frame:2131231047
- id:mtrl_card_checked_layer_id:2131231048
- id:mtrl_child_content_container:2131231049
- id:mtrl_internal_children_alpha_tag:2131231050
- id:mtrl_picker_header_selection_text:2131231054
- id:mtrl_picker_header_toggle:2131231056
- id:mtrl_picker_title_text:2131231060
- id:nestedScroll:2131231070
- id:none:2131231076
- id:notification_background:2131231079
- id:notification_main_column:2131231080
- id:notification_main_column_container:2131231081
- id:parent:2131231104
- id:parentPanel:2131231105
- id:parentRelative:2131231106
- id:parent_matrix:2131231107
- id:password_toggle:2131231108
- id:path:2131231109
- id:pathRelative:2131231110
- id:pooling_container_listener_holder_tag:2131231114
- id:position:2131231115
- id:ratio:2131231121
- id:recyclerView:2131231123
- id:report_drawn:2131231124
- id:right:2131231126
- id:rightToLeft:2131231127
- id:right_icon:2131231128
- id:right_side:2131231129
- id:row_index_key:2131231132
- id:save_overlay_view:2131231134
- id:scale:2131231136
- id:scrollIndicatorDown:2131231139
- id:scrollIndicatorUp:2131231140
- id:scrollView:2131231141
- id:search_button:2131231145
- id:search_close_btn:2131231146
- id:search_edit_frame:2131231147
- id:search_go_btn:2131231148
- id:search_mag_icon:2131231149
- id:search_plate:2131231150
- id:search_src_text:2131231151
- id:search_voice_btn:2131231152
- id:sectionHeader:2131231153
- id:selected:2131231155
- id:selection_type:2131231156
- id:shortcut:2131231159
- id:skipCollapsed:2131231164
- id:skipped:2131231165
- id:snackbar_action:2131231167
- id:snackbar_text:2131231168
- id:spacer:2131231172
- id:special_effects_controller_view_tag:2131231173
- id:spinnerPrior:2131231174
- id:spinnerRepeat:2131231175
- id:split_action_bar:2131231177
- id:standard:2131231185
- id:start:2131231186
- id:startHorizontal:2131231187
- id:startToEnd:2131231188
- id:startVertical:2131231189
- id:statActiveCount:2131231190
- id:statTodayCount:2131231191
- id:statTotalCount:2131231192
- id:statsRow:2131231195
- id:submenuarrow:2131231198
- id:submit_area:2131231199
- id:switch24Hour:2131231201
- id:switchAmoled:2131231202
- id:switchAutoDelete:2131231203
- id:switchDefaultSound:2131231204
- id:switchDefaultVibration:2131231205
- id:switchEnabled:2131231206
- id:switchFlashScreen:2131231207
- id:switchOngoingNotif:2131231208
- id:switchSound:2131231209
- id:switchStartOnBoot:2131231210
- id:switchVibration:2131231211
- id:tagPrior:2131231213
- id:tagRepeat:2131231214
- id:tag_accessibility_actions:2131231215
- id:tag_accessibility_clickable_spans:2131231216
- id:tag_accessibility_heading:2131231217
- id:tag_accessibility_pane_title:2131231218
- id:tag_on_apply_window_listener:2131231219
- id:tag_on_receive_content_listener:2131231220
- id:tag_on_receive_content_mime_types:2131231221
- id:tag_screen_reader_focusable:2131231222
- id:tag_state_description:2131231223
- id:tag_unhandled_key_event_manager:2131231225
- id:tag_unhandled_key_listeners:2131231226
- id:tag_window_insets_animation_callback:2131231227
- id:text:2131231228
- id:text2:2131231229
- id:textAboutVersion:2131231230
- id:textAlarmMessage:2131231231
- id:textAlarmTitle:2131231232
- id:textBatteryStatus:2131231233
- id:textDate:2131231234
- id:textDateSmall:2131231235
- id:textEnd:2131231236
- id:textGreeting:2131231237
- id:textMessage:2131231238
- id:textPaletteValue:2131231239
- id:textPriorValue:2131231240
- id:textSnoozeValue:2131231241
- id:textSpacerNoButtons:2131231242
- id:textSpacerNoTitle:2131231243
- id:textStart:2131231244
- id:textTimeLarge:2131231245
- id:textTitle:2131231246
- id:textTop:2131231247
- id:text_input_end_icon:2131231248
- id:text_input_error_icon:2131231249
- id:text_input_start_icon:2131231250
- id:textinput_counter:2131231251
- id:textinput_error:2131231252
- id:textinput_helper_text:2131231253
- id:textinput_placeholder:2131231254
- id:textinput_prefix_text:2131231255
- id:textinput_suffix_text:2131231256
- id:title:2131231258
- id:titleDividerNoCustom:2131231259
- id:title_template:2131231260
- id:toggle:2131231261
- id:toggleThemeGroup:2131231262
- id:toolbar:2131231263
- id:top:2131231264
- id:topPanel:2131231265
- id:touch_outside:2131231266
- id:transition_current_scene:2131231269
- id:unchecked:2131231275
- id:up:2131231278
- id:view_offset_helper:2131231281
- id:view_transition:2131231282
- id:view_tree_lifecycle_owner:2131231283
- id:view_tree_on_back_pressed_dispatcher_owner:2131231284
- id:view_tree_saved_state_registry_owner:2131231285
- id:view_tree_view_model_store_owner:2131231286
- id:visible_removing_fragment_view_tag:2131231288
- id:wrapped_composition_tag:2131231296
+ id:layoutSnooze:2131230993
+ id:left:2131230994
+ id:leftToRight:2131230995
+ id:line1:2131230997
+ id:line3:2131230998
+ id:linear:2131230999
+ id:listMode:2131231000
+ id:list_item:2131231001
+ id:material_clock_display:2131231007
+ id:material_clock_face:2131231009
+ id:material_clock_hand:2131231010
+ id:material_clock_level:2131231011
+ id:material_clock_period_toggle:2131231014
+ id:material_hour_tv:2131231016
+ id:material_label:2131231017
+ id:material_minute_tv:2131231019
+ id:material_value_index:2131231026
+ id:message:2131231028
+ id:mini:2131231030
+ id:month_grid:2131231031
+ id:month_navigation_fragment_toggle:2131231033
+ id:month_navigation_next:2131231034
+ id:month_navigation_previous:2131231035
+ id:month_title:2131231036
+ id:mtrl_calendar_day_selector_frame:2131231039
+ id:mtrl_calendar_days_of_week:2131231040
+ id:mtrl_calendar_frame:2131231041
+ id:mtrl_calendar_main_pane:2131231042
+ id:mtrl_calendar_months:2131231043
+ id:mtrl_calendar_year_selector_frame:2131231046
+ id:mtrl_card_checked_layer_id:2131231047
+ id:mtrl_child_content_container:2131231048
+ id:mtrl_internal_children_alpha_tag:2131231049
+ id:mtrl_picker_header_selection_text:2131231053
+ id:mtrl_picker_header_toggle:2131231055
+ id:mtrl_picker_title_text:2131231059
+ id:nestedScroll:2131231069
+ id:none:2131231075
+ id:notification_background:2131231078
+ id:notification_main_column:2131231079
+ id:notification_main_column_container:2131231080
+ id:parent:2131231103
+ id:parentPanel:2131231104
+ id:parentRelative:2131231105
+ id:parent_matrix:2131231106
+ id:password_toggle:2131231107
+ id:path:2131231108
+ id:pathRelative:2131231109
+ id:pooling_container_listener_holder_tag:2131231113
+ id:position:2131231114
+ id:ratio:2131231120
+ id:recyclerView:2131231122
+ id:report_drawn:2131231123
+ id:right:2131231125
+ id:rightToLeft:2131231126
+ id:right_icon:2131231127
+ id:right_side:2131231128
+ id:row_index_key:2131231131
+ id:save_overlay_view:2131231133
+ id:scale:2131231135
+ id:scrollIndicatorDown:2131231138
+ id:scrollIndicatorUp:2131231139
+ id:scrollView:2131231140
+ id:search_button:2131231144
+ id:search_close_btn:2131231145
+ id:search_edit_frame:2131231146
+ id:search_go_btn:2131231147
+ id:search_mag_icon:2131231148
+ id:search_plate:2131231149
+ id:search_src_text:2131231150
+ id:search_voice_btn:2131231151
+ id:sectionHeader:2131231152
+ id:selected:2131231154
+ id:selection_type:2131231155
+ id:shortcut:2131231158
+ id:skipCollapsed:2131231163
+ id:skipped:2131231164
+ id:snackbar_action:2131231166
+ id:snackbar_text:2131231167
+ id:spacer:2131231171
+ id:special_effects_controller_view_tag:2131231172
+ id:spinnerPrior:2131231173
+ id:spinnerRepeat:2131231174
+ id:split_action_bar:2131231176
+ id:standard:2131231184
+ id:start:2131231185
+ id:startHorizontal:2131231186
+ id:startToEnd:2131231187
+ id:startVertical:2131231188
+ id:statActiveCount:2131231189
+ id:statTodayCount:2131231190
+ id:statTotalCount:2131231191
+ id:statsRow:2131231194
+ id:submenuarrow:2131231197
+ id:submit_area:2131231198
+ id:switch24Hour:2131231200
+ id:switchAmoled:2131231201
+ id:switchAutoDelete:2131231202
+ id:switchDefaultSound:2131231203
+ id:switchDefaultVibration:2131231204
+ id:switchEnabled:2131231205
+ id:switchFlashScreen:2131231206
+ id:switchOngoingNotif:2131231207
+ id:switchSound:2131231208
+ id:switchStartOnBoot:2131231209
+ id:switchVibration:2131231210
+ id:tagPrior:2131231212
+ id:tagRepeat:2131231213
+ id:tag_accessibility_actions:2131231214
+ id:tag_accessibility_clickable_spans:2131231215
+ id:tag_accessibility_heading:2131231216
+ id:tag_accessibility_pane_title:2131231217
+ id:tag_on_apply_window_listener:2131231218
+ id:tag_on_receive_content_listener:2131231219
+ id:tag_on_receive_content_mime_types:2131231220
+ id:tag_screen_reader_focusable:2131231221
+ id:tag_state_description:2131231222
+ id:tag_unhandled_key_event_manager:2131231224
+ id:tag_unhandled_key_listeners:2131231225
+ id:tag_window_insets_animation_callback:2131231226
+ id:text:2131231227
+ id:text2:2131231228
+ id:textAboutVersion:2131231229
+ id:textAlarmMessage:2131231230
+ id:textAlarmTitle:2131231231
+ id:textBatteryStatus:2131231232
+ id:textDate:2131231233
+ id:textDateSmall:2131231234
+ id:textEnd:2131231235
+ id:textGreeting:2131231236
+ id:textMessage:2131231237
+ id:textPriorValue:2131231238
+ id:textSnoozeValue:2131231239
+ id:textSpacerNoButtons:2131231240
+ id:textSpacerNoTitle:2131231241
+ id:textStart:2131231242
+ id:textTimeLarge:2131231243
+ id:textTitle:2131231244
+ id:textTop:2131231245
+ id:text_input_end_icon:2131231246
+ id:text_input_error_icon:2131231247
+ id:text_input_start_icon:2131231248
+ id:textinput_counter:2131231249
+ id:textinput_error:2131231250
+ id:textinput_helper_text:2131231251
+ id:textinput_placeholder:2131231252
+ id:textinput_prefix_text:2131231253
+ id:textinput_suffix_text:2131231254
+ id:title:2131231256
+ id:titleDividerNoCustom:2131231257
+ id:title_template:2131231258
+ id:toggle:2131231259
+ id:toggleThemeGroup:2131231260
+ id:toolbar:2131231261
+ id:top:2131231262
+ id:topPanel:2131231263
+ id:touch_outside:2131231264
+ id:transition_current_scene:2131231267
+ id:unchecked:2131231273
+ id:up:2131231276
+ id:view_offset_helper:2131231279
+ id:view_transition:2131231280
+ id:view_tree_lifecycle_owner:2131231281
+ id:view_tree_on_back_pressed_dispatcher_owner:2131231282
+ id:view_tree_saved_state_registry_owner:2131231283
+ id:view_tree_view_model_store_owner:2131231284
+ id:visible_removing_fragment_view_tag:2131231286
+ id:wrapped_composition_tag:2131231294
  integer:bottom_sheet_slide_duration:2131296259
  integer:mtrl_calendar_year_selector_span:2131296306
  layout:abc_action_bar_title_item:2131427328
@@ -19876,84 +19620,72 @@ The root reachable resources are:
  style:Theme_HardReminder_Alarm:2131755566
  style:Theme_HardReminder_Amoled:2131755567
  style:Theme_HardReminder_Dark:2131755568
- style:Theme_HardReminder_Expressive:2131755569
- style:Theme_HardReminder_Expressive_Amoled:2131755570
- style:Theme_HardReminder_Expressive_Dark:2131755571
- style:Theme_HardReminder_Mono:2131755572
- style:Theme_HardReminder_Mono_Amoled:2131755573
- style:Theme_HardReminder_Mono_Dark:2131755574
- style:Theme_HardReminder_Tonal:2131755575
- style:Theme_HardReminder_Tonal_Amoled:2131755576
- style:Theme_HardReminder_Tonal_Dark:2131755577
- style:Theme_HardReminder_Vibrant:2131755578
- style:Theme_HardReminder_Vibrant_Amoled:2131755579
- style:Theme_HardReminder_Vibrant_Dark:2131755580
- style:Theme_MaterialComponents:2131755608
- style:Theme_MaterialComponents_BottomSheetDialog:2131755609
- style:Theme_MaterialComponents_Bridge:2131755610
- style:Theme_MaterialComponents_CompactMenu:2131755611
- style:Theme_MaterialComponents_DayNight:2131755612
- style:Theme_MaterialComponents_DayNight_BottomSheetDialog:2131755613
- style:Theme_MaterialComponents_DayNight_Bridge:2131755614
- style:Theme_MaterialComponents_DayNight_DarkActionBar:2131755615
- style:Theme_MaterialComponents_DayNight_DarkActionBar_Bridge:2131755616
- style:Theme_MaterialComponents_DayNight_Dialog:2131755617
- style:Theme_MaterialComponents_DayNight_Dialog_Alert:2131755618
- style:Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge:2131755619
- style:Theme_MaterialComponents_DayNight_Dialog_Bridge:2131755620
- style:Theme_MaterialComponents_DayNight_Dialog_FixedSize:2131755621
- style:Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge:2131755622
- style:Theme_MaterialComponents_DayNight_Dialog_MinWidth:2131755623
- style:Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge:2131755624
- style:Theme_MaterialComponents_DayNight_DialogWhenLarge:2131755625
- style:Theme_MaterialComponents_DayNight_NoActionBar:2131755626
- style:Theme_MaterialComponents_DayNight_NoActionBar_Bridge:2131755627
- style:Theme_MaterialComponents_Dialog:2131755628
- style:Theme_MaterialComponents_Dialog_Alert:2131755629
- style:Theme_MaterialComponents_Dialog_Alert_Bridge:2131755630
- style:Theme_MaterialComponents_Dialog_Bridge:2131755631
- style:Theme_MaterialComponents_Dialog_FixedSize:2131755632
- style:Theme_MaterialComponents_Dialog_FixedSize_Bridge:2131755633
- style:Theme_MaterialComponents_Dialog_MinWidth:2131755634
- style:Theme_MaterialComponents_Dialog_MinWidth_Bridge:2131755635
- style:Theme_MaterialComponents_DialogWhenLarge:2131755636
- style:Theme_MaterialComponents_Light:2131755637
- style:Theme_MaterialComponents_Light_BottomSheetDialog:2131755638
- style:Theme_MaterialComponents_Light_Bridge:2131755639
- style:Theme_MaterialComponents_Light_DarkActionBar:2131755640
- style:Theme_MaterialComponents_Light_DarkActionBar_Bridge:2131755641
- style:Theme_MaterialComponents_Light_Dialog:2131755642
- style:Theme_MaterialComponents_Light_Dialog_Alert:2131755643
- style:Theme_MaterialComponents_Light_Dialog_Alert_Bridge:2131755644
- style:Theme_MaterialComponents_Light_Dialog_Bridge:2131755645
- style:Theme_MaterialComponents_Light_Dialog_FixedSize:2131755646
- style:Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge:2131755647
- style:Theme_MaterialComponents_Light_Dialog_MinWidth:2131755648
- style:Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge:2131755649
- style:Theme_MaterialComponents_Light_DialogWhenLarge:2131755650
- style:Theme_MaterialComponents_Light_NoActionBar:2131755651
- style:Theme_MaterialComponents_Light_NoActionBar_Bridge:2131755652
- style:Theme_MaterialComponents_NoActionBar:2131755653
- style:Theme_MaterialComponents_NoActionBar_Bridge:2131755654
- style:Widget_AppCompat_AutoCompleteTextView:2131755779
- style:Widget_Design_BottomSheet_Modal:2131755846
- style:Widget_Design_TextInputEditText:2131755853
- style:Widget_Design_TextInputLayout:2131755854
- style:Widget_Material3_SideSheet:2131755993
- style:Widget_MaterialComponents_BottomAppBar:2131756034
- style:Widget_MaterialComponents_Button:2131756042
- style:Widget_MaterialComponents_CardView:2131756054
- style:Widget_MaterialComponents_Chip_Action:2131756056
- style:Widget_MaterialComponents_ChipGroup:2131756060
- style:Widget_MaterialComponents_CompoundButton_CheckBox:2131756066
- style:Widget_MaterialComponents_CompoundButton_RadioButton:2131756067
- style:Widget_MaterialComponents_CompoundButton_Switch:2131756068
- style:Widget_MaterialComponents_ExtendedFloatingActionButton_Icon:2131756070
- style:Widget_MaterialComponents_MaterialButtonToggleGroup:2131756074
- style:Widget_MaterialComponents_MaterialCalendar:2131756075
- style:Widget_MaterialComponents_TimePicker_Clock:2131756134
- style:Widget_MaterialComponents_Toolbar:2131756142
- style:Widget_Support_CoordinatorLayout:2131756147
+ style:Theme_MaterialComponents:2131755596
+ style:Theme_MaterialComponents_BottomSheetDialog:2131755597
+ style:Theme_MaterialComponents_Bridge:2131755598
+ style:Theme_MaterialComponents_CompactMenu:2131755599
+ style:Theme_MaterialComponents_DayNight:2131755600
+ style:Theme_MaterialComponents_DayNight_BottomSheetDialog:2131755601
+ style:Theme_MaterialComponents_DayNight_Bridge:2131755602
+ style:Theme_MaterialComponents_DayNight_DarkActionBar:2131755603
+ style:Theme_MaterialComponents_DayNight_DarkActionBar_Bridge:2131755604
+ style:Theme_MaterialComponents_DayNight_Dialog:2131755605
+ style:Theme_MaterialComponents_DayNight_Dialog_Alert:2131755606
+ style:Theme_MaterialComponents_DayNight_Dialog_Alert_Bridge:2131755607
+ style:Theme_MaterialComponents_DayNight_Dialog_Bridge:2131755608
+ style:Theme_MaterialComponents_DayNight_Dialog_FixedSize:2131755609
+ style:Theme_MaterialComponents_DayNight_Dialog_FixedSize_Bridge:2131755610
+ style:Theme_MaterialComponents_DayNight_Dialog_MinWidth:2131755611
+ style:Theme_MaterialComponents_DayNight_Dialog_MinWidth_Bridge:2131755612
+ style:Theme_MaterialComponents_DayNight_DialogWhenLarge:2131755613
+ style:Theme_MaterialComponents_DayNight_NoActionBar:2131755614
+ style:Theme_MaterialComponents_DayNight_NoActionBar_Bridge:2131755615
+ style:Theme_MaterialComponents_Dialog:2131755616
+ style:Theme_MaterialComponents_Dialog_Alert:2131755617
+ style:Theme_MaterialComponents_Dialog_Alert_Bridge:2131755618
+ style:Theme_MaterialComponents_Dialog_Bridge:2131755619
+ style:Theme_MaterialComponents_Dialog_FixedSize:2131755620
+ style:Theme_MaterialComponents_Dialog_FixedSize_Bridge:2131755621
+ style:Theme_MaterialComponents_Dialog_MinWidth:2131755622
+ style:Theme_MaterialComponents_Dialog_MinWidth_Bridge:2131755623
+ style:Theme_MaterialComponents_DialogWhenLarge:2131755624
+ style:Theme_MaterialComponents_Light:2131755625
+ style:Theme_MaterialComponents_Light_BottomSheetDialog:2131755626
+ style:Theme_MaterialComponents_Light_Bridge:2131755627
+ style:Theme_MaterialComponents_Light_DarkActionBar:2131755628
+ style:Theme_MaterialComponents_Light_DarkActionBar_Bridge:2131755629
+ style:Theme_MaterialComponents_Light_Dialog:2131755630
+ style:Theme_MaterialComponents_Light_Dialog_Alert:2131755631
+ style:Theme_MaterialComponents_Light_Dialog_Alert_Bridge:2131755632
+ style:Theme_MaterialComponents_Light_Dialog_Bridge:2131755633
+ style:Theme_MaterialComponents_Light_Dialog_FixedSize:2131755634
+ style:Theme_MaterialComponents_Light_Dialog_FixedSize_Bridge:2131755635
+ style:Theme_MaterialComponents_Light_Dialog_MinWidth:2131755636
+ style:Theme_MaterialComponents_Light_Dialog_MinWidth_Bridge:2131755637
+ style:Theme_MaterialComponents_Light_DialogWhenLarge:2131755638
+ style:Theme_MaterialComponents_Light_NoActionBar:2131755639
+ style:Theme_MaterialComponents_Light_NoActionBar_Bridge:2131755640
+ style:Theme_MaterialComponents_NoActionBar:2131755641
+ style:Theme_MaterialComponents_NoActionBar_Bridge:2131755642
+ style:Widget_AppCompat_AutoCompleteTextView:2131755767
+ style:Widget_Design_BottomSheet_Modal:2131755834
+ style:Widget_Design_TextInputEditText:2131755841
+ style:Widget_Design_TextInputLayout:2131755842
+ style:Widget_Material3_CompoundButton_MaterialSwitch:2131755905
+ style:Widget_Material3_SideSheet:2131755981
+ style:Widget_MaterialComponents_BottomAppBar:2131756022
+ style:Widget_MaterialComponents_Button:2131756030
+ style:Widget_MaterialComponents_CardView:2131756042
+ style:Widget_MaterialComponents_Chip_Action:2131756044
+ style:Widget_MaterialComponents_ChipGroup:2131756048
+ style:Widget_MaterialComponents_CompoundButton_CheckBox:2131756054
+ style:Widget_MaterialComponents_CompoundButton_RadioButton:2131756055
+ style:Widget_MaterialComponents_ExtendedFloatingActionButton_Icon:2131756058
+ style:Widget_MaterialComponents_MaterialButtonToggleGroup:2131756062
+ style:Widget_MaterialComponents_MaterialCalendar:2131756063
+ style:Widget_MaterialComponents_TimePicker_Clock:2131756122
+ style:Widget_MaterialComponents_Toolbar:2131756130
+ style:Widget_Support_CoordinatorLayout:2131756135
 Unused resources are: 
  anim:abc_fade_in:2130771968
  anim:abc_fade_out:2130771969
@@ -19998,8 +19730,15 @@ Unused resources are:
  color:dim_foreground_disabled_material_light:2131034211
  color:dim_foreground_material_dark:2131034212
  color:dim_foreground_material_light:2131034213
+ color:expressive_accent:2131034217
+ color:expressive_background:2131034218
+ color:expressive_dark_accent:2131034219
+ color:expressive_dark_primary:2131034220
+ color:expressive_primary:2131034221
+ color:expressive_primary_dark:2131034222
  color:expressive_primary_light:2131034223
  color:expressive_ripple:2131034224
+ color:expressive_surface:2131034225
  color:m3_appbar_overlay_color:2131034230
  color:m3_assist_chip_stroke_color:2131034232
  color:m3_button_ripple_color:2131034237
@@ -20224,8 +19963,15 @@ Unused resources are:
  color:material_personalized_hint_foreground_inverse:2131034812
  color:material_personalized_primary_inverse_text_disable_only:2131034813
  color:material_personalized_primary_text_disable_only:2131034814
+ color:mono_accent:2131034826
+ color:mono_background:2131034827
+ color:mono_dark_accent:2131034828
+ color:mono_dark_primary:2131034829
+ color:mono_primary:2131034830
+ color:mono_primary_dark:2131034831
  color:mono_primary_light:2131034832
  color:mono_ripple:2131034833
+ color:mono_surface:2131034834
  color:mtrl_btn_text_color_disabled:2131034840
  color:mtrl_btn_transparent_bg_color:2131034842
  color:mtrl_navigation_bar_colored_item_tint:2131034862
@@ -20237,8 +19983,15 @@ Unused resources are:
  color:ripple_primary:2131034906
  color:vector_tint_color:2131034936
  color:vector_tint_theme_color:2131034937
+ color:vibrant_accent:2131034938
+ color:vibrant_background:2131034939
+ color:vibrant_dark_accent:2131034940
+ color:vibrant_dark_primary:2131034941
+ color:vibrant_primary:2131034942
+ color:vibrant_primary_dark:2131034943
  color:vibrant_primary_light:2131034944
  color:vibrant_ripple:2131034945
+ color:vibrant_surface:2131034946
  dimen:abc_action_bar_icon_vertical_padding_material:2131099654
  dimen:abc_action_bar_stacked_max_height:2131099657
  dimen:abc_action_bar_stacked_tab_max_width:2131099658
@@ -20411,6 +20164,7 @@ Unused resources are:
  dimen:mtrl_slider_label_square_side:2131100386
  dimen:mtrl_slider_track_side_padding:2131100391
  dimen:mtrl_slider_widget_height:2131100392
+ dimen:mtrl_switch_thumb_elevation:2131100400
  dimen:mtrl_textinput_box_corner_radius_medium:2131100405
  dimen:mtrl_textinput_outline_box_expanded_padding:2131100412
  dimen:mtrl_tooltip_arrowSize:2131100415
@@ -20548,142 +20302,142 @@ Unused resources are:
  id:inward:2131230978
  id:jumpToEnd:2131230982
  id:jumpToStart:2131230983
- id:legacy:2131230997
- id:m3_side_sheet:2131231003
- id:marquee:2131231004
- id:masked:2131231005
- id:match_constraint:2131231006
- id:match_parent:2131231007
- id:material_clock_display_and_toggle:2131231009
- id:material_clock_period_am_button:2131231013
- id:material_clock_period_pm_button:2131231014
- id:material_hour_text_input:2131231016
- id:material_minute_text_input:2131231019
- id:material_textinput_timepicker:2131231021
- id:material_timepicker_cancel_button:2131231022
- id:material_timepicker_container:2131231023
- id:material_timepicker_mode_button:2131231024
- id:material_timepicker_ok_button:2131231025
- id:material_timepicker_view:2131231026
- id:matrix:2131231028
- id:middle:2131231030
- id:month_navigation_bar:2131231033
- id:motion_base:2131231038
- id:mtrl_anchor_parent:2131231039
- id:mtrl_calendar_selection_frame:2131231045
- id:mtrl_calendar_text_input_frame:2131231046
- id:mtrl_motion_snapshot_view:2131231051
- id:mtrl_picker_fullscreen:2131231052
- id:mtrl_picker_header:2131231053
- id:mtrl_picker_header_title_and_selection:2131231055
- id:mtrl_picker_text_input_date:2131231057
- id:mtrl_picker_text_input_range_end:2131231058
- id:mtrl_picker_text_input_range_start:2131231059
- id:mtrl_view_tag_bottom_padding:2131231061
- id:multiply:2131231062
- id:navigation_bar_item_active_indicator_view:2131231063
- id:navigation_bar_item_icon_container:2131231064
- id:navigation_bar_item_icon_view:2131231065
- id:navigation_bar_item_labels_group:2131231066
- id:navigation_bar_item_large_label_view:2131231067
- id:navigation_bar_item_small_label_view:2131231068
- id:navigation_header_container:2131231069
- id:never:2131231071
- id:neverCompleteToEnd:2131231072
- id:neverCompleteToStart:2131231073
- id:noScroll:2131231074
- id:noState:2131231075
- id:normal:2131231077
- id:north:2131231078
- id:off:2131231082
- id:on:2131231083
- id:onInterceptTouchReturnSwipe:2131231084
- id:open_search_bar_text_view:2131231085
- id:open_search_view_background:2131231086
- id:open_search_view_clear_button:2131231087
- id:open_search_view_content_container:2131231088
- id:open_search_view_divider:2131231089
- id:open_search_view_dummy_toolbar:2131231090
- id:open_search_view_edit_text:2131231091
- id:open_search_view_header_container:2131231092
- id:open_search_view_root:2131231093
- id:open_search_view_scrim:2131231094
- id:open_search_view_search_prefix:2131231095
- id:open_search_view_status_bar_spacer:2131231096
- id:open_search_view_toolbar:2131231097
- id:open_search_view_toolbar_container:2131231098
- id:outline:2131231099
- id:outward:2131231100
- id:overshoot:2131231101
- id:packed:2131231102
- id:parallax:2131231103
- id:peekHeight:2131231111
- id:percent:2131231112
- id:pin:2131231113
- id:postLayout:2131231116
- id:pressed:2131231117
- id:progress_circular:2131231118
- id:progress_horizontal:2131231119
- id:radio:2131231120
- id:rectangles:2131231122
- id:reverseSawtooth:2131231125
- id:root:2131231130
- id:rounded:2131231131
- id:save_non_transition_alpha:2131231133
- id:sawtooth:2131231135
- id:screen:2131231137
- id:scroll:2131231138
- id:scrollable:2131231142
- id:search_badge:2131231143
- id:search_bar:2131231144
- id:select_dialog_listview:2131231154
- id:sharedValueSet:2131231157
- id:sharedValueUnset:2131231158
- id:showCustom:2131231160
- id:showHome:2131231161
- id:showTitle:2131231162
- id:sin:2131231163
- id:slide:2131231166
- id:snap:2131231169
- id:snapMargins:2131231170
- id:south:2131231171
- id:spline:2131231176
- id:spread:2131231178
- id:spread_inside:2131231179
- id:spring:2131231180
- id:square:2131231181
- id:src_atop:2131231182
- id:src_in:2131231183
- id:src_over:2131231184
- id:staticLayout:2131231193
- id:staticPostLayout:2131231194
- id:stop:2131231196
- id:stretch:2131231197
- id:supportScrollUp:2131231200
- id:tabMode:2131231212
- id:tag_transition_group:2131231224
- id:time:2131231257
- id:transitionToEnd:2131231267
- id:transitionToStart:2131231268
- id:transition_layout_save:2131231270
- id:transition_position:2131231271
- id:transition_scene_layoutid_cache:2131231272
- id:transition_transform:2131231273
- id:triangle:2131231274
- id:uniform:2131231276
- id:unlabeled:2131231277
- id:useLogo:2131231279
- id:vertical_only:2131231280
- id:visible:2131231287
- id:west:2131231289
- id:withText:2131231290
- id:with_icon:2131231291
- id:withinBounds:2131231292
- id:wrap:2131231293
- id:wrap_content:2131231294
- id:wrap_content_constrained:2131231295
- id:x_left:2131231297
- id:x_right:2131231298
+ id:legacy:2131230996
+ id:m3_side_sheet:2131231002
+ id:marquee:2131231003
+ id:masked:2131231004
+ id:match_constraint:2131231005
+ id:match_parent:2131231006
+ id:material_clock_display_and_toggle:2131231008
+ id:material_clock_period_am_button:2131231012
+ id:material_clock_period_pm_button:2131231013
+ id:material_hour_text_input:2131231015
+ id:material_minute_text_input:2131231018
+ id:material_textinput_timepicker:2131231020
+ id:material_timepicker_cancel_button:2131231021
+ id:material_timepicker_container:2131231022
+ id:material_timepicker_mode_button:2131231023
+ id:material_timepicker_ok_button:2131231024
+ id:material_timepicker_view:2131231025
+ id:matrix:2131231027
+ id:middle:2131231029
+ id:month_navigation_bar:2131231032
+ id:motion_base:2131231037
+ id:mtrl_anchor_parent:2131231038
+ id:mtrl_calendar_selection_frame:2131231044
+ id:mtrl_calendar_text_input_frame:2131231045
+ id:mtrl_motion_snapshot_view:2131231050
+ id:mtrl_picker_fullscreen:2131231051
+ id:mtrl_picker_header:2131231052
+ id:mtrl_picker_header_title_and_selection:2131231054
+ id:mtrl_picker_text_input_date:2131231056
+ id:mtrl_picker_text_input_range_end:2131231057
+ id:mtrl_picker_text_input_range_start:2131231058
+ id:mtrl_view_tag_bottom_padding:2131231060
+ id:multiply:2131231061
+ id:navigation_bar_item_active_indicator_view:2131231062
+ id:navigation_bar_item_icon_container:2131231063
+ id:navigation_bar_item_icon_view:2131231064
+ id:navigation_bar_item_labels_group:2131231065
+ id:navigation_bar_item_large_label_view:2131231066
+ id:navigation_bar_item_small_label_view:2131231067
+ id:navigation_header_container:2131231068
+ id:never:2131231070
+ id:neverCompleteToEnd:2131231071
+ id:neverCompleteToStart:2131231072
+ id:noScroll:2131231073
+ id:noState:2131231074
+ id:normal:2131231076
+ id:north:2131231077
+ id:off:2131231081
+ id:on:2131231082
+ id:onInterceptTouchReturnSwipe:2131231083
+ id:open_search_bar_text_view:2131231084
+ id:open_search_view_background:2131231085
+ id:open_search_view_clear_button:2131231086
+ id:open_search_view_content_container:2131231087
+ id:open_search_view_divider:2131231088
+ id:open_search_view_dummy_toolbar:2131231089
+ id:open_search_view_edit_text:2131231090
+ id:open_search_view_header_container:2131231091
+ id:open_search_view_root:2131231092
+ id:open_search_view_scrim:2131231093
+ id:open_search_view_search_prefix:2131231094
+ id:open_search_view_status_bar_spacer:2131231095
+ id:open_search_view_toolbar:2131231096
+ id:open_search_view_toolbar_container:2131231097
+ id:outline:2131231098
+ id:outward:2131231099
+ id:overshoot:2131231100
+ id:packed:2131231101
+ id:parallax:2131231102
+ id:peekHeight:2131231110
+ id:percent:2131231111
+ id:pin:2131231112
+ id:postLayout:2131231115
+ id:pressed:2131231116
+ id:progress_circular:2131231117
+ id:progress_horizontal:2131231118
+ id:radio:2131231119
+ id:rectangles:2131231121
+ id:reverseSawtooth:2131231124
+ id:root:2131231129
+ id:rounded:2131231130
+ id:save_non_transition_alpha:2131231132
+ id:sawtooth:2131231134
+ id:screen:2131231136
+ id:scroll:2131231137
+ id:scrollable:2131231141
+ id:search_badge:2131231142
+ id:search_bar:2131231143
+ id:select_dialog_listview:2131231153
+ id:sharedValueSet:2131231156
+ id:sharedValueUnset:2131231157
+ id:showCustom:2131231159
+ id:showHome:2131231160
+ id:showTitle:2131231161
+ id:sin:2131231162
+ id:slide:2131231165
+ id:snap:2131231168
+ id:snapMargins:2131231169
+ id:south:2131231170
+ id:spline:2131231175
+ id:spread:2131231177
+ id:spread_inside:2131231178
+ id:spring:2131231179
+ id:square:2131231180
+ id:src_atop:2131231181
+ id:src_in:2131231182
+ id:src_over:2131231183
+ id:staticLayout:2131231192
+ id:staticPostLayout:2131231193
+ id:stop:2131231195
+ id:stretch:2131231196
+ id:supportScrollUp:2131231199
+ id:tabMode:2131231211
+ id:tag_transition_group:2131231223
+ id:time:2131231255
+ id:transitionToEnd:2131231265
+ id:transitionToStart:2131231266
+ id:transition_layout_save:2131231268
+ id:transition_position:2131231269
+ id:transition_scene_layoutid_cache:2131231270
+ id:transition_transform:2131231271
+ id:triangle:2131231272
+ id:uniform:2131231274
+ id:unlabeled:2131231275
+ id:useLogo:2131231277
+ id:vertical_only:2131231278
+ id:visible:2131231285
+ id:west:2131231287
+ id:withText:2131231288
+ id:with_icon:2131231289
+ id:withinBounds:2131231290
+ id:wrap:2131231291
+ id:wrap_content:2131231292
+ id:wrap_content_constrained:2131231293
+ id:x_left:2131231295
+ id:x_right:2131231296
  integer:cancel_button_image_alpha:2131296260
  integer:config_tooltipAnimTime:2131296261
  integer:m3_card_anim_delay_ms:2131296268
@@ -20927,146 +20681,146 @@ Unused resources are:
  style:Theme_Design_Light_BottomSheetDialog:2131755562
  style:Theme_Design_Light_NoActionBar:2131755563
  style:Theme_Design_NoActionBar:2131755564
- style:Theme_Material3_Dark_BottomSheetDialog:2131755582
- style:Theme_Material3_Dark_Dialog:2131755583
- style:Theme_Material3_Dark_Dialog_Alert:2131755584
- style:Theme_Material3_Dark_Dialog_MinWidth:2131755585
- style:Theme_Material3_Dark_DialogWhenLarge:2131755586
- style:Theme_Material3_Dark_SideSheetDialog:2131755588
- style:Theme_Material3_DayNight:2131755589
- style:Theme_Material3_DayNight_BottomSheetDialog:2131755590
- style:Theme_Material3_DayNight_Dialog:2131755591
- style:Theme_Material3_DayNight_Dialog_Alert:2131755592
- style:Theme_Material3_DayNight_Dialog_MinWidth:2131755593
- style:Theme_Material3_DayNight_DialogWhenLarge:2131755594
- style:Theme_Material3_DayNight_NoActionBar:2131755595
- style:Theme_Material3_DayNight_SideSheetDialog:2131755596
- style:Theme_Material3_DynamicColors_Dark:2131755597
- style:Theme_Material3_DynamicColors_DayNight:2131755598
- style:Theme_Material3_DynamicColors_Light:2131755599
- style:Theme_Material3_Light_BottomSheetDialog:2131755601
- style:Theme_Material3_Light_Dialog:2131755602
- style:Theme_Material3_Light_Dialog_Alert:2131755603
- style:Theme_Material3_Light_Dialog_MinWidth:2131755604
- style:Theme_Material3_Light_DialogWhenLarge:2131755605
- style:Theme_Material3_Light_SideSheetDialog:2131755607
- style:ThemeOverlay_AppCompat:2131755655
- style:ThemeOverlay_AppCompat_DayNight:2131755659
- style:ThemeOverlay_AppCompat_DayNight_ActionBar:2131755660
- style:ThemeOverlay_Material3:2131755665
- style:ThemeOverlay_Material3_ActionBar:2131755666
- style:ThemeOverlay_Material3_AutoCompleteTextView_FilledBox_Dense:2131755669
- style:ThemeOverlay_Material3_AutoCompleteTextView_OutlinedBox_Dense:2131755671
- style:ThemeOverlay_Material3_BottomAppBar_Legacy:2131755673
- style:ThemeOverlay_Material3_Button_ElevatedButton:2131755677
- style:ThemeOverlay_Material3_Dark_ActionBar:2131755687
- style:ThemeOverlay_Material3_DayNight_BottomSheetDialog:2131755688
- style:ThemeOverlay_Material3_DayNight_SideSheetDialog:2131755689
- style:ThemeOverlay_Material3_Dialog_Alert_Framework:2131755692
- style:ThemeOverlay_Material3_DynamicColors_DayNight:2131755694
- style:ThemeOverlay_Material3_HarmonizedColors:2131755704
- style:ThemeOverlay_Material3_HarmonizedColors_Empty:2131755705
- style:ThemeOverlay_Material3_Light_Dialog_Alert_Framework:2131755707
- style:ThemeOverlay_Material3_MaterialAlertDialog_Centered:2131755709
- style:ThemeOverlay_Material3_PersonalizedColors:2131755717
- style:ThemeOverlay_MaterialComponents:2131755729
- style:ThemeOverlay_MaterialComponents_ActionBar:2131755730
- style:ThemeOverlay_MaterialComponents_ActionBar_Primary:2131755731
- style:ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense:2131755735
- style:ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense:2131755737
- style:ThemeOverlay_MaterialComponents_BottomAppBar_Primary:2131755738
- style:ThemeOverlay_MaterialComponents_BottomAppBar_Surface:2131755739
- style:ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog:2131755743
- style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered:2131755750
- style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date:2131755751
- style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar:2131755752
- style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text:2131755753
- style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day:2131755754
- style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner:2131755755
- style:ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary:2131755766
- style:ThemeOverlay_MaterialComponents_Toolbar_Primary:2131755767
- style:ThemeOverlay_MaterialComponents_Toolbar_Surface:2131755768
- style:Widget_AppCompat_ActionBar:2131755769
- style:Widget_AppCompat_Button_Colored:2131755784
- style:Widget_AppCompat_Light_ActionBar:2131755795
- style:Widget_AppCompat_Light_ActionBar_Solid_Inverse:2131755797
- style:Widget_AppCompat_Light_ActionBar_TabBar_Inverse:2131755799
- style:Widget_AppCompat_Light_ActionBar_TabText_Inverse:2131755801
- style:Widget_AppCompat_Light_ActionBar_TabView_Inverse:2131755803
- style:Widget_AppCompat_Light_ActionButton_CloseMode:2131755805
- style:Widget_AppCompat_Light_ActionMode_Inverse:2131755807
- style:Widget_AppCompat_Light_ActivityChooserView:2131755808
- style:Widget_AppCompat_Light_AutoCompleteTextView:2131755809
- style:Widget_AppCompat_Light_DropDownItem_Spinner:2131755810
- style:Widget_AppCompat_Light_ListPopupWindow:2131755811
- style:Widget_AppCompat_Light_ListView_DropDown:2131755812
- style:Widget_AppCompat_PopupWindow:2131755824
- style:Widget_AppCompat_ProgressBar:2131755825
- style:Widget_AppCompat_ProgressBar_Horizontal:2131755826
- style:Widget_AppCompat_SeekBar_Discrete:2131755833
- style:Widget_AppCompat_Spinner_Underlined:2131755837
- style:Widget_HardReminder_Toolbar:2131755856
- style:Widget_Material3_AutoCompleteTextView_FilledBox_Dense:2131755861
- style:Widget_Material3_AutoCompleteTextView_OutlinedBox_Dense:2131755863
- style:Widget_Material3_BottomAppBar_Legacy:2131755868
- style:Widget_Material3_Button_ElevatedButton:2131755876
- style:Widget_Material3_Button_ElevatedButton_Icon:2131755877
- style:Widget_Material3_Button_Icon:2131755878
- style:Widget_Material3_Button_OutlinedButton_Icon:2131755884
- style:Widget_Material3_Button_TextButton_Dialog_Icon:2131755888
- style:Widget_Material3_Button_TextButton_Icon:2131755889
- style:Widget_Material3_Button_TonalButton_Icon:2131755892
- style:Widget_Material3_Button_UnelevatedButton:2131755893
- style:Widget_Material3_Chip_Assist_Elevated:2131755899
- style:Widget_Material3_Chip_Filter_Elevated:2131755901
- style:Widget_Material3_Chip_Input_Elevated:2131755903
- style:Widget_Material3_Chip_Input_Icon:2131755904
- style:Widget_Material3_Chip_Input_Icon_Elevated:2131755905
- style:Widget_Material3_Chip_Suggestion:2131755906
- style:Widget_Material3_Chip_Suggestion_Elevated:2131755907
- style:Widget_Material3_CircularProgressIndicator_ExtraSmall:2131755910
- style:Widget_Material3_CircularProgressIndicator_Medium:2131755911
- style:Widget_Material3_CircularProgressIndicator_Small:2131755912
- style:Widget_Material3_ExtendedFloatingActionButton_Primary:2131755925
- style:Widget_Material3_ExtendedFloatingActionButton_Secondary:2131755926
- style:Widget_Material3_ExtendedFloatingActionButton_Surface:2131755927
- style:Widget_Material3_ExtendedFloatingActionButton_Tertiary:2131755928
- style:Widget_Material3_SearchBar_Outlined:2131755989
- style:Widget_Material3_SideSheet_Detached:2131755994
- style:Widget_Material3_SideSheet_Modal_Detached:2131755996
- style:Widget_Material3_Snackbar_FullWidth:2131756000
- style:Widget_Material3_TabLayout_OnSurface:2131756003
- style:Widget_Material3_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu:2131756011
- style:Widget_Material3_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu:2131756015
- style:Widget_MaterialComponents_ActionBar_Primary:2131756021
- style:Widget_MaterialComponents_ActionBar_PrimarySurface:2131756022
- style:Widget_MaterialComponents_ActionBar_Solid:2131756023
- style:Widget_MaterialComponents_AppBarLayout_PrimarySurface:2131756027
- style:Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense:2131756030
- style:Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense:2131756032
- style:Widget_MaterialComponents_BottomAppBar_Colored:2131756035
- style:Widget_MaterialComponents_BottomAppBar_PrimarySurface:2131756036
- style:Widget_MaterialComponents_BottomNavigationView_Colored:2131756038
- style:Widget_MaterialComponents_BottomNavigationView_PrimarySurface:2131756039
- style:Widget_MaterialComponents_Button_Icon:2131756043
- style:Widget_MaterialComponents_Button_OutlinedButton_Icon:2131756045
- style:Widget_MaterialComponents_Button_TextButton_Dialog_Icon:2131756049
- style:Widget_MaterialComponents_Button_TextButton_Icon:2131756050
- style:Widget_MaterialComponents_Button_UnelevatedButton_Icon:2131756053
- style:Widget_MaterialComponents_Chip_Filter:2131756059
- style:Widget_MaterialComponents_CircularProgressIndicator_ExtraSmall:2131756062
- style:Widget_MaterialComponents_CircularProgressIndicator_Medium:2131756063
- style:Widget_MaterialComponents_CircularProgressIndicator_Small:2131756064
- style:Widget_MaterialComponents_NavigationRailView_Colored:2131756101
- style:Widget_MaterialComponents_NavigationRailView_Colored_Compact:2131756102
- style:Widget_MaterialComponents_NavigationRailView_Compact:2131756103
- style:Widget_MaterialComponents_NavigationRailView_PrimarySurface:2131756104
- style:Widget_MaterialComponents_ShapeableImageView:2131756111
- style:Widget_MaterialComponents_Snackbar_FullWidth:2131756114
- style:Widget_MaterialComponents_TabLayout_Colored:2131756117
- style:Widget_MaterialComponents_TabLayout_PrimarySurface:2131756118
- style:Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu:2131756125
- style:Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu:2131756129
- style:Widget_MaterialComponents_Toolbar_Primary:2131756143
- style:Widget_MaterialComponents_Toolbar_PrimarySurface:2131756144
- style:Widget_MaterialComponents_Toolbar_Surface:2131756145
+ style:Theme_Material3_Dark_BottomSheetDialog:2131755570
+ style:Theme_Material3_Dark_Dialog:2131755571
+ style:Theme_Material3_Dark_Dialog_Alert:2131755572
+ style:Theme_Material3_Dark_Dialog_MinWidth:2131755573
+ style:Theme_Material3_Dark_DialogWhenLarge:2131755574
+ style:Theme_Material3_Dark_SideSheetDialog:2131755576
+ style:Theme_Material3_DayNight:2131755577
+ style:Theme_Material3_DayNight_BottomSheetDialog:2131755578
+ style:Theme_Material3_DayNight_Dialog:2131755579
+ style:Theme_Material3_DayNight_Dialog_Alert:2131755580
+ style:Theme_Material3_DayNight_Dialog_MinWidth:2131755581
+ style:Theme_Material3_DayNight_DialogWhenLarge:2131755582
+ style:Theme_Material3_DayNight_NoActionBar:2131755583
+ style:Theme_Material3_DayNight_SideSheetDialog:2131755584
+ style:Theme_Material3_DynamicColors_Dark:2131755585
+ style:Theme_Material3_DynamicColors_DayNight:2131755586
+ style:Theme_Material3_DynamicColors_Light:2131755587
+ style:Theme_Material3_Light_BottomSheetDialog:2131755589
+ style:Theme_Material3_Light_Dialog:2131755590
+ style:Theme_Material3_Light_Dialog_Alert:2131755591
+ style:Theme_Material3_Light_Dialog_MinWidth:2131755592
+ style:Theme_Material3_Light_DialogWhenLarge:2131755593
+ style:Theme_Material3_Light_SideSheetDialog:2131755595
+ style:ThemeOverlay_AppCompat:2131755643
+ style:ThemeOverlay_AppCompat_DayNight:2131755647
+ style:ThemeOverlay_AppCompat_DayNight_ActionBar:2131755648
+ style:ThemeOverlay_Material3:2131755653
+ style:ThemeOverlay_Material3_ActionBar:2131755654
+ style:ThemeOverlay_Material3_AutoCompleteTextView_FilledBox_Dense:2131755657
+ style:ThemeOverlay_Material3_AutoCompleteTextView_OutlinedBox_Dense:2131755659
+ style:ThemeOverlay_Material3_BottomAppBar_Legacy:2131755661
+ style:ThemeOverlay_Material3_Button_ElevatedButton:2131755665
+ style:ThemeOverlay_Material3_Dark_ActionBar:2131755675
+ style:ThemeOverlay_Material3_DayNight_BottomSheetDialog:2131755676
+ style:ThemeOverlay_Material3_DayNight_SideSheetDialog:2131755677
+ style:ThemeOverlay_Material3_Dialog_Alert_Framework:2131755680
+ style:ThemeOverlay_Material3_DynamicColors_DayNight:2131755682
+ style:ThemeOverlay_Material3_HarmonizedColors:2131755692
+ style:ThemeOverlay_Material3_HarmonizedColors_Empty:2131755693
+ style:ThemeOverlay_Material3_Light_Dialog_Alert_Framework:2131755695
+ style:ThemeOverlay_Material3_MaterialAlertDialog_Centered:2131755697
+ style:ThemeOverlay_Material3_PersonalizedColors:2131755705
+ style:ThemeOverlay_MaterialComponents:2131755717
+ style:ThemeOverlay_MaterialComponents_ActionBar:2131755718
+ style:ThemeOverlay_MaterialComponents_ActionBar_Primary:2131755719
+ style:ThemeOverlay_MaterialComponents_AutoCompleteTextView_FilledBox_Dense:2131755723
+ style:ThemeOverlay_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense:2131755725
+ style:ThemeOverlay_MaterialComponents_BottomAppBar_Primary:2131755726
+ style:ThemeOverlay_MaterialComponents_BottomAppBar_Surface:2131755727
+ style:ThemeOverlay_MaterialComponents_DayNight_BottomSheetDialog:2131755731
+ style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Centered:2131755738
+ style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date:2131755739
+ style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Calendar:2131755740
+ style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text:2131755741
+ style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Header_Text_Day:2131755742
+ style:ThemeOverlay_MaterialComponents_MaterialAlertDialog_Picker_Date_Spinner:2131755743
+ style:ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary:2131755754
+ style:ThemeOverlay_MaterialComponents_Toolbar_Primary:2131755755
+ style:ThemeOverlay_MaterialComponents_Toolbar_Surface:2131755756
+ style:Widget_AppCompat_ActionBar:2131755757
+ style:Widget_AppCompat_Button_Colored:2131755772
+ style:Widget_AppCompat_Light_ActionBar:2131755783
+ style:Widget_AppCompat_Light_ActionBar_Solid_Inverse:2131755785
+ style:Widget_AppCompat_Light_ActionBar_TabBar_Inverse:2131755787
+ style:Widget_AppCompat_Light_ActionBar_TabText_Inverse:2131755789
+ style:Widget_AppCompat_Light_ActionBar_TabView_Inverse:2131755791
+ style:Widget_AppCompat_Light_ActionButton_CloseMode:2131755793
+ style:Widget_AppCompat_Light_ActionMode_Inverse:2131755795
+ style:Widget_AppCompat_Light_ActivityChooserView:2131755796
+ style:Widget_AppCompat_Light_AutoCompleteTextView:2131755797
+ style:Widget_AppCompat_Light_DropDownItem_Spinner:2131755798
+ style:Widget_AppCompat_Light_ListPopupWindow:2131755799
+ style:Widget_AppCompat_Light_ListView_DropDown:2131755800
+ style:Widget_AppCompat_PopupWindow:2131755812
+ style:Widget_AppCompat_ProgressBar:2131755813
+ style:Widget_AppCompat_ProgressBar_Horizontal:2131755814
+ style:Widget_AppCompat_SeekBar_Discrete:2131755821
+ style:Widget_AppCompat_Spinner_Underlined:2131755825
+ style:Widget_HardReminder_Toolbar:2131755844
+ style:Widget_Material3_AutoCompleteTextView_FilledBox_Dense:2131755849
+ style:Widget_Material3_AutoCompleteTextView_OutlinedBox_Dense:2131755851
+ style:Widget_Material3_BottomAppBar_Legacy:2131755856
+ style:Widget_Material3_Button_ElevatedButton:2131755864
+ style:Widget_Material3_Button_ElevatedButton_Icon:2131755865
+ style:Widget_Material3_Button_Icon:2131755866
+ style:Widget_Material3_Button_OutlinedButton_Icon:2131755872
+ style:Widget_Material3_Button_TextButton_Dialog_Icon:2131755876
+ style:Widget_Material3_Button_TextButton_Icon:2131755877
+ style:Widget_Material3_Button_TonalButton_Icon:2131755880
+ style:Widget_Material3_Button_UnelevatedButton:2131755881
+ style:Widget_Material3_Chip_Assist_Elevated:2131755887
+ style:Widget_Material3_Chip_Filter_Elevated:2131755889
+ style:Widget_Material3_Chip_Input_Elevated:2131755891
+ style:Widget_Material3_Chip_Input_Icon:2131755892
+ style:Widget_Material3_Chip_Input_Icon_Elevated:2131755893
+ style:Widget_Material3_Chip_Suggestion:2131755894
+ style:Widget_Material3_Chip_Suggestion_Elevated:2131755895
+ style:Widget_Material3_CircularProgressIndicator_ExtraSmall:2131755898
+ style:Widget_Material3_CircularProgressIndicator_Medium:2131755899
+ style:Widget_Material3_CircularProgressIndicator_Small:2131755900
+ style:Widget_Material3_ExtendedFloatingActionButton_Primary:2131755913
+ style:Widget_Material3_ExtendedFloatingActionButton_Secondary:2131755914
+ style:Widget_Material3_ExtendedFloatingActionButton_Surface:2131755915
+ style:Widget_Material3_ExtendedFloatingActionButton_Tertiary:2131755916
+ style:Widget_Material3_SearchBar_Outlined:2131755977
+ style:Widget_Material3_SideSheet_Detached:2131755982
+ style:Widget_Material3_SideSheet_Modal_Detached:2131755984
+ style:Widget_Material3_Snackbar_FullWidth:2131755988
+ style:Widget_Material3_TabLayout_OnSurface:2131755991
+ style:Widget_Material3_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu:2131755999
+ style:Widget_Material3_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu:2131756003
+ style:Widget_MaterialComponents_ActionBar_Primary:2131756009
+ style:Widget_MaterialComponents_ActionBar_PrimarySurface:2131756010
+ style:Widget_MaterialComponents_ActionBar_Solid:2131756011
+ style:Widget_MaterialComponents_AppBarLayout_PrimarySurface:2131756015
+ style:Widget_MaterialComponents_AutoCompleteTextView_FilledBox_Dense:2131756018
+ style:Widget_MaterialComponents_AutoCompleteTextView_OutlinedBox_Dense:2131756020
+ style:Widget_MaterialComponents_BottomAppBar_Colored:2131756023
+ style:Widget_MaterialComponents_BottomAppBar_PrimarySurface:2131756024
+ style:Widget_MaterialComponents_BottomNavigationView_Colored:2131756026
+ style:Widget_MaterialComponents_BottomNavigationView_PrimarySurface:2131756027
+ style:Widget_MaterialComponents_Button_Icon:2131756031
+ style:Widget_MaterialComponents_Button_OutlinedButton_Icon:2131756033
+ style:Widget_MaterialComponents_Button_TextButton_Dialog_Icon:2131756037
+ style:Widget_MaterialComponents_Button_TextButton_Icon:2131756038
+ style:Widget_MaterialComponents_Button_UnelevatedButton_Icon:2131756041
+ style:Widget_MaterialComponents_Chip_Filter:2131756047
+ style:Widget_MaterialComponents_CircularProgressIndicator_ExtraSmall:2131756050
+ style:Widget_MaterialComponents_CircularProgressIndicator_Medium:2131756051
+ style:Widget_MaterialComponents_CircularProgressIndicator_Small:2131756052
+ style:Widget_MaterialComponents_NavigationRailView_Colored:2131756089
+ style:Widget_MaterialComponents_NavigationRailView_Colored_Compact:2131756090
+ style:Widget_MaterialComponents_NavigationRailView_Compact:2131756091
+ style:Widget_MaterialComponents_NavigationRailView_PrimarySurface:2131756092
+ style:Widget_MaterialComponents_ShapeableImageView:2131756099
+ style:Widget_MaterialComponents_Snackbar_FullWidth:2131756102
+ style:Widget_MaterialComponents_TabLayout_Colored:2131756105
+ style:Widget_MaterialComponents_TabLayout_PrimarySurface:2131756106
+ style:Widget_MaterialComponents_TextInputLayout_FilledBox_Dense_ExposedDropdownMenu:2131756113
+ style:Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense_ExposedDropdownMenu:2131756117
+ style:Widget_MaterialComponents_Toolbar_Primary:2131756131
+ style:Widget_MaterialComponents_Toolbar_PrimarySurface:2131756132
+ style:Widget_MaterialComponents_Toolbar_Surface:2131756133

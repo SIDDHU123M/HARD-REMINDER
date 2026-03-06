@@ -13,7 +13,7 @@ import androidx.viewbinding.ViewBindings;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.button.MaterialButtonToggleGroup;
-import com.google.android.material.switchmaterial.SwitchMaterial;
+import com.google.android.material.materialswitch.MaterialSwitch;
 import com.hardreminder.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -48,43 +48,37 @@ public final class ActivitySettingsBinding implements ViewBinding {
   public final LinearLayout layoutNotifSettings;
 
   @NonNull
-  public final LinearLayout layoutPalette;
-
-  @NonNull
   public final LinearLayout layoutSnooze;
 
   @NonNull
-  public final SwitchMaterial switch24Hour;
+  public final MaterialSwitch switch24Hour;
 
   @NonNull
-  public final SwitchMaterial switchAmoled;
+  public final MaterialSwitch switchAmoled;
 
   @NonNull
-  public final SwitchMaterial switchAutoDelete;
+  public final MaterialSwitch switchAutoDelete;
 
   @NonNull
-  public final SwitchMaterial switchDefaultSound;
+  public final MaterialSwitch switchDefaultSound;
 
   @NonNull
-  public final SwitchMaterial switchDefaultVibration;
+  public final MaterialSwitch switchDefaultVibration;
 
   @NonNull
-  public final SwitchMaterial switchFlashScreen;
+  public final MaterialSwitch switchFlashScreen;
 
   @NonNull
-  public final SwitchMaterial switchOngoingNotif;
+  public final MaterialSwitch switchOngoingNotif;
 
   @NonNull
-  public final SwitchMaterial switchStartOnBoot;
+  public final MaterialSwitch switchStartOnBoot;
 
   @NonNull
   public final TextView textAboutVersion;
 
   @NonNull
   public final TextView textBatteryStatus;
-
-  @NonNull
-  public final TextView textPaletteValue;
 
   @NonNull
   public final TextView textPriorValue;
@@ -103,13 +97,12 @@ public final class ActivitySettingsBinding implements ViewBinding {
       @NonNull MaterialButton btnThemeSystem, @NonNull LinearLayout layoutAbout,
       @NonNull LinearLayout layoutAmoled, @NonNull LinearLayout layoutBattery,
       @NonNull LinearLayout layoutDefaultPrior, @NonNull LinearLayout layoutNotifSettings,
-      @NonNull LinearLayout layoutPalette, @NonNull LinearLayout layoutSnooze,
-      @NonNull SwitchMaterial switch24Hour, @NonNull SwitchMaterial switchAmoled,
-      @NonNull SwitchMaterial switchAutoDelete, @NonNull SwitchMaterial switchDefaultSound,
-      @NonNull SwitchMaterial switchDefaultVibration, @NonNull SwitchMaterial switchFlashScreen,
-      @NonNull SwitchMaterial switchOngoingNotif, @NonNull SwitchMaterial switchStartOnBoot,
-      @NonNull TextView textAboutVersion, @NonNull TextView textBatteryStatus,
-      @NonNull TextView textPaletteValue, @NonNull TextView textPriorValue,
+      @NonNull LinearLayout layoutSnooze, @NonNull MaterialSwitch switch24Hour,
+      @NonNull MaterialSwitch switchAmoled, @NonNull MaterialSwitch switchAutoDelete,
+      @NonNull MaterialSwitch switchDefaultSound, @NonNull MaterialSwitch switchDefaultVibration,
+      @NonNull MaterialSwitch switchFlashScreen, @NonNull MaterialSwitch switchOngoingNotif,
+      @NonNull MaterialSwitch switchStartOnBoot, @NonNull TextView textAboutVersion,
+      @NonNull TextView textBatteryStatus, @NonNull TextView textPriorValue,
       @NonNull TextView textSnoozeValue, @NonNull MaterialButtonToggleGroup toggleThemeGroup,
       @NonNull MaterialToolbar toolbar) {
     this.rootView = rootView;
@@ -121,7 +114,6 @@ public final class ActivitySettingsBinding implements ViewBinding {
     this.layoutBattery = layoutBattery;
     this.layoutDefaultPrior = layoutDefaultPrior;
     this.layoutNotifSettings = layoutNotifSettings;
-    this.layoutPalette = layoutPalette;
     this.layoutSnooze = layoutSnooze;
     this.switch24Hour = switch24Hour;
     this.switchAmoled = switchAmoled;
@@ -133,7 +125,6 @@ public final class ActivitySettingsBinding implements ViewBinding {
     this.switchStartOnBoot = switchStartOnBoot;
     this.textAboutVersion = textAboutVersion;
     this.textBatteryStatus = textBatteryStatus;
-    this.textPaletteValue = textPaletteValue;
     this.textPriorValue = textPriorValue;
     this.textSnoozeValue = textSnoozeValue;
     this.toggleThemeGroup = toggleThemeGroup;
@@ -215,12 +206,6 @@ public final class ActivitySettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.layoutPalette;
-      LinearLayout layoutPalette = ViewBindings.findChildViewById(rootView, id);
-      if (layoutPalette == null) {
-        break missingId;
-      }
-
       id = R.id.layoutSnooze;
       LinearLayout layoutSnooze = ViewBindings.findChildViewById(rootView, id);
       if (layoutSnooze == null) {
@@ -228,49 +213,49 @@ public final class ActivitySettingsBinding implements ViewBinding {
       }
 
       id = R.id.switch24Hour;
-      SwitchMaterial switch24Hour = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switch24Hour = ViewBindings.findChildViewById(rootView, id);
       if (switch24Hour == null) {
         break missingId;
       }
 
       id = R.id.switchAmoled;
-      SwitchMaterial switchAmoled = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchAmoled = ViewBindings.findChildViewById(rootView, id);
       if (switchAmoled == null) {
         break missingId;
       }
 
       id = R.id.switchAutoDelete;
-      SwitchMaterial switchAutoDelete = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchAutoDelete = ViewBindings.findChildViewById(rootView, id);
       if (switchAutoDelete == null) {
         break missingId;
       }
 
       id = R.id.switchDefaultSound;
-      SwitchMaterial switchDefaultSound = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchDefaultSound = ViewBindings.findChildViewById(rootView, id);
       if (switchDefaultSound == null) {
         break missingId;
       }
 
       id = R.id.switchDefaultVibration;
-      SwitchMaterial switchDefaultVibration = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchDefaultVibration = ViewBindings.findChildViewById(rootView, id);
       if (switchDefaultVibration == null) {
         break missingId;
       }
 
       id = R.id.switchFlashScreen;
-      SwitchMaterial switchFlashScreen = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchFlashScreen = ViewBindings.findChildViewById(rootView, id);
       if (switchFlashScreen == null) {
         break missingId;
       }
 
       id = R.id.switchOngoingNotif;
-      SwitchMaterial switchOngoingNotif = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchOngoingNotif = ViewBindings.findChildViewById(rootView, id);
       if (switchOngoingNotif == null) {
         break missingId;
       }
 
       id = R.id.switchStartOnBoot;
-      SwitchMaterial switchStartOnBoot = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchStartOnBoot = ViewBindings.findChildViewById(rootView, id);
       if (switchStartOnBoot == null) {
         break missingId;
       }
@@ -284,12 +269,6 @@ public final class ActivitySettingsBinding implements ViewBinding {
       id = R.id.textBatteryStatus;
       TextView textBatteryStatus = ViewBindings.findChildViewById(rootView, id);
       if (textBatteryStatus == null) {
-        break missingId;
-      }
-
-      id = R.id.textPaletteValue;
-      TextView textPaletteValue = ViewBindings.findChildViewById(rootView, id);
-      if (textPaletteValue == null) {
         break missingId;
       }
 
@@ -319,10 +298,10 @@ public final class ActivitySettingsBinding implements ViewBinding {
 
       return new ActivitySettingsBinding((LinearLayout) rootView, btnThemeDark, btnThemeLight,
           btnThemeSystem, layoutAbout, layoutAmoled, layoutBattery, layoutDefaultPrior,
-          layoutNotifSettings, layoutPalette, layoutSnooze, switch24Hour, switchAmoled,
-          switchAutoDelete, switchDefaultSound, switchDefaultVibration, switchFlashScreen,
-          switchOngoingNotif, switchStartOnBoot, textAboutVersion, textBatteryStatus,
-          textPaletteValue, textPriorValue, textSnoozeValue, toggleThemeGroup, toolbar);
+          layoutNotifSettings, layoutSnooze, switch24Hour, switchAmoled, switchAutoDelete,
+          switchDefaultSound, switchDefaultVibration, switchFlashScreen, switchOngoingNotif,
+          switchStartOnBoot, textAboutVersion, textBatteryStatus, textPriorValue, textSnoozeValue,
+          toggleThemeGroup, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

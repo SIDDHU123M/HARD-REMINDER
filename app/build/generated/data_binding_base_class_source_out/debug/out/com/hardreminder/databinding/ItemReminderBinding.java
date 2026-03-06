@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.google.android.material.card.MaterialCardView;
-import com.google.android.material.switchmaterial.SwitchMaterial;
+import com.google.android.material.materialswitch.MaterialSwitch;
 import com.hardreminder.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -28,7 +28,7 @@ public final class ItemReminderBinding implements ViewBinding {
   public final LinearLayout cardContent;
 
   @NonNull
-  public final SwitchMaterial switchEnabled;
+  public final MaterialSwitch switchEnabled;
 
   @NonNull
   public final TextView tagPrior;
@@ -49,7 +49,7 @@ public final class ItemReminderBinding implements ViewBinding {
   public final TextView textTitle;
 
   private ItemReminderBinding(@NonNull MaterialCardView rootView, @NonNull View accentStrip,
-      @NonNull LinearLayout cardContent, @NonNull SwitchMaterial switchEnabled,
+      @NonNull LinearLayout cardContent, @NonNull MaterialSwitch switchEnabled,
       @NonNull TextView tagPrior, @NonNull TextView tagRepeat, @NonNull TextView textDateSmall,
       @NonNull TextView textMessage, @NonNull TextView textTimeLarge, @NonNull TextView textTitle) {
     this.rootView = rootView;
@@ -104,7 +104,7 @@ public final class ItemReminderBinding implements ViewBinding {
       }
 
       id = R.id.switchEnabled;
-      SwitchMaterial switchEnabled = ViewBindings.findChildViewById(rootView, id);
+      MaterialSwitch switchEnabled = ViewBindings.findChildViewById(rootView, id);
       if (switchEnabled == null) {
         break missingId;
       }

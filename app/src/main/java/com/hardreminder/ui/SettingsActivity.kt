@@ -14,12 +14,11 @@ import com.hardreminder.data.AppSettings.autoDeleteFired
 import com.hardreminder.data.AppSettings.defaultPriorMinutes
 import com.hardreminder.data.AppSettings.defaultSound
 import com.hardreminder.data.AppSettings.defaultVibration
+import com.hardreminder.data.AppSettings.startOnBoot
+import com.hardreminder.data.AppSettings.themeMode
 import com.hardreminder.data.AppSettings.flashScreenOnAlarm
 import com.hardreminder.data.AppSettings.showOngoingNotification
 import com.hardreminder.data.AppSettings.snoozeMinutes
-import com.hardreminder.data.AppSettings.startOnBoot
-import com.hardreminder.data.AppSettings.colorPalette
-import com.hardreminder.data.AppSettings.themeMode
 import com.hardreminder.data.AppSettings.use24HourFormat
 import com.hardreminder.data.AppSettings.useAmoledMode
 import com.hardreminder.databinding.ActivitySettingsBinding
@@ -57,8 +56,6 @@ class SettingsActivity : AppCompatActivity() {
 
         updateThemeToggleGroup()
         binding.switchAmoled.isChecked = useAmoledMode
-
-        updatePaletteLabel()
         updateSnoozeLabel()
         updatePriorLabel()
         updateBatteryStatus()
@@ -96,23 +93,6 @@ class SettingsActivity : AppCompatActivity() {
 
         binding.switchFlashScreen.setOnCheckedChangeListener { _, checked ->
             flashScreenOnAlarm = checked
-        }
-
-        // Palette picker
-        binding.layoutPalette.setOnClickListener {
-            val options = AppSettings.PALETTE_OPTIONS
-            val labels = options.map { it.second }.toTypedArray()
-            val currentIndex = options.indexOfFirst { it.first == colorPalette }.coerceAtLeast(0)
-
-            MaterialAlertDialogBuilder(this)
-                .setTitle("Color Palette")
-                .setSingleChoiceItems(labels, currentIndex) { dialog, which ->
-                    colorPalette = options[which].first
-                    updatePaletteLabel()
-                    dialog.dismiss()
-                    recreate()
-                }
-                .show()
         }
 
         // Theme picker via ToggleGroup
@@ -219,11 +199,6 @@ class SettingsActivity : AppCompatActivity() {
             else -> R.id.btnThemeSystem
         }
         binding.toggleThemeGroup.check(buttonId)
-    }
-
-    private fun updatePaletteLabel() {
-        val label = AppSettings.PALETTE_OPTIONS.firstOrNull { it.first == colorPalette }?.second ?: "Default"
-        binding.textPaletteValue.text = label
     }
 
     private fun updateSnoozeLabel() {

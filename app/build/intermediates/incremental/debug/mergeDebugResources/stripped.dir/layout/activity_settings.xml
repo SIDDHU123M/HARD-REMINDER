@@ -135,60 +135,14 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchAmoled"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_marginStart="16dp"
-                android:background="@color/divider" />
 
-            <!-- Color palette -->
-            <LinearLayout
-                android:id="@+id/layoutPalette"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:selectableItemBackground"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingHorizontal="16dp"
-                android:paddingVertical="14dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Color Style"
-                        android:textColor="?attr/colorOnSurface"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Choose a color palette"
-                        android:textColor="@color/text_secondary"
-                        android:textSize="13sp" />
-
-                </LinearLayout>
-
-                <TextView
-                    android:id="@+id/textPaletteValue"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="?attr/colorPrimary"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
 
             <!-- ====== DEFAULTS FOR NEW REMINDERS ====== -->
             <TextView
@@ -234,7 +188,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchDefaultSound"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -278,7 +232,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchDefaultVibration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -425,7 +379,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchFlashScreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -469,7 +423,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switch24Hour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -520,7 +474,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchStartOnBoot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -564,7 +518,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchOngoingNotif"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -662,7 +616,7 @@
 
                 </LinearLayout>
 
-                <com.google.android.material.switchmaterial.SwitchMaterial
+                <com.google.android.material.materialswitch.MaterialSwitch
                     android:id="@+id/switchAutoDelete"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />

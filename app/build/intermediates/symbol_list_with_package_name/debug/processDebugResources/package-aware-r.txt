@@ -3424,7 +3424,6 @@ id layoutCustomInterval
 id layoutDayChips
 id layoutDefaultPrior
 id layoutNotifSettings
-id layoutPalette
 id layoutSnooze
 id left
 id leftToRight
@@ -3670,7 +3669,6 @@ id textDateSmall
 id textEnd
 id textGreeting
 id textMessage
-id textPaletteValue
 id textPriorValue
 id textSnoozeValue
 id textSpacerNoButtons
@@ -4734,18 +4732,6 @@ style Theme_HardReminder
 style Theme_HardReminder_Alarm
 style Theme_HardReminder_Amoled
 style Theme_HardReminder_Dark
-style Theme_HardReminder_Expressive
-style Theme_HardReminder_Expressive_Amoled
-style Theme_HardReminder_Expressive_Dark
-style Theme_HardReminder_Mono
-style Theme_HardReminder_Mono_Amoled
-style Theme_HardReminder_Mono_Dark
-style Theme_HardReminder_Tonal
-style Theme_HardReminder_Tonal_Amoled
-style Theme_HardReminder_Tonal_Dark
-style Theme_HardReminder_Vibrant
-style Theme_HardReminder_Vibrant_Amoled
-style Theme_HardReminder_Vibrant_Dark
 style Theme_Material3_Dark
 style Theme_Material3_Dark_BottomSheetDialog
 style Theme_Material3_Dark_Dialog

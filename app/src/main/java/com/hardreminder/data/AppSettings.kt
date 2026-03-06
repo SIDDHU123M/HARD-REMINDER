@@ -19,19 +19,11 @@ object AppSettings {
     private const val KEY_DISMISS_ON_UNLOCK = "dismiss_on_unlock"
     private const val KEY_THEME_MODE = "theme_mode"
     private const val KEY_USE_AMOLED_MODE = "use_amoled_mode"
-    private const val KEY_COLOR_PALETTE = "color_palette"
 
     // Theme modes
     const val THEME_LIGHT = 0
     const val THEME_DARK = 1
     const val THEME_SYSTEM = 3
-
-    // Color palettes
-    const val PALETTE_DEFAULT = 0
-    const val PALETTE_TONAL = 1
-    const val PALETTE_VIBRANT = 2
-    const val PALETTE_EXPRESSIVE = 3
-    const val PALETTE_MONO = 4
 
     private fun prefs(context: Context): SharedPreferences =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -91,23 +83,10 @@ object AppSettings {
         get() = prefs(this).getBoolean(KEY_USE_AMOLED_MODE, false)
         set(value) = prefs(this).edit().putBoolean(KEY_USE_AMOLED_MODE, value).apply()
 
-    // Color palette (0=Default, 1=Tonal, 2=Vibrant, 3=Expressive, 4=Mono)
-    var Context.colorPalette: Int
-        get() = prefs(this).getInt(KEY_COLOR_PALETTE, PALETTE_DEFAULT)
-        set(value) = prefs(this).edit().putInt(KEY_COLOR_PALETTE, value).apply()
-
     val THEME_OPTIONS = listOf(
         THEME_LIGHT to "Light",
         THEME_DARK to "Dark",
         THEME_SYSTEM to "Follow System"
-    )
-
-    val PALETTE_OPTIONS = listOf(
-        PALETTE_DEFAULT to "Default",
-        PALETTE_TONAL to "Tonal",
-        PALETTE_VIBRANT to "Vibrant",
-        PALETTE_EXPRESSIVE to "Expressive",
-        PALETTE_MONO to "Mono"
     )
 
     // Prior notification time options in minutes

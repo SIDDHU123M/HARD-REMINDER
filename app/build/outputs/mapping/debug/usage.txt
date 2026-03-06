@@ -26927,7 +26927,6 @@ com.google.android.material.R$attr:
     public static int materialSearchViewStyle
     public static int materialSearchViewToolbarHeight
     public static int materialSearchViewToolbarStyle
-    public static int materialSwitchStyle
     public static int materialTimePickerStyle
     public static int materialTimePickerTheme
     public static int materialTimePickerTitleStyle
@@ -27125,7 +27124,6 @@ com.google.android.material.R$attr:
     public static int state_collapsible
     public static int state_liftable
     public static int state_lifted
-    public static int state_with_icon
     public static int statusBarBackground
     public static int statusBarForeground
     public static int statusBarScrim
@@ -27148,6 +27146,7 @@ com.google.android.material.R$attr:
     public static int suggestionRowLayout
     public static int switchMinWidth
     public static int switchPadding
+    public static int switchStyle
     public static int switchTextAppearance
     public static int tabBackground
     public static int tabContentStart
@@ -28799,6 +28798,7 @@ com.google.android.material.R$dimen:
     public static int mtrl_snackbar_message_margin_horizontal
     public static int mtrl_snackbar_padding_horizontal
     public static int mtrl_switch_text_padding
+    public static int mtrl_switch_thumb_elevation
     public static int mtrl_switch_thumb_icon_size
     public static int mtrl_switch_thumb_size
     public static int mtrl_switch_track_height
@@ -30530,7 +30530,6 @@ com.google.android.material.R$style:
     public static int Widget_Material3_CollapsingToolbar_Large
     public static int Widget_Material3_CollapsingToolbar_Medium
     public static int Widget_Material3_CompoundButton_CheckBox
-    public static int Widget_Material3_CompoundButton_MaterialSwitch
     public static int Widget_Material3_CompoundButton_RadioButton
     public static int Widget_Material3_CompoundButton_Switch
     public static int Widget_Material3_DrawerLayout
@@ -30673,6 +30672,7 @@ com.google.android.material.R$style:
     public static int Widget_MaterialComponents_CircularProgressIndicator_Medium
     public static int Widget_MaterialComponents_CircularProgressIndicator_Small
     public static int Widget_MaterialComponents_CollapsingToolbar
+    public static int Widget_MaterialComponents_CompoundButton_Switch
     public static int Widget_MaterialComponents_ExtendedFloatingActionButton
     public static int Widget_MaterialComponents_FloatingActionButton
     public static int Widget_MaterialComponents_Light_ActionBar_Solid
@@ -31783,13 +31783,6 @@ com.google.android.material.R$styleable:
     public static int MaterialDivider_dividerInsetStart
     public static int MaterialDivider_dividerThickness
     public static int MaterialDivider_lastItemDecorated
-    public static int MaterialSwitch_thumbIcon
-    public static int MaterialSwitch_thumbIconSize
-    public static int MaterialSwitch_thumbIconTint
-    public static int MaterialSwitch_thumbIconTintMode
-    public static int MaterialSwitch_trackDecoration
-    public static int MaterialSwitch_trackDecorationTint
-    public static int MaterialSwitch_trackDecorationTintMode
     public static int MaterialTimePicker_backgroundTint
     public static int MaterialTimePicker_clockIcon
     public static int MaterialTimePicker_keyboardIcon
@@ -32084,6 +32077,7 @@ com.google.android.material.R$styleable:
     public static int SwitchCompat_track
     public static int SwitchCompat_trackTint
     public static int SwitchCompat_trackTintMode
+    public static int SwitchMaterial_useMaterialThemeColors
     public static int TabItem_android_icon
     public static int TabItem_android_layout
     public static int TabItem_android_text
@@ -33221,8 +33215,6 @@ com.google.android.material.drawable.DrawableUtils:
     private static final int UNSPECIFIED_HEIGHT
     private static final int UNSPECIFIED_WIDTH
     private void <init>()
-    public static android.graphics.drawable.Drawable createTintableDrawableIfNeeded(android.graphics.drawable.Drawable,android.content.res.ColorStateList,android.graphics.PorterDuff$Mode)
-    public static int[] getUncheckedState(int[])
     public static android.util.AttributeSet parseDrawableXml(android.content.Context,int,java.lang.CharSequence)
     public static void setRippleDrawableRadius(android.graphics.drawable.RippleDrawable,int)
     public static void setTint(android.graphics.drawable.Drawable,int)
@@ -33635,7 +33627,8 @@ com.google.android.material.internal.WindowUtils$Api30Impl:
 com.google.android.material.internal.WindowUtils:
     private void <init>()
 com.google.android.material.internal.package-info
-com.google.android.material.materialswitch.MaterialSwitch
+com.google.android.material.materialswitch.MaterialSwitch:
+    public void <init>(android.content.Context)
 com.google.android.material.math.MathUtils:
     public static final float DEFAULT_EPSILON
     private void <init>()
@@ -34297,9 +34290,7 @@ com.google.android.material.snackbar.SnackbarManager:
     public boolean isCurrent(com.google.android.material.snackbar.SnackbarManager$Callback)
 com.google.android.material.stateful.ExtendableSavedState$1
 com.google.android.material.stateful.ExtendableSavedState
-com.google.android.material.switchmaterial.SwitchMaterial:
-    public void <init>(android.content.Context)
-    public boolean isUseMaterialThemeColors()
+com.google.android.material.switchmaterial.SwitchMaterial
 com.google.android.material.tabs.ElasticTabIndicatorInterpolator
 com.google.android.material.tabs.FadeTabIndicatorInterpolator
 com.google.android.material.tabs.TabIndicatorInterpolator

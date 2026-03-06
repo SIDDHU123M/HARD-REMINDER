@@ -110,7 +110,6 @@ id layoutCustomInterval
 id layoutDayChips
 id layoutDefaultPrior
 id layoutNotifSettings
-id layoutPalette
 id layoutSnooze
 id nestedScroll
 id recyclerView
@@ -143,7 +142,6 @@ id textDate
 id textDateSmall
 id textGreeting
 id textMessage
-id textPaletteValue
 id textPriorValue
 id textSnoozeValue
 id textTimeLarge
@@ -165,18 +163,6 @@ style Theme.HardReminder
 style Theme.HardReminder.Alarm
 style Theme.HardReminder.Amoled
 style Theme.HardReminder.Dark
-style Theme.HardReminder.Expressive
-style Theme.HardReminder.Expressive.Amoled
-style Theme.HardReminder.Expressive.Dark
-style Theme.HardReminder.Mono
-style Theme.HardReminder.Mono.Amoled
-style Theme.HardReminder.Mono.Dark
-style Theme.HardReminder.Tonal
-style Theme.HardReminder.Tonal.Amoled
-style Theme.HardReminder.Tonal.Dark
-style Theme.HardReminder.Vibrant
-style Theme.HardReminder.Vibrant.Amoled
-style Theme.HardReminder.Vibrant.Dark
 style Widget.HardReminder.ExposedDropdown
 style Widget.HardReminder.Toolbar
 style WindowAnimationTransition
