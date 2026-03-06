@@ -1,0 +1,3 @@
+- Use this Connected Button Group from Material 3 Expressive (https://m3.material.io/components/button-groups/specs)
+- Add transitions when switching between screens and add predictive gesture
+- Use list (expressive) components to show all the settings items. (https://m3.material.io/components/lists/specs)

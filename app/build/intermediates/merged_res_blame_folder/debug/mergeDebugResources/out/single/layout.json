@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-mergeDebugResources-69:\\layout\\activity_add_edit_reminder.xml",
+        "source": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-main-73:\\layout\\activity_add_edit_reminder.xml"
+    },
+    {
+        "merged": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-mergeDebugResources-69:\\layout\\activity_alarm_ring.xml",
+        "source": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-main-73:\\layout\\activity_alarm_ring.xml"
+    },
+    {
+        "merged": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-mergeDebugResources-69:\\layout\\activity_settings.xml",
+        "source": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-main-73:\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-mergeDebugResources-69:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-main-73:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-mergeDebugResources-69:\\layout\\item_reminder.xml",
+        "source": "C:\\Users\\ritam\\.gradle\\daemon\\9.3.1\\com.hardreminder.app-main-73:\\layout\\item_reminder.xml"
+    }
+]

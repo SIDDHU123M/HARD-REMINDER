@@ -1,0 +1,9 @@
+com.hardreminder.app-pngs-0 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\res\pngs\debug
+com.hardreminder.app-resValues-1 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\res\resValues\debug
+com.hardreminder.app-updated_navigation_xml-2 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\generated\updated_navigation_xml\debug
+com.hardreminder.app-packageDebugResources-3 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.hardreminder.app-packageDebugResources-4 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.hardreminder.app-merged-not-compiled-resources-5 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\intermediates\merged-not-compiled-resources\debug
+com.hardreminder.app-debug-6 C:\Users\ritam\Desktop\HARD-REMINDER\app\build\intermediates\merged_res\debug\mergeDebugResources
+com.hardreminder.app-debug-7 C:\Users\ritam\Desktop\HARD-REMINDER\app\src\debug\res
+com.hardreminder.app-main-8 C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\res

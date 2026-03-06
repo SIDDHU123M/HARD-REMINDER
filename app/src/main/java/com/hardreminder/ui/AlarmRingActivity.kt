@@ -2,7 +2,6 @@ package com.hardreminder.ui
 
 import android.app.KeyguardManager
 import android.app.NotificationManager
-import android.content.Intent
 import android.media.AudioAttributes
 import android.media.MediaPlayer
 import android.media.RingtoneManager
@@ -12,18 +11,36 @@ import android.os.VibrationEffect
 import android.os.Vibrator
 import android.os.VibratorManager
 import android.view.WindowManager
-import androidx.appcompat.app.AppCompatActivity
-import com.hardreminder.data.AppSettings.snoozeMinutes
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Alarm
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.hardreminder.alarm.AlarmScheduler
+import com.hardreminder.data.AppSettings.isDarkAppTheme
+import com.hardreminder.data.AppSettings.snoozeMinutes
+import com.hardreminder.data.AppSettings.useAmoledMode
+import com.hardreminder.data.AppSettings.useMaterialYou
 import com.hardreminder.data.ReminderDatabase
-import com.hardreminder.databinding.ActivityAlarmRingBinding
+import com.hardreminder.ui.theme.HardReminderTheme
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class AlarmRingActivity : AppCompatActivity() {
+class AlarmRingActivity : ComponentActivity() {
 
-    private lateinit var binding: ActivityAlarmRingBinding
     private var mediaPlayer: MediaPlayer? = null
     private var vibrator: Vibrator? = null
 
@@ -46,28 +63,29 @@ class AlarmRingActivity : AppCompatActivity() {
             )
         }
 
-        binding = ActivityAlarmRingBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
         val reminderId = intent.getLongExtra("REMINDER_ID", -1)
         val title = intent.getStringExtra("REMINDER_TITLE") ?: "Reminder"
         val message = intent.getStringExtra("REMINDER_MESSAGE") ?: ""
         val soundEnabled = intent.getBooleanExtra("REMINDER_SOUND", true)
-
-        binding.textAlarmTitle.text = title
-        binding.textAlarmMessage.text = message.ifEmpty { "Time's up!" }
 
         if (soundEnabled) {
             startAlarmSound()
         }
         startVibration()
 
-        binding.btnDismiss.setOnClickListener {
-            dismiss(reminderId)
-        }
-
-        binding.btnSnooze.setOnClickListener {
-            snooze(reminderId)
+        setContent {
+            HardReminderTheme(
+                darkTheme = isDarkAppTheme,
+                amoled = useAmoledMode,
+                dynamicColor = useMaterialYou
+            ) {
+                AlarmRingScreen(
+                    title = title,
+                    message = message.ifEmpty { "Time's up!" },
+                    onDismiss = { dismiss(reminderId) },
+                    onSnooze = { snooze(reminderId) }
+                )
+            }
         }
     }
 
@@ -105,7 +123,6 @@ class AlarmRingActivity : AppCompatActivity() {
                 start()
             }
         } catch (_: Exception) {
-            // Fallback - try default notification sound
             try {
                 val notifUri = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)
                 mediaPlayer = MediaPlayer().apply {
@@ -133,12 +150,11 @@ class AlarmRingActivity : AppCompatActivity() {
         }
 
         val pattern = longArrayOf(0, 800, 400, 800, 400, 800, 400)
-        vibrator?.vibrate(VibrationEffect.createWaveform(pattern, 0)) // 0 = repeat from index 0
+        vibrator?.vibrate(VibrationEffect.createWaveform(pattern, 0))
     }
 
     private fun dismiss(reminderId: Long) {
         stopAlarm()
-        // Cancel the notification too
         if (reminderId != -1L) {
             val nm = getSystemService(NotificationManager::class.java)
             nm.cancel(reminderId.toInt())
@@ -165,6 +181,111 @@ class AlarmRingActivity : AppCompatActivity() {
     @Deprecated("Use onBackPressedDispatcher")
     override fun onBackPressed() {
         // Prevent dismissing with back button - must press Dismiss
-        // Do nothing
+    }
+}
+
+@Composable
+fun AlarmRingScreen(
+    title: String,
+    message: String,
+    onDismiss: () -> Unit,
+    onSnooze: () -> Unit
+) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.primary
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(32.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            Spacer(modifier = Modifier.weight(1f))
+
+            // Alarm icon in a circle
+            Box(
+                modifier = Modifier
+                    .size(108.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.15f)),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = Icons.Default.Alarm,
+                    contentDescription = "Alarm ringing",
+                    modifier = Modifier.size(56.dp),
+                    tint = MaterialTheme.colorScheme.onPrimary
+                )
+            }
+
+            Spacer(modifier = Modifier.height(28.dp))
+
+            Text(
+                text = title,
+                style = MaterialTheme.typography.headlineLarge,
+                fontWeight = FontWeight.Bold,
+                color = MaterialTheme.colorScheme.onPrimary,
+                textAlign = TextAlign.Center,
+                maxLines = 3
+            )
+
+            Spacer(modifier = Modifier.height(12.dp))
+
+            Text(
+                text = message,
+                style = MaterialTheme.typography.bodyLarge,
+                color = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.8f),
+                textAlign = TextAlign.Center,
+                maxLines = 4,
+                fontSize = 18.sp
+            )
+
+            Spacer(modifier = Modifier.weight(2f))
+
+            // Dismiss button
+            Button(
+                onClick = onDismiss,
+                modifier = Modifier
+                    .width(240.dp)
+                    .height(64.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = MaterialTheme.colorScheme.surface,
+                    contentColor = MaterialTheme.colorScheme.primary
+                ),
+                shape = RoundedCornerShape(32.dp),
+                elevation = ButtonDefaults.buttonElevation(defaultElevation = 6.dp)
+            ) {
+                Text(
+                    text = "DISMISS",
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Bold
+                )
+            }
+
+            Spacer(modifier = Modifier.height(14.dp))
+
+            // Snooze button
+            OutlinedButton(
+                onClick = onSnooze,
+                modifier = Modifier
+                    .width(240.dp)
+                    .height(52.dp),
+                colors = ButtonDefaults.outlinedButtonColors(
+                    contentColor = MaterialTheme.colorScheme.onPrimary
+                ),
+                border = androidx.compose.foundation.BorderStroke(1.5.dp, MaterialTheme.colorScheme.onPrimary),
+                shape = RoundedCornerShape(26.dp)
+            ) {
+                Text(
+                    text = "SNOOZE",
+                    fontSize = 15.sp,
+                    letterSpacing = 1.sp
+                )
+            }
+
+            Spacer(modifier = Modifier.height(32.dp))
+        }
     }
 }

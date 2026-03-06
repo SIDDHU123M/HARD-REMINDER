@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Context7__resolve-library-id",
+      "mcp__claude_ai_Context7__query-docs",
+      "Bash(./gradlew assembleDebug:*)",
+      "Bash(ls:*)",
+      "Bash(\"C:/Users/ritam/Desktop/HARD-REMINDER/gradlew.bat\" -p \"C:/Users/ritam/Desktop/HARD-REMINDER\" assembleDebug)",
+      "WebFetch(domain:m3.material.io)",
+      "WebSearch",
+      "WebFetch(domain:joebirch.co)"
+    ]
+  },
+  "outputStyle": "default"
+}

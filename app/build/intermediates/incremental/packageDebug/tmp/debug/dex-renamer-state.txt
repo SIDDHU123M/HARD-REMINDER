@@ -1,0 +1,4 @@
+#Sat Mar 07 02:01:57 IST 2026
+base.0=C\:\\Users\\ritam\\Desktop\\HARD-REMINDER\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

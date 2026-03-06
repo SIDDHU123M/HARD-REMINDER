@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hardreminder"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="34" />
+
+    <!-- Exact alarm permission (Android 12+) -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!-- Notification permission (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Boot receiver to reschedule alarms after reboot -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Foreground service -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
+    <!-- Vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- Wake lock to ensure alarm fires -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Full screen intent for alarm popup -->
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+
+    <!-- Disable battery optimization (requested at runtime) -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <permission
+        android:name="com.hardreminder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.hardreminder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
+    <application
+        android:name="com.hardreminder.HardReminderApp"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:enableOnBackInvokedCallback="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/Theme.HardReminder" >
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.hardreminder.ui.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Add/Edit Reminder Activity -->
+        <activity
+            android:name="com.hardreminder.ui.AddEditReminderActivity"
+            android:exported="false"
+            android:parentActivityName="com.hardreminder.ui.MainActivity" />
+
+        <!-- Settings Activity -->
+        <activity
+            android:name="com.hardreminder.ui.SettingsActivity"
+            android:exported="false"
+            android:parentActivityName="com.hardreminder.ui.MainActivity" />
+
+        <!-- About Activity -->
+        <activity
+            android:name="com.hardreminder.ui.AboutActivity"
+            android:exported="false"
+            android:parentActivityName="com.hardreminder.ui.MainActivity" />
+
+        <!-- Full-screen alarm Activity (shows when alarm fires) -->
+        <activity
+            android:name="com.hardreminder.ui.AlarmRingActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:showOnLockScreen="true"
+            android:taskAffinity=""
+            android:theme="@style/Theme.HardReminder"
+            android:turnScreenOn="true" />
+
+        <!-- Alarm BroadcastReceiver -->
+        <receiver
+            android:name="com.hardreminder.receiver.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- Boot completed receiver -->
+        <receiver
+            android:name="com.hardreminder.receiver.BootReceiver"
+            android:directBootAware="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Dismiss action receiver -->
+        <receiver
+            android:name="com.hardreminder.receiver.DismissReceiver"
+            android:exported="false" />
+
+        <!-- Prior alarm receiver -->
+        <receiver
+            android:name="com.hardreminder.receiver.PriorAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Cancel reminder from prior notification -->
+        <receiver
+            android:name="com.hardreminder.receiver.CancelReminderReceiver"
+            android:exported="false" />
+
+        <!-- Snooze receiver -->
+        <receiver
+            android:name="com.hardreminder.receiver.SnoozeReceiver"
+            android:exported="false" />
+
+        <!-- Foreground service to keep app alive -->
+        <service
+            android:name="com.hardreminder.service.ReminderForegroundService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse" />
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <activity
+            android:name="androidx.compose.ui.tooling.PreviewActivity"
+            android:exported="true" />
+        <activity
+            android:name="androidx.activity.ComponentActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.hardreminder.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.DUMP" >
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

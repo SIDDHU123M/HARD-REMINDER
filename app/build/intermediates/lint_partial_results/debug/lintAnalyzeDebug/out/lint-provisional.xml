@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="conditional_incidents">
+
+    <incident
+        id="ExactAlarm"
+        severity="error"
+        message="`USE_EXACT_ALARM` can only be used when targeting API level 33 or higher">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="7"
+            column="36"
+            startOffset="331"
+            endLine="7"
+            endColumn="70"
+            endOffset="365"/>
+        <map>
+            <condition targetLT="33"/>
+        </map>
+    </incident>
+
+    <incident
+        id="NotificationPermission"
+        severity="error"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission">
+        <fix-data missing="android.permission.POST_NOTIFICATIONS"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/hardreminder/receiver/AlarmReceiver.kt"
+            line="164"
+            column="9"
+            startOffset="6252"
+            endLine="164"
+            endColumn="61"
+            endOffset="6304"/>
+    </incident>
+
+    <incident
+        id="NotificationPermission"
+        severity="error"
+        message="When targeting Android 13 or higher, posting a permission requires holding the `POST_NOTIFICATIONS` permission">
+        <fix-data missing="android.permission.POST_NOTIFICATIONS"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/hardreminder/receiver/PriorAlarmReceiver.kt"
+            line="131"
+            column="9"
+            startOffset="5125"
+            endLine="132"
+            endColumn="46"
+            endOffset="5228"/>
+    </incident>
+
+    <incident
+        id="BatteryLife"
+        severity="warning"
+        message="Use of `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` violates the Play Store Content Policy regarding acceptable use cases, as described in https://developer.android.com/training/monitoring-device-state/doze-standby.html">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/hardreminder/ui/MainActivity.kt"
+            line="258"
+            column="50"
+            startOffset="10431"
+            endLine="258"
+            endColumn="93"
+            endOffset="10474"/>
+        <map>
+            <condition targetGE="23"/>
+        </map>
+    </incident>
+
+    <incident
+        id="BatteryLife"
+        severity="warning"
+        message="Use of `REQUEST_IGNORE_BATTERY_OPTIMIZATIONS` violates the Play Store Content Policy regarding acceptable use cases, as described in https://developer.android.com/training/monitoring-device-state/doze-standby.html">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/hardreminder/ui/SettingsActivity.kt"
+            line="182"
+            column="46"
+            startOffset="7107"
+            endLine="182"
+            endColumn="89"
+            endOffset="7150"/>
+        <map>
+            <condition targetGE="23"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_chevron_right.xml"
+            line="6"
+            column="19"
+            startOffset="204"
+            endLine="6"
+            endColumn="40"
+            endOffset="225"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_dismiss.xml"
+            line="9"
+            column="28"
+            startOffset="293"
+            endLine="9"
+            endColumn="48"
+            endOffset="313"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_notification.xml"
+            line="9"
+            column="28"
+            startOffset="293"
+            endLine="9"
+            endColumn="48"
+            endOffset="313"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="VectorRaster"
+        severity="warning"
+        message="">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/drawable/ic_theme.xml"
+            line="7"
+            column="26"
+            startOffset="221"
+            endLine="7"
+            endColumn="53"
+            endOffset="248"/>
+        <map>
+            <entry
+                name="containsFillType"
+                boolean="false"/>
+            <entry
+                name="containsGradient"
+                boolean="false"/>
+            <entry
+                name="folderVersion"
+                int="-1"/>
+            <entry
+                name="message"
+                string="Resource references will not work correctly in images generated for this vector icon for API &lt; %1$d; check generated icon to make sure it looks acceptable"/>
+        </map>
+    </incident>
+
+    <incident
+        id="Deprecated"
+        severity="warning"
+        message="`android:editable` is deprecated: Use an `&lt;EditText>` to make it editable">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_add_edit_reminder.xml"
+            line="129"
+            column="21"
+            startOffset="5657"
+            endLine="129"
+            endColumn="45"
+            endOffset="5681"/>
+        <map>
+            <condition minGE="ffffffffffffffff"/>
+        </map>
+    </incident>
+
+    <incident
+        id="Deprecated"
+        severity="warning"
+        message="`android:editable` is deprecated: Use an `&lt;EditText>` to make it editable">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_add_edit_reminder.xml"
+            line="236"
+            column="21"
+            startOffset="11203"
+            endLine="236"
+            endColumn="45"
+            endOffset="11227"/>
+        <map>
+            <condition minGE="ffffffffffffffff"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; SDK_INT is always >= 34">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="1690"
+                endOffset="1710"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="39"
+            column="9"
+            startOffset="1690"
+            endLine="39"
+            endColumn="29"
+            endOffset="1710"/>
+        <map>
+            <condition minGE="fffffffe00000000"/>
+        </map>
+    </incident>
+
+</incidents>

@@ -1,27 +1,141 @@
 package com.hardreminder.ui
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
+import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableFloatStateOf
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.activity.compose.PredictiveBackHandler
+import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.draw.scale
+import com.hardreminder.R
+import kotlinx.coroutines.CancellationException
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.unit.dp
 import com.hardreminder.BuildConfig
-import com.hardreminder.databinding.ActivityAboutBinding
+import com.hardreminder.data.AppSettings.useAmoledMode
+import com.hardreminder.data.AppSettings.isDarkAppTheme
+import com.hardreminder.data.AppSettings.useMaterialYou
+import com.hardreminder.ui.theme.HardReminderTheme
 
-class AboutActivity : AppCompatActivity() {
+class AboutActivity : ComponentActivity() {
 
-    private lateinit var binding: ActivityAboutBinding
+    private val themeRefreshTrigger = mutableIntStateOf(0)
 
+    override fun finish() {
+        super.finish()
+        @Suppress("DEPRECATION")
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        themeRefreshTrigger.intValue++
+    }
+
+    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        ThemeHelper.applyActivityTheme(this)
-        binding = ActivityAboutBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        setSupportActionBar(binding.toolbar)
-        supportActionBar?.title = "About"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        binding.toolbar.setNavigationOnClickListener { finish() }
+        setContent {
+            var backProgress by remember { mutableFloatStateOf(0f) }
 
-        binding.textVersionName.text = BuildConfig.VERSION_NAME
-        binding.textVersionCode.text = BuildConfig.VERSION_CODE.toString()
-        binding.textPackageName.text = BuildConfig.APPLICATION_ID
+            PredictiveBackHandler { progress ->
+                try {
+                    progress.collect { backEvent ->
+                        backProgress = backEvent.progress
+                    }
+                    finish()
+                } catch (e: CancellationException) {
+                    backProgress = 0f
+                }
+            }
+
+            val refreshKey = themeRefreshTrigger.intValue
+            val context = LocalContext.current
+
+            val isDark = remember(refreshKey) { context.isDarkAppTheme }
+            val isAmoled = remember(refreshKey) { context.useAmoledMode }
+            val isDynamic = remember(refreshKey) { context.useMaterialYou }
+
+            HardReminderTheme(
+                darkTheme = isDark,
+                amoled = isAmoled,
+                dynamicColor = isDynamic
+            ) {
+                Scaffold(
+                    modifier = Modifier
+                        .scale(1f - backProgress * 0.05f)
+                        .alpha(1f - backProgress * 0.3f),
+                    topBar = {
+                        TopAppBar(
+                            title = { Text("About") },
+                            navigationIcon = {
+                                IconButton(onClick = { finish() }) {
+                                    Icon(
+                                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                                        contentDescription = "Back"
+                                    )
+                                }
+                            },
+                            colors = TopAppBarDefaults.topAppBarColors(
+                                containerColor = MaterialTheme.colorScheme.surface,
+                                titleContentColor = MaterialTheme.colorScheme.onSurface
+                            )
+                        )
+                    }
+                ) { innerPadding ->
+                    Column(
+                        modifier = Modifier
+                            .padding(innerPadding)
+                            .padding(24.dp)
+                            .fillMaxSize()
+                    ) {
+                        Text(
+                            text = "Hard Reminder",
+                            style = MaterialTheme.typography.headlineMedium,
+                            color = MaterialTheme.colorScheme.primary
+                        )
+                        Spacer(modifier = Modifier.height(16.dp))
+                        Text(
+                            text = "Version: ${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE})",
+                            style = MaterialTheme.typography.bodyLarge,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                        Spacer(modifier = Modifier.height(8.dp))
+                        Text(
+                            text = "Package: ${BuildConfig.APPLICATION_ID}",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(modifier = Modifier.height(32.dp))
+                        Text(
+                            text = "A simple yet persistent reminder app built with Material 3 Expressive.",
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurface
+                        )
+                    }
+                }
+            }
+        }
     }
 }

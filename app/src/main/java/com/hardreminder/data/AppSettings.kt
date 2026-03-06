@@ -18,20 +18,13 @@ object AppSettings {
     private const val KEY_FLASH_SCREEN = "flash_screen_on_alarm"
     private const val KEY_DISMISS_ON_UNLOCK = "dismiss_on_unlock"
     private const val KEY_THEME_MODE = "theme_mode"
-    private const val KEY_COLOR_PALETTE = "color_palette"
+    private const val KEY_USE_AMOLED_MODE = "use_amoled_mode"
+    private const val KEY_USE_MATERIAL_YOU = "use_material_you"
 
     // Theme modes
     const val THEME_LIGHT = 0
     const val THEME_DARK = 1
-    const val THEME_AMOLED = 2
     const val THEME_SYSTEM = 3
-
-    // Color palettes
-    const val PALETTE_DEFAULT = 0
-    const val PALETTE_TONAL = 1
-    const val PALETTE_VIBRANT = 2
-    const val PALETTE_EXPRESSIVE = 3
-    const val PALETTE_MONO = 4
 
     private fun prefs(context: Context): SharedPreferences =
         context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
@@ -81,29 +74,33 @@ object AppSettings {
         get() = prefs(this).getBoolean(KEY_FLASH_SCREEN, true)
         set(value) = prefs(this).edit().putBoolean(KEY_FLASH_SCREEN, value).apply()
 
-    // App theme mode (0=Light, 1=Dark, 2=AMOLED, 3=System)
+    // App theme mode (0=Light, 1=Dark, 3=System)
     var Context.themeMode: Int
         get() = prefs(this).getInt(KEY_THEME_MODE, THEME_SYSTEM)
         set(value) = prefs(this).edit().putInt(KEY_THEME_MODE, value).apply()
 
-    // Color palette (0=Default, 1=Tonal, 2=Vibrant, 3=Expressive, 4=Mono)
-    var Context.colorPalette: Int
-        get() = prefs(this).getInt(KEY_COLOR_PALETTE, PALETTE_DEFAULT)
-        set(value) = prefs(this).edit().putInt(KEY_COLOR_PALETTE, value).apply()
+    // Use AMOLED mode when dark theme is active
+    var Context.useAmoledMode: Boolean
+        get() = prefs(this).getBoolean(KEY_USE_AMOLED_MODE, false)
+        set(value) = prefs(this).edit().putBoolean(KEY_USE_AMOLED_MODE, value).apply()
+
+    // Use Material You dynamic colors
+    var Context.useMaterialYou: Boolean
+        get() = prefs(this).getBoolean(KEY_USE_MATERIAL_YOU, true)
+        set(value) = prefs(this).edit().putBoolean(KEY_USE_MATERIAL_YOU, value).apply()
+
+    // Helper for composing UI based on theme mode
+    val Context.isDarkAppTheme: Boolean
+        get() = when (themeMode) {
+            THEME_LIGHT -> false
+            THEME_DARK -> true
+            else -> resources.configuration.uiMode and android.content.res.Configuration.UI_MODE_NIGHT_MASK == android.content.res.Configuration.UI_MODE_NIGHT_YES
+        }
 
     val THEME_OPTIONS = listOf(
         THEME_LIGHT to "Light",
         THEME_DARK to "Dark",
-        THEME_AMOLED to "AMOLED Black",
         THEME_SYSTEM to "Follow System"
-    )
-
-    val PALETTE_OPTIONS = listOf(
-        PALETTE_DEFAULT to "Default",
-        PALETTE_TONAL to "Tonal",
-        PALETTE_VIBRANT to "Vibrant",
-        PALETTE_EXPRESSIVE to "Expressive",
-        PALETTE_MONO to "Mono"
     )
 
     // Prior notification time options in minutes

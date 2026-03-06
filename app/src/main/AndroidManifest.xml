@@ -36,6 +36,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HardReminder"
+        android:enableOnBackInvokedCallback="true"
         tools:targetApi="34">
 
         <!-- Main Activity -->
@@ -75,7 +76,7 @@
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
             android:taskAffinity=""
-            android:theme="@style/Theme.HardReminder.Alarm" />
+            android:theme="@style/Theme.HardReminder" />
 
         <!-- Alarm BroadcastReceiver -->
         <receiver
