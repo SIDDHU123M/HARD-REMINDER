@@ -10,313 +10,313 @@
 10
 11    <!-- Exact alarm permission (Android 12+) -->
 12    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-12-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:6:5-79
-12-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:6:22-76
+12-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:6:5-79
+12-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
-13-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:7:5-74
-13-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:7:22-71
+13-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:7:5-74
+13-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:7:22-71
 14
 15    <!-- Notification permission (Android 13+) -->
 16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-16-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:10:5-77
-16-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:10:22-74
+16-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:10:5-77
+16-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:10:22-74
 17
 18    <!-- Boot receiver to reschedule alarms after reboot -->
 19    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-19-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:13:5-81
-19-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:13:22-78
+19-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:13:5-81
+19-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:13:22-78
 20
 21    <!-- Foreground service -->
 22    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-22-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:16:5-77
-22-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:16:22-74
+22-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:16:5-77
+22-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:16:22-74
 23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
-23-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:17:5-89
-23-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:17:22-86
+23-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:17:5-89
+23-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:17:22-86
 24
 25    <!-- Vibrate -->
 26    <uses-permission android:name="android.permission.VIBRATE" />
-26-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:20:5-66
-26-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:20:22-63
+26-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:20:5-66
+26-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:20:22-63
 27
 28    <!-- Wake lock to ensure alarm fires -->
 29    <uses-permission android:name="android.permission.WAKE_LOCK" />
-29-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:23:5-68
-29-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:23:22-65
+29-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:23:5-68
+29-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:23:22-65
 30
 31    <!-- Full screen intent for alarm popup -->
 32    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-32-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:26:5-81
-32-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:26:22-78
+32-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:26:5-81
+32-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:26:22-78
 33
 34    <!-- Disable battery optimization (requested at runtime) -->
 35    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-35-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:29:5-95
-35-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:29:22-92
+35-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:29:5-95
+35-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:29:22-92
 36
 37    <permission
-37-->[androidx.core:core:1.13.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+37-->[androidx.core:core:1.13.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 38        android:name="com.hardreminder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-38-->[androidx.core:core:1.13.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+38-->[androidx.core:core:1.13.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 39        android:protectionLevel="signature" />
-39-->[androidx.core:core:1.13.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+39-->[androidx.core:core:1.13.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 40
 41    <uses-permission android:name="com.hardreminder.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-41-->[androidx.core:core:1.13.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
-41-->[androidx.core:core:1.13.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+41-->[androidx.core:core:1.13.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+41-->[androidx.core:core:1.13.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 42
 43    <application
-43-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:31:5-124:19
+43-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:31:5-124:19
 44        android:name="com.hardreminder.HardReminderApp"
-44-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:32:9-40
+44-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:32:9-40
 45        android:allowBackup="true"
-45-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:33:9-35
+45-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:33:9-35
 46        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-46-->[androidx.core:core:1.13.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+46-->[androidx.core:core:1.13.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\733999cfdbb899f7fffb2871ac386b6f\workspace\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 47        android:debuggable="true"
 48        android:enableOnBackInvokedCallback="true"
-48-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:39:9-51
+48-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:39:9-51
 49        android:extractNativeLibs="false"
 50        android:icon="@mipmap/ic_launcher"
-50-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:34:9-43
+50-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:34:9-43
 51        android:label="@string/app_name"
-51-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:35:9-41
+51-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:35:9-41
 52        android:roundIcon="@mipmap/ic_launcher_round"
-52-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:36:9-54
+52-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:36:9-54
 53        android:supportsRtl="true"
-53-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:37:9-35
+53-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:37:9-35
 54        android:testOnly="true"
 55        android:theme="@style/Theme.HardReminder" >
-55-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:38:9-50
+55-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:38:9-50
 56
 57        <!-- Main Activity -->
 58        <activity
-58-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:43:9-50:20
+58-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:43:9-50:20
 59            android:name="com.hardreminder.ui.MainActivity"
-59-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:44:13-44
+59-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:44:13-44
 60            android:exported="true" >
-60-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:45:13-36
+60-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:45:13-36
 61            <intent-filter>
-61-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:46:13-49:29
+61-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:46:13-49:29
 62                <action android:name="android.intent.action.MAIN" />
-62-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:47:17-69
-62-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:47:25-66
+62-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:47:17-69
+62-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:47:25-66
 63
 64                <category android:name="android.intent.category.LAUNCHER" />
-64-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:48:17-77
-64-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:48:27-74
+64-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:48:17-77
+64-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:48:27-74
 65            </intent-filter>
 66        </activity>
 67
 68        <!-- Add/Edit Reminder Activity -->
 69        <activity
-69-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:53:9-56:61
+69-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:53:9-56:61
 70            android:name="com.hardreminder.ui.AddEditReminderActivity"
-70-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:54:13-55
+70-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:54:13-55
 71            android:exported="false"
-71-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:55:13-37
+71-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:55:13-37
 72            android:parentActivityName="com.hardreminder.ui.MainActivity" />
-72-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:56:13-58
+72-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:56:13-58
 73
 74        <!-- Settings Activity -->
 75        <activity
-75-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:59:9-62:61
+75-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:59:9-62:61
 76            android:name="com.hardreminder.ui.SettingsActivity"
-76-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:60:13-48
+76-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:60:13-48
 77            android:exported="false"
-77-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:61:13-37
+77-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:61:13-37
 78            android:parentActivityName="com.hardreminder.ui.MainActivity" />
-78-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:62:13-58
+78-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:62:13-58
 79
 80        <!-- About Activity -->
 81        <activity
-81-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:65:9-68:61
+81-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:65:9-68:61
 82            android:name="com.hardreminder.ui.AboutActivity"
-82-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:66:13-45
+82-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:66:13-45
 83            android:exported="false"
-83-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:67:13-37
+83-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:67:13-37
 84            android:parentActivityName="com.hardreminder.ui.MainActivity" />
-84-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:68:13-58
+84-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:68:13-58
 85
 86        <!-- Full-screen alarm Activity (shows when alarm fires) -->
 87        <activity
-87-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:71:9-79:57
+87-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:71:9-79:57
 88            android:name="com.hardreminder.ui.AlarmRingActivity"
-88-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:72:13-49
+88-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:72:13-49
 89            android:excludeFromRecents="true"
-89-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:76:13-46
+89-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:76:13-46
 90            android:exported="false"
-90-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:73:13-37
+90-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:73:13-37
 91            android:launchMode="singleInstance"
-91-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:77:13-48
+91-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:77:13-48
 92            android:showOnLockScreen="true"
-92-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:74:13-44
+92-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:74:13-44
 93            android:taskAffinity=""
-93-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:78:13-36
+93-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:78:13-36
 94            android:theme="@style/Theme.HardReminder"
-94-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:79:13-54
+94-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:79:13-54
 95            android:turnScreenOn="true" />
-95-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:75:13-40
+95-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:75:13-40
 96
 97        <!-- Alarm BroadcastReceiver -->
 98        <receiver
-98-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:82:9-84:40
+98-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:82:9-84:40
 99            android:name="com.hardreminder.receiver.AlarmReceiver"
-99-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:83:13-51
+99-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:83:13-51
 100            android:exported="false" />
-100-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:84:13-37
+100-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:84:13-37
 101
 102        <!-- Boot completed receiver -->
 103        <receiver
-103-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:87:9-96:20
+103-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:87:9-96:20
 104            android:name="com.hardreminder.receiver.BootReceiver"
-104-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:88:13-50
+104-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:88:13-50
 105            android:directBootAware="true"
-105-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:90:13-43
+105-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:90:13-43
 106            android:exported="true" >
-106-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:89:13-36
+106-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:89:13-36
 107            <intent-filter>
-107-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:91:13-95:29
+107-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:91:13-95:29
 108                <action android:name="android.intent.action.BOOT_COMPLETED" />
-108-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:92:17-79
-108-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:92:25-76
+108-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:92:17-79
+108-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:92:25-76
 109                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED" />
-109-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:93:17-86
-109-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:93:25-83
+109-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:93:17-86
+109-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:93:25-83
 110                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
-110-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:94:17-82
-110-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:94:25-79
+110-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:94:17-82
+110-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:94:25-79
 111            </intent-filter>
 112        </receiver>
 113
 114        <!-- Dismiss action receiver -->
 115        <receiver
-115-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:99:9-101:40
+115-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:99:9-101:40
 116            android:name="com.hardreminder.receiver.DismissReceiver"
-116-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:100:13-53
+116-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:100:13-53
 117            android:exported="false" />
-117-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:101:13-37
+117-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:101:13-37
 118
 119        <!-- Prior alarm receiver -->
 120        <receiver
-120-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:104:9-106:40
+120-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:104:9-106:40
 121            android:name="com.hardreminder.receiver.PriorAlarmReceiver"
-121-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:105:13-56
+121-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:105:13-56
 122            android:exported="false" />
-122-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:106:13-37
+122-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:106:13-37
 123
 124        <!-- Cancel reminder from prior notification -->
 125        <receiver
-125-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:109:9-111:40
+125-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:109:9-111:40
 126            android:name="com.hardreminder.receiver.CancelReminderReceiver"
-126-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:110:13-60
+126-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:110:13-60
 127            android:exported="false" />
-127-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:111:13-37
+127-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:111:13-37
 128
 129        <!-- Snooze receiver -->
 130        <receiver
-130-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:114:9-116:40
+130-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:114:9-116:40
 131            android:name="com.hardreminder.receiver.SnoozeReceiver"
-131-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:115:13-52
+131-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:115:13-52
 132            android:exported="false" />
-132-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:116:13-37
+132-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:116:13-37
 133
 134        <!-- Foreground service to keep app alive -->
 135        <service
-135-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:119:9-122:58
+135-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:119:9-122:58
 136            android:name="com.hardreminder.service.ReminderForegroundService"
-136-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:120:13-62
+136-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:120:13-62
 137            android:exported="false"
-137-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:121:13-37
+137-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:121:13-37
 138            android:foregroundServiceType="specialUse" />
-138-->C:\Users\ritam\Desktop\HARD-REMINDER\app\src\main\AndroidManifest.xml:122:13-55
+138-->C:\Users\sidharth\Desktop\Gittie\HARD REMINDER\app\src\main\AndroidManifest.xml:122:13-55
 139        <service
-139-->[androidx.room:room-runtime:2.6.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+139-->[androidx.room:room-runtime:2.6.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
 140            android:name="androidx.room.MultiInstanceInvalidationService"
-140-->[androidx.room:room-runtime:2.6.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+140-->[androidx.room:room-runtime:2.6.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
 141            android:directBootAware="true"
-141-->[androidx.room:room-runtime:2.6.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+141-->[androidx.room:room-runtime:2.6.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
 142            android:exported="false" />
-142-->[androidx.room:room-runtime:2.6.1] C:\Users\ritam\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+142-->[androidx.room:room-runtime:2.6.1] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\ddf075b55c4fdb34244fb104baeb821a\workspace\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
 143
 144        <activity
-144-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\6f13d8d292d3c0a12fffb63c285c0e10\workspace\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+144-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\6f13d8d292d3c0a12fffb63c285c0e10\workspace\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
 145            android:name="androidx.compose.ui.tooling.PreviewActivity"
-145-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\6f13d8d292d3c0a12fffb63c285c0e10\workspace\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+145-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\6f13d8d292d3c0a12fffb63c285c0e10\workspace\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
 146            android:exported="true" />
-146-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\6f13d8d292d3c0a12fffb63c285c0e10\workspace\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+146-->[androidx.compose.ui:ui-tooling-android:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\6f13d8d292d3c0a12fffb63c285c0e10\workspace\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
 147        <activity
-147-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:23:9-26:79
+147-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:23:9-26:79
 148            android:name="androidx.activity.ComponentActivity"
-148-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:24:13-63
+148-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:24:13-63
 149            android:exported="true"
-149-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:25:13-36
+149-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:25:13-36
 150            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
-150-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:26:13-76
+150-->[androidx.compose.ui:ui-test-manifest:1.8.2] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5e3eb2a8b5077c0e90dd3cc9d2acc8ad\workspace\transformed\ui-test-manifest-1.8.2\AndroidManifest.xml:26:13-76
 151
 152        <provider
-152-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+152-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
 153            android:name="androidx.startup.InitializationProvider"
-153-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
+153-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:25:13-67
 154            android:authorities="com.hardreminder.androidx-startup"
-154-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
+154-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:26:13-68
 155            android:exported="false" >
-155-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
+155-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:27:13-37
 156            <meta-data
-156-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+156-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
 157                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-157-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
+157-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:30:17-75
 158                android:value="androidx.startup" />
-158-->[androidx.emoji2:emoji2:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
+158-->[androidx.emoji2:emoji2:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\5fdf5a75376982d0ea214b5190c2264a\workspace\transformed\emoji2-1.4.0\AndroidManifest.xml:31:17-49
 159            <meta-data
-159-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\f1e178d22ffc9eaf71fbf2857f236001\workspace\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:29:13-31:52
+159-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\f1e178d22ffc9eaf71fbf2857f236001\workspace\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:29:13-31:52
 160                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-160-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\f1e178d22ffc9eaf71fbf2857f236001\workspace\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:30:17-78
+160-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\f1e178d22ffc9eaf71fbf2857f236001\workspace\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:30:17-78
 161                android:value="androidx.startup" />
-161-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\f1e178d22ffc9eaf71fbf2857f236001\workspace\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:31:17-49
+161-->[androidx.lifecycle:lifecycle-process:2.9.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\f1e178d22ffc9eaf71fbf2857f236001\workspace\transformed\lifecycle-process-2.9.0\AndroidManifest.xml:31:17-49
 162            <meta-data
-162-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+162-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
 163                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-163-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+163-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
 164                android:value="androidx.startup" />
-164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+164-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
 165        </provider>
 166
 167        <receiver
-167-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+167-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
 168            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-168-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+168-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
 169            android:directBootAware="false"
-169-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+169-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
 170            android:enabled="true"
-170-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+170-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
 171            android:exported="true"
-171-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+171-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
 172            android:permission="android.permission.DUMP" >
-172-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+172-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
 173            <intent-filter>
-173-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+173-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
 174                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-174-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
-174-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+174-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+174-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
 175            </intent-filter>
 176            <intent-filter>
-176-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+176-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
 177                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-177-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
-177-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+177-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+177-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
 178            </intent-filter>
 179            <intent-filter>
-179-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+179-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
 180                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-180-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
-180-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+180-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+180-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
 181            </intent-filter>
 182            <intent-filter>
-182-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+182-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
 183                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
-183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\ritam\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+183-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\sidharth\.gradle\caches\9.3.1\transforms\4294ad3ba536d39920a78e8299412a14\workspace\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
 184            </intent-filter>
 185        </receiver>
 186    </application>

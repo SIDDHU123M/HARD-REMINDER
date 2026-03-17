@@ -4,7 +4,7 @@
             "outputFile": "com.hardreminder.app-mergeDebugResources-68:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ritam\\.gradle\\caches\\9.3.1\\transforms\\38c17fd4426a253605a63f8af9603b3d\\workspace\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\sidharth\\.gradle\\caches\\9.3.1\\transforms\\38c17fd4426a253605a63f8af9603b3d\\workspace\\transformed\\appcompat-1.6.1\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
