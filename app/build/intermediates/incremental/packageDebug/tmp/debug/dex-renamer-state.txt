@@ -1,4 +1,4 @@
-#Sat Mar 07 03:12:26 IST 2026
+#Wed Mar 18 00:04:12 IST 2026
 base.0=C\:\\Users\\sidharth\\Desktop\\Gittie\\HARD REMINDER\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -13,10 +13,14 @@ import android.os.VibratorManager
 import android.view.WindowManager
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Alarm
 import androidx.compose.material3.*
@@ -24,6 +28,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.scale
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
@@ -189,10 +194,32 @@ fun AlarmRingScreen(
     title: String,
     message: String,
     onDismiss: () -> Unit,
-    onSnooze: () -> Unit
+    onSnooze: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
+    // Pulse animation for the alarm icon
+    val infiniteTransition = rememberInfiniteTransition(label = "pulse")
+    val pulseScale by infiniteTransition.animateFloat(
+        initialValue = 1f,
+        targetValue = 1.15f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = 800),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "pulseScale"
+    )
+    val ringAlpha by infiniteTransition.animateFloat(
+        initialValue = 0.10f,
+        targetValue = 0.25f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = 800),
+            repeatMode = RepeatMode.Reverse
+        ),
+        label = "ringAlpha"
+    )
+
     Surface(
-        modifier = Modifier.fillMaxSize(),
+        modifier = modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.primary
     ) {
         Column(
@@ -204,23 +231,36 @@ fun AlarmRingScreen(
         ) {
             Spacer(modifier = Modifier.weight(1f))
 
-            // Alarm icon in a circle
+            // Pulsing outer ring + alarm icon
             Box(
-                modifier = Modifier
-                    .size(108.dp)
-                    .clip(CircleShape)
-                    .background(MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.15f)),
                 contentAlignment = Alignment.Center
             ) {
-                Icon(
-                    imageVector = Icons.Default.Alarm,
-                    contentDescription = "Alarm ringing",
-                    modifier = Modifier.size(56.dp),
-                    tint = MaterialTheme.colorScheme.onPrimary
+                // Outer pulsing ring
+                Box(
+                    modifier = Modifier
+                        .size(128.dp)
+                        .scale(pulseScale)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.onPrimary.copy(alpha = ringAlpha))
                 )
+                // Inner icon circle
+                Box(
+                    modifier = Modifier
+                        .size(100.dp)
+                        .clip(CircleShape)
+                        .background(MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.18f)),
+                    contentAlignment = Alignment.Center
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Alarm,
+                        contentDescription = "Alarm ringing",
+                        modifier = Modifier.size(52.dp),
+                        tint = MaterialTheme.colorScheme.onPrimary
+                    )
+                }
             }
 
-            Spacer(modifier = Modifier.height(28.dp))
+            Spacer(modifier = Modifier.height(32.dp))
 
             Text(
                 text = title,
@@ -254,7 +294,7 @@ fun AlarmRingScreen(
                     containerColor = MaterialTheme.colorScheme.surface,
                     contentColor = MaterialTheme.colorScheme.primary
                 ),
-                shape = RoundedCornerShape(32.dp),
+                shape = MaterialTheme.shapes.extraLarge,
                 elevation = ButtonDefaults.buttonElevation(defaultElevation = 6.dp)
             ) {
                 Text(
@@ -276,7 +316,7 @@ fun AlarmRingScreen(
                     contentColor = MaterialTheme.colorScheme.onPrimary
                 ),
                 border = androidx.compose.foundation.BorderStroke(1.5.dp, MaterialTheme.colorScheme.onPrimary),
-                shape = RoundedCornerShape(26.dp)
+                shape = MaterialTheme.shapes.extraLarge
             ) {
                 Text(
                     text = "SNOOZE",

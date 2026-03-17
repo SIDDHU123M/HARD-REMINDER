@@ -3813,9 +3813,7 @@ androidx.compose.animation.AnimatedVisibilityScopeImpl:
     public void setTransition(androidx.compose.animation.core.Transition)
 androidx.compose.animation.AnimationModifierKt:
     public static final androidx.compose.ui.Modifier animateContentSize(androidx.compose.ui.Modifier,androidx.compose.animation.core.FiniteAnimationSpec,androidx.compose.ui.Alignment,kotlin.jvm.functions.Function2)
-    public static final androidx.compose.ui.Modifier animateContentSize(androidx.compose.ui.Modifier,androidx.compose.animation.core.FiniteAnimationSpec,kotlin.jvm.functions.Function2)
     public static synthetic androidx.compose.ui.Modifier animateContentSize$default(androidx.compose.ui.Modifier,androidx.compose.animation.core.FiniteAnimationSpec,androidx.compose.ui.Alignment,kotlin.jvm.functions.Function2,int,java.lang.Object)
-    public static synthetic androidx.compose.ui.Modifier animateContentSize$default(androidx.compose.ui.Modifier,androidx.compose.animation.core.FiniteAnimationSpec,kotlin.jvm.functions.Function2,int,java.lang.Object)
 androidx.compose.animation.BoundsAnimation$animate$1
 androidx.compose.animation.BoundsAnimation$animate$2
 androidx.compose.animation.BoundsAnimation
@@ -4010,11 +4008,23 @@ androidx.compose.animation.SharedTransitionScopeKt
 androidx.compose.animation.SingleValueAnimationKt:
     public static final androidx.compose.animation.core.Animatable Animatable-8_81llA(long)
     public static final synthetic androidx.compose.runtime.State animateColorAsState-KTwxG1Y(long,androidx.compose.animation.core.AnimationSpec,kotlin.jvm.functions.Function1,androidx.compose.runtime.Composer,int,int)
-androidx.compose.animation.SizeAnimationModifierElement
-androidx.compose.animation.SizeAnimationModifierNode$AnimData
-androidx.compose.animation.SizeAnimationModifierNode$animateTo$data$1$1
-androidx.compose.animation.SizeAnimationModifierNode$measure$2
-androidx.compose.animation.SizeAnimationModifierNode
+androidx.compose.animation.SizeAnimationModifierElement:
+    public final androidx.compose.animation.core.FiniteAnimationSpec component1()
+    public final androidx.compose.ui.Alignment component2()
+    public final kotlin.jvm.functions.Function2 component3()
+    public final androidx.compose.animation.SizeAnimationModifierElement copy(androidx.compose.animation.core.FiniteAnimationSpec,androidx.compose.ui.Alignment,kotlin.jvm.functions.Function2)
+    public static synthetic androidx.compose.animation.SizeAnimationModifierElement copy$default(androidx.compose.animation.SizeAnimationModifierElement,androidx.compose.animation.core.FiniteAnimationSpec,androidx.compose.ui.Alignment,kotlin.jvm.functions.Function2,int,java.lang.Object)
+    public final androidx.compose.ui.Alignment getAlignment()
+    public final androidx.compose.animation.core.FiniteAnimationSpec getAnimationSpec()
+    public final kotlin.jvm.functions.Function2 getFinishedListener()
+    public void inspectableProperties(androidx.compose.ui.platform.InspectorInfo)
+androidx.compose.animation.SizeAnimationModifierNode$AnimData:
+    public final androidx.compose.animation.core.Animatable component1()
+    public final long component2-YbymL2g()
+    public final androidx.compose.animation.SizeAnimationModifierNode$AnimData copy-O0kMr_c(androidx.compose.animation.core.Animatable,long)
+    public static synthetic androidx.compose.animation.SizeAnimationModifierNode$AnimData copy-O0kMr_c$default(androidx.compose.animation.SizeAnimationModifierNode$AnimData,androidx.compose.animation.core.Animatable,long,int,java.lang.Object)
+androidx.compose.animation.SizeAnimationModifierNode:
+    public synthetic void <init>(androidx.compose.animation.core.AnimationSpec,androidx.compose.ui.Alignment,kotlin.jvm.functions.Function2,int,kotlin.jvm.internal.DefaultConstructorMarker)
 androidx.compose.animation.SizeTransformImpl:
     public synthetic void <init>(boolean,kotlin.jvm.functions.Function2,int,kotlin.jvm.internal.DefaultConstructorMarker)
     public final kotlin.jvm.functions.Function2 getSizeAnimationSpec()
@@ -4107,8 +4117,6 @@ androidx.compose.animation.core.AnimationKt:
     public static final java.lang.Object getVelocityFromNanos(androidx.compose.animation.core.Animation,long)
 androidx.compose.animation.core.AnimationResult:
     public static final int $stable
-    public final androidx.compose.animation.core.AnimationEndReason getEndReason()
-    public final androidx.compose.animation.core.AnimationState getEndState()
 androidx.compose.animation.core.AnimationScope:
     public final java.lang.Object getTargetValue()
     public final androidx.compose.animation.core.TwoWayConverter getTypeConverter()
@@ -4116,8 +4124,6 @@ androidx.compose.animation.core.AnimationScope:
 androidx.compose.animation.core.AnimationSpecKt:
     public static final synthetic androidx.compose.animation.core.InfiniteRepeatableSpec infiniteRepeatable(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode)
     public static synthetic androidx.compose.animation.core.InfiniteRepeatableSpec infiniteRepeatable$default(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,int,java.lang.Object)
-    public static final androidx.compose.animation.core.InfiniteRepeatableSpec infiniteRepeatable-9IiC70o(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,long)
-    public static synthetic androidx.compose.animation.core.InfiniteRepeatableSpec infiniteRepeatable-9IiC70o$default(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,long,int,java.lang.Object)
     public static final androidx.compose.animation.core.KeyframesSpec keyframes(kotlin.jvm.functions.Function1)
     public static final androidx.compose.animation.core.KeyframesWithSplineSpec keyframesWithSpline(float,kotlin.jvm.functions.Function1)
     public static final androidx.compose.animation.core.KeyframesWithSplineSpec keyframesWithSpline(kotlin.jvm.functions.Function1)
@@ -4201,7 +4207,6 @@ androidx.compose.animation.core.DecayAnimationSpecKt:
     public static final java.lang.Object calculateTargetValue(androidx.compose.animation.core.DecayAnimationSpec,androidx.compose.animation.core.TwoWayConverter,java.lang.Object,java.lang.Object)
 androidx.compose.animation.core.DeferredTargetAnimation$updateTarget$1
 androidx.compose.animation.core.DeferredTargetAnimation
-androidx.compose.animation.core.DurationBasedAnimationSpec
 androidx.compose.animation.core.EasingFunctionsKt
 androidx.compose.animation.core.EasingKt:
     private static final float OneUlpAt1
@@ -4235,18 +4240,29 @@ androidx.compose.animation.core.InfiniteAnimationPolicyKt$withInfiniteAnimationF
 androidx.compose.animation.core.InfiniteAnimationPolicyKt:
     public static final java.lang.Object withInfiniteAnimationFrameMillis(kotlin.jvm.functions.Function1,kotlin.coroutines.Continuation)
     private static final java.lang.Object withInfiniteAnimationFrameMillis$$forInline(kotlin.jvm.functions.Function1,kotlin.coroutines.Continuation)
-androidx.compose.animation.core.InfiniteRepeatableSpec
-androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState
-androidx.compose.animation.core.InfiniteTransition$run$1$1$1
-androidx.compose.animation.core.InfiniteTransition$run$1$1$2
-androidx.compose.animation.core.InfiniteTransition$run$1$1$3
-androidx.compose.animation.core.InfiniteTransition$run$1$1
-androidx.compose.animation.core.InfiniteTransition$run$2
-androidx.compose.animation.core.InfiniteTransition
-androidx.compose.animation.core.InfiniteTransitionKt$animateValue$1$1
-androidx.compose.animation.core.InfiniteTransitionKt$animateValue$2$1$invoke$$inlined$onDispose$1
-androidx.compose.animation.core.InfiniteTransitionKt$animateValue$2$1
-androidx.compose.animation.core.InfiniteTransitionKt
+androidx.compose.animation.core.InfiniteRepeatableSpec:
+    public synthetic void <init>(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode)
+    public synthetic void <init>(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,int,kotlin.jvm.internal.DefaultConstructorMarker)
+    public synthetic void <init>(androidx.compose.animation.core.DurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,long,int,kotlin.jvm.internal.DefaultConstructorMarker)
+    public final androidx.compose.animation.core.DurationBasedAnimationSpec getAnimation()
+    public final long getInitialStartOffset-Rmkjzm4()
+    public final androidx.compose.animation.core.RepeatMode getRepeatMode()
+androidx.compose.animation.core.InfiniteTransition$TransitionAnimationState:
+    public final androidx.compose.animation.core.TargetBasedAnimation getAnimation()
+    public final androidx.compose.animation.core.AnimationSpec getAnimationSpec()
+    public final java.lang.String getLabel()
+    public final androidx.compose.animation.core.TwoWayConverter getTypeConverter()
+    public final void setAnimation$animation_core_release(androidx.compose.animation.core.TargetBasedAnimation)
+    public final void setFinished$animation_core_release(boolean)
+    public final void setInitialValue$animation_core_release(java.lang.Object)
+    public final void setTargetValue$animation_core_release(java.lang.Object)
+androidx.compose.animation.core.InfiniteTransition:
+    public final java.util.List getAnimations()
+    public final java.lang.String getLabel()
+androidx.compose.animation.core.InfiniteTransitionKt:
+    public static final synthetic androidx.compose.runtime.State animateFloat(androidx.compose.animation.core.InfiniteTransition,float,float,androidx.compose.animation.core.InfiniteRepeatableSpec,androidx.compose.runtime.Composer,int)
+    public static final synthetic androidx.compose.runtime.State animateValue(androidx.compose.animation.core.InfiniteTransition,java.lang.Object,java.lang.Object,androidx.compose.animation.core.TwoWayConverter,androidx.compose.animation.core.InfiniteRepeatableSpec,androidx.compose.runtime.Composer,int)
+    public static final synthetic androidx.compose.animation.core.InfiniteTransition rememberInfiniteTransition(androidx.compose.runtime.Composer,int)
 androidx.compose.animation.core.InternalAnimationApi
 androidx.compose.animation.core.KeyframeBaseEntity
 androidx.compose.animation.core.KeyframesSpec$KeyframeEntity
@@ -4295,7 +4311,8 @@ androidx.compose.animation.core.PreconditionsKt:
     public static final java.lang.Void throwIllegalStateExceptionForNullCheck(java.lang.String)
 androidx.compose.animation.core.PreventExhaustiveWhenTransitionState
 androidx.compose.animation.core.R
-androidx.compose.animation.core.RepeatMode
+androidx.compose.animation.core.RepeatMode:
+    public static kotlin.enums.EnumEntries getEntries()
 androidx.compose.animation.core.RepeatableSpec
 androidx.compose.animation.core.SeekableTransitionState$Companion
 androidx.compose.animation.core.SeekableTransitionState$SeekingAnimationState:
@@ -4432,16 +4449,39 @@ androidx.compose.animation.core.StartDelayAnimationSpec:
 androidx.compose.animation.core.StartDelayVectorizedAnimationSpec:
     public final long getStartDelayNanos()
     public final androidx.compose.animation.core.VectorizedAnimationSpec getVectorizedAnimationSpec()
-androidx.compose.animation.core.StartOffset
-androidx.compose.animation.core.StartOffsetType$Companion
-androidx.compose.animation.core.StartOffsetType
+androidx.compose.animation.core.StartOffset:
+    private final long value
+    private synthetic void <init>(long)
+    public static final synthetic androidx.compose.animation.core.StartOffset box-impl(long)
+    public boolean equals(java.lang.Object)
+    public static boolean equals-impl(long,java.lang.Object)
+    public static final int getOffsetMillis-impl(long)
+    public static final int getOffsetType-Eo1U57Q(long)
+    public int hashCode()
+    public java.lang.String toString()
+    public static java.lang.String toString-impl(long)
+    public final synthetic long unbox-impl()
+androidx.compose.animation.core.StartOffsetType$Companion:
+    public final int getFastForward-Eo1U57Q()
+androidx.compose.animation.core.StartOffsetType:
+    private final int value
+    private synthetic void <init>(int)
+    public static final synthetic int access$getFastForward$cp()
+    public static final synthetic androidx.compose.animation.core.StartOffsetType box-impl(int)
+    public boolean equals(java.lang.Object)
+    public static boolean equals-impl(int,java.lang.Object)
+    public static final boolean equals-impl0(int,int)
+    public int hashCode()
+    public static int hashCode-impl(int)
+    public java.lang.String toString()
+    public static java.lang.String toString-impl(int)
+    public final synthetic int unbox-impl()
 androidx.compose.animation.core.SuspendAnimationKt$animateDecay$2
 androidx.compose.animation.core.SuspendAnimationKt:
     public static final synthetic java.lang.Object access$callWithFrameNanos(androidx.compose.animation.core.Animation,kotlin.jvm.functions.Function1,kotlin.coroutines.Continuation)
     public static synthetic java.lang.Object animate$default(androidx.compose.animation.core.TwoWayConverter,java.lang.Object,java.lang.Object,java.lang.Object,androidx.compose.animation.core.AnimationSpec,kotlin.jvm.functions.Function2,kotlin.coroutines.Continuation,int,java.lang.Object)
     public static final java.lang.Object animateDecay(float,float,androidx.compose.animation.core.FloatDecayAnimationSpec,kotlin.jvm.functions.Function2,kotlin.coroutines.Continuation)
 androidx.compose.animation.core.TargetBasedAnimation:
-    public synthetic void <init>(androidx.compose.animation.core.AnimationSpec,androidx.compose.animation.core.TwoWayConverter,java.lang.Object,java.lang.Object,androidx.compose.animation.core.AnimationVector,int,kotlin.jvm.internal.DefaultConstructorMarker)
     public synthetic void <init>(androidx.compose.animation.core.VectorizedAnimationSpec,androidx.compose.animation.core.TwoWayConverter,java.lang.Object,java.lang.Object,androidx.compose.animation.core.AnimationVector,int,kotlin.jvm.internal.DefaultConstructorMarker)
     public final androidx.compose.animation.core.VectorizedAnimationSpec getAnimationSpec$animation_core_release()
     public final java.lang.Object getMutableInitialValue$animation_core_release()
@@ -4515,7 +4555,6 @@ androidx.compose.animation.core.TweenSpec:
     public final int getDelay()
     public final int getDurationMillis()
     public final androidx.compose.animation.core.Easing getEasing()
-    public synthetic bridge androidx.compose.animation.core.VectorizedDurationBasedAnimationSpec vectorize(androidx.compose.animation.core.TwoWayConverter)
     public synthetic bridge androidx.compose.animation.core.VectorizedFiniteAnimationSpec vectorize(androidx.compose.animation.core.TwoWayConverter)
 androidx.compose.animation.core.VectorConvertersKt:
     public static final float lerp(float,float,float)
@@ -4540,7 +4579,11 @@ androidx.compose.animation.core.VectorizedFiniteAnimationSpec:
     public static synthetic boolean access$isInfinite$jd(androidx.compose.animation.core.VectorizedFiniteAnimationSpec)
 androidx.compose.animation.core.VectorizedFloatDecaySpec:
     public final androidx.compose.animation.core.FloatDecayAnimationSpec getFloatDecaySpec()
-androidx.compose.animation.core.VectorizedInfiniteRepeatableSpec
+androidx.compose.animation.core.VectorizedInfiniteRepeatableSpec:
+    public synthetic void <init>(androidx.compose.animation.core.VectorizedDurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode)
+    public synthetic void <init>(androidx.compose.animation.core.VectorizedDurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,int,kotlin.jvm.internal.DefaultConstructorMarker)
+    public synthetic void <init>(androidx.compose.animation.core.VectorizedDurationBasedAnimationSpec,androidx.compose.animation.core.RepeatMode,long,int,kotlin.jvm.internal.DefaultConstructorMarker)
+    public final long getDurationNanos$animation_core_release()
 androidx.compose.animation.core.VectorizedKeyframeSpecElementInfo
 androidx.compose.animation.core.VectorizedKeyframesSpec
 androidx.compose.animation.core.VectorizedMonoSplineKeyframesSpec
@@ -5893,8 +5936,6 @@ androidx.compose.foundation.layout.SizeKt$requiredSize-3ABfNKs$$inlined$debugIns
 androidx.compose.foundation.layout.SizeKt$requiredWidthIn-VpY3zN4$$inlined$debugInspectorInfo$1
 androidx.compose.foundation.layout.SizeKt$widthIn-VpY3zN4$$inlined$debugInspectorInfo$1
 androidx.compose.foundation.layout.SizeKt:
-    public static final androidx.compose.ui.Modifier fillMaxHeight(androidx.compose.ui.Modifier,float)
-    public static synthetic androidx.compose.ui.Modifier fillMaxHeight$default(androidx.compose.ui.Modifier,float,int,java.lang.Object)
     public static final androidx.compose.ui.Modifier requiredHeightIn-VpY3zN4(androidx.compose.ui.Modifier,float,float)
     public static synthetic androidx.compose.ui.Modifier requiredHeightIn-VpY3zN4$default(androidx.compose.ui.Modifier,float,float,int,java.lang.Object)
     public static final androidx.compose.ui.Modifier requiredSize-3ABfNKs(androidx.compose.ui.Modifier,float)
@@ -8737,7 +8778,8 @@ androidx.compose.material.icons.Icons$AutoMirrored$TwoTone
 androidx.compose.material.icons.Icons$AutoMirrored
 androidx.compose.material.icons.Icons$Filled:
     public static final int $stable
-androidx.compose.material.icons.Icons$Outlined
+androidx.compose.material.icons.Icons$Outlined:
+    public static final int $stable
 androidx.compose.material.icons.Icons$Rounded
 androidx.compose.material.icons.Icons$Sharp
 androidx.compose.material.icons.Icons$TwoTone
@@ -9647,7 +9689,6 @@ androidx.compose.material.icons.filled.Battery5BarKt
 androidx.compose.material.icons.filled.Battery6BarKt
 androidx.compose.material.icons.filled.BatteryAlertKt
 androidx.compose.material.icons.filled.BatteryChargingFullKt
-androidx.compose.material.icons.filled.BatteryFullKt
 androidx.compose.material.icons.filled.BatterySaverKt
 androidx.compose.material.icons.filled.BatteryStdKt
 androidx.compose.material.icons.filled.BatteryUnknownKt
@@ -9724,7 +9765,6 @@ androidx.compose.material.icons.filled.BrushKt
 androidx.compose.material.icons.filled.BubbleChartKt
 androidx.compose.material.icons.filled.BugReportKt
 androidx.compose.material.icons.filled.BuildCircleKt
-androidx.compose.material.icons.filled.BuildKt
 androidx.compose.material.icons.filled.BungalowKt
 androidx.compose.material.icons.filled.BurstModeKt
 androidx.compose.material.icons.filled.BusAlertKt
@@ -10707,8 +10747,6 @@ androidx.compose.material.icons.filled.NoteKt
 androidx.compose.material.icons.filled.NotesKt
 androidx.compose.material.icons.filled.NotificationAddKt
 androidx.compose.material.icons.filled.NotificationImportantKt
-androidx.compose.material.icons.filled.NotificationsActiveKt
-androidx.compose.material.icons.filled.NotificationsKt
 androidx.compose.material.icons.filled.NotificationsNoneKt
 androidx.compose.material.icons.filled.NotificationsOffKt
 androidx.compose.material.icons.filled.NotificationsPausedKt
@@ -10738,7 +10776,6 @@ androidx.compose.material.icons.filled.PaddingKt
 androidx.compose.material.icons.filled.PagesKt
 androidx.compose.material.icons.filled.PageviewKt
 androidx.compose.material.icons.filled.PaidKt
-androidx.compose.material.icons.filled.PaletteKt
 androidx.compose.material.icons.filled.PanToolAltKt
 androidx.compose.material.icons.filled.PanToolKt
 androidx.compose.material.icons.filled.PanoramaFishEyeKt
@@ -10945,7 +10982,6 @@ androidx.compose.material.icons.filled.RemoveRoadKt
 androidx.compose.material.icons.filled.RemoveShoppingCartKt
 androidx.compose.material.icons.filled.ReorderKt
 androidx.compose.material.icons.filled.RepartitionKt
-androidx.compose.material.icons.filled.RepeatKt
 androidx.compose.material.icons.filled.RepeatOnKt
 androidx.compose.material.icons.filled.RepeatOneKt
 androidx.compose.material.icons.filled.RepeatOneOnKt
@@ -11337,7 +11373,6 @@ androidx.compose.material.icons.filled.TipsAndUpdatesKt
 androidx.compose.material.icons.filled.TireRepairKt
 androidx.compose.material.icons.filled.TitleKt
 androidx.compose.material.icons.filled.TocKt
-androidx.compose.material.icons.filled.TodayKt
 androidx.compose.material.icons.filled.ToggleOffKt
 androidx.compose.material.icons.filled.ToggleOnKt
 androidx.compose.material.icons.filled.TokenKt
@@ -11457,7 +11492,8 @@ androidx.compose.material.icons.filled.VolcanoKt
 androidx.compose.material.icons.filled.VolumeDownKt
 androidx.compose.material.icons.filled.VolumeMuteKt
 androidx.compose.material.icons.filled.VolumeOffKt
-androidx.compose.material.icons.filled.VolumeUpKt
+androidx.compose.material.icons.filled.VolumeUpKt:
+    public static synthetic void getVolumeUp$annotations(androidx.compose.material.icons.Icons$Filled)
 androidx.compose.material.icons.filled.VolunteerActivismKt
 androidx.compose.material.icons.filled.VpnKeyKt
 androidx.compose.material.icons.filled.VpnKeyOffKt
@@ -12838,7 +12874,6 @@ androidx.compose.material.icons.outlined.NotificationAddKt
 androidx.compose.material.icons.outlined.NotificationImportantKt
 androidx.compose.material.icons.outlined.NotificationsActiveKt
 androidx.compose.material.icons.outlined.NotificationsKt
-androidx.compose.material.icons.outlined.NotificationsNoneKt
 androidx.compose.material.icons.outlined.NotificationsOffKt
 androidx.compose.material.icons.outlined.NotificationsPausedKt
 androidx.compose.material.icons.outlined.NumbersKt
@@ -20274,8 +20309,6 @@ androidx.compose.material3.AppBarKt:
     private static final kotlin.Unit LargeFlexibleTopAppBar_eXZ4JBQ$lambda$10(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,int,androidx.compose.runtime.Composer,int)
     public static final synthetic void LargeTopAppBar(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int)
     private static final kotlin.Unit LargeTopAppBar$lambda$8(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,androidx.compose.runtime.Composer,int)
-    public static final void LargeTopAppBar-oKE7A98(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int)
-    private static final kotlin.Unit LargeTopAppBar_oKE7A98$lambda$9(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,androidx.compose.runtime.Composer,int)
     public static final void MediumFlexibleTopAppBar-eXZ4JBQ(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int,int)
     private static final kotlin.Unit MediumFlexibleTopAppBar_eXZ4JBQ$lambda$7(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,int,androidx.compose.runtime.Composer,int)
     public static final synthetic void MediumTopAppBar(kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int)
@@ -20287,9 +20320,7 @@ androidx.compose.material3.AppBarKt:
     public static final void TopAppBar-cJHQLPU(kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int)
     private static final kotlin.Unit TopAppBar_cJHQLPU$lambda$4(kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function2,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,androidx.compose.runtime.Composer,int)
     public static final void TwoRowsTopAppBar-eXZ4JBQ(kotlin.jvm.functions.Function3,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int,int)
-    private static final void TwoRowsTopAppBar-pJA5dT0(androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,float,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,androidx.compose.ui.Alignment$Horizontal,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,androidx.compose.runtime.Composer,int,int,int)
     private static final kotlin.Unit TwoRowsTopAppBar_eXZ4JBQ$lambda$11(kotlin.jvm.functions.Function3,androidx.compose.ui.Modifier,kotlin.jvm.functions.Function3,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,androidx.compose.ui.Alignment$Horizontal,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,int,androidx.compose.runtime.Composer,int)
-    private static final kotlin.Unit TwoRowsTopAppBar_pJA5dT0$lambda$35(androidx.compose.ui.Modifier,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,float,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,kotlin.jvm.functions.Function2,androidx.compose.ui.text.TextStyle,androidx.compose.ui.Alignment$Horizontal,kotlin.jvm.functions.Function2,kotlin.jvm.functions.Function3,float,float,androidx.compose.foundation.layout.WindowInsets,androidx.compose.material3.TopAppBarColors,androidx.compose.material3.TopAppBarScrollBehavior,int,int,int,androidx.compose.runtime.Composer,int)
     public static final synthetic float access$getBottomAppBarHorizontalPadding$p()
     public static final synthetic float access$getFABHorizontalPadding$p()
     public static final synthetic float access$getFABVerticalPadding$p()
@@ -20299,11 +20330,8 @@ androidx.compose.material3.AppBarKt:
     public static synthetic void getLocalSingleRowTopAppBarOverride$annotations()
     public static final androidx.compose.runtime.ProvidableCompositionLocal getLocalTwoRowsTopAppBarOverride()
     public static synthetic void getLocalTwoRowsTopAppBarOverride$annotations()
-    public static final androidx.compose.animation.core.CubicBezierEasing getTopTitleAlphaEasing()
     public static final androidx.compose.material3.BottomAppBarState rememberBottomAppBarState(float,float,float,androidx.compose.runtime.Composer,int,int)
     private static final androidx.compose.material3.BottomAppBarState rememberBottomAppBarState$lambda$28$lambda$27(float,float,float)
-    public static final androidx.compose.material3.TopAppBarState rememberTopAppBarState(float,float,float,androidx.compose.runtime.Composer,int,int)
-    private static final androidx.compose.material3.TopAppBarState rememberTopAppBarState$lambda$26$lambda$25(float,float,float)
     private static final androidx.compose.runtime.State rememberTouchExplorationService(androidx.compose.runtime.Composer,int)
     private static final java.lang.Object settleAppBarBottom(androidx.compose.material3.BottomAppBarState,float,androidx.compose.animation.core.DecayAnimationSpec,androidx.compose.animation.core.AnimationSpec,kotlin.coroutines.Continuation)
     private static final kotlin.Unit settleAppBarBottom$lambda$29(kotlin.jvm.internal.Ref$FloatRef,androidx.compose.material3.BottomAppBarState,kotlin.jvm.internal.Ref$FloatRef,androidx.compose.animation.core.AnimationScope)
@@ -20601,14 +20629,12 @@ androidx.compose.material3.ColorSchemeKt:
 androidx.compose.material3.ComposableSingletons$AppBarKt:
     public final kotlin.jvm.functions.Function2 getLambda$-1113422563$material3()
     public final kotlin.jvm.functions.Function2 getLambda$-1168245838$material3()
-    public final kotlin.jvm.functions.Function2 getLambda$-1230986050$material3()
     public final kotlin.jvm.functions.Function3 getLambda$-1276513184$material3()
     public final kotlin.jvm.functions.Function3 getLambda$-1401945836$material3()
     public final kotlin.jvm.functions.Function3 getLambda$-1707954976$material3()
     public final kotlin.jvm.functions.Function3 getLambda$-1846660506$material3()
     public final kotlin.jvm.functions.Function2 getLambda$-185842620$material3()
     public final kotlin.jvm.functions.Function2 getLambda$-1926007989$material3()
-    public final kotlin.jvm.functions.Function2 getLambda$-2101264077$material3()
     public final kotlin.jvm.functions.Function2 getLambda$-229000834$material3()
     public final kotlin.jvm.functions.Function3 getLambda$-470693625$material3()
     public final kotlin.jvm.functions.Function3 getLambda$-541682128$material3()
@@ -20623,8 +20649,6 @@ androidx.compose.material3.ComposableSingletons$AppBarKt:
     public final kotlin.jvm.functions.Function3 getLambda$1702484764$material3()
     public final kotlin.jvm.functions.Function2 getLambda$1767216677$material3()
     public final kotlin.jvm.functions.Function2 getLambda$1866429650$material3()
-    public final kotlin.jvm.functions.Function3 getLambda$1921811868$material3()
-    public final kotlin.jvm.functions.Function2 getLambda$37575796$material3()
     public final kotlin.jvm.functions.Function2 getLambda$575301698$material3()
     public final kotlin.jvm.functions.Function3 getLambda$917296843$material3()
 androidx.compose.material3.ComposableSingletons$BottomSheetScaffoldKt$lambda$-788244078$1
@@ -20783,24 +20807,8 @@ androidx.compose.material3.DefaultTooltipCaretShape:
     public static final int $stable
     public synthetic void <init>(long,int,kotlin.jvm.internal.DefaultConstructorMarker)
     public final long getCaretSize-MYxV2XQ()
-androidx.compose.material3.DefaultTwoRowsTopAppBarOverride$TwoRowsTopAppBar$6$1
-androidx.compose.material3.DefaultTwoRowsTopAppBarOverride$TwoRowsTopAppBar$actionsRow$1
-androidx.compose.material3.DefaultTwoRowsTopAppBarOverride$TwoRowsTopAppBar$appBarContainerColor$1$1
-androidx.compose.material3.DefaultTwoRowsTopAppBarOverride$TwoRowsTopAppBar$appBarDragModifier$2$1
 androidx.compose.material3.DefaultTwoRowsTopAppBarOverride:
     public static final int $stable
-    public void TwoRowsTopAppBar(androidx.compose.material3.TwoRowsTopAppBarOverrideScope,androidx.compose.runtime.Composer,int)
-    private static final float TwoRowsTopAppBar$lambda$10$lambda$9(kotlin.jvm.functions.Function0)
-    private static final boolean TwoRowsTopAppBar$lambda$12$lambda$11(kotlin.jvm.functions.Function0)
-    private static final boolean TwoRowsTopAppBar$lambda$13(androidx.compose.runtime.State)
-    private static final kotlin.Unit TwoRowsTopAppBar$lambda$15$lambda$14(androidx.compose.material3.TwoRowsTopAppBarOverrideScope,float)
-    private static final kotlin.Unit TwoRowsTopAppBar$lambda$18$lambda$17(kotlin.jvm.functions.Function0,androidx.compose.ui.graphics.drawscope.DrawScope)
-    private static final kotlin.Unit TwoRowsTopAppBar$lambda$20$lambda$19(androidx.compose.ui.semantics.SemanticsPropertyReceiver)
-    private static final float TwoRowsTopAppBar$lambda$27$lambda$26$lambda$23$lambda$22()
-    private static final float TwoRowsTopAppBar$lambda$27$lambda$26$lambda$25$lambda$24(androidx.compose.material3.TwoRowsTopAppBarOverrideScope)
-    private static final kotlin.Unit TwoRowsTopAppBar$lambda$28(androidx.compose.material3.DefaultTwoRowsTopAppBarOverride,androidx.compose.material3.TwoRowsTopAppBarOverrideScope,int,androidx.compose.runtime.Composer,int)
-    private static final float TwoRowsTopAppBar$lambda$5$lambda$4(androidx.compose.material3.TwoRowsTopAppBarOverrideScope)
-    private static final float TwoRowsTopAppBar$lambda$8$lambda$7(kotlin.jvm.functions.Function0)
 androidx.compose.material3.DefaultWideNavigationRailOverride
 androidx.compose.material3.DividerDefaults:
     public static final int $stable
@@ -20835,9 +20843,10 @@ androidx.compose.material3.EqualWeightContentMeasurePolicy
 androidx.compose.material3.ExitAlwaysScrollBehavior$nestedScrollConnection$1$onPostFling$1
 androidx.compose.material3.ExitAlwaysScrollBehavior$nestedScrollConnection$1
 androidx.compose.material3.ExitAlwaysScrollBehavior
-androidx.compose.material3.ExitUntilCollapsedScrollBehavior$nestedScrollConnection$1$onPostFling$1
-androidx.compose.material3.ExitUntilCollapsedScrollBehavior$nestedScrollConnection$1
-androidx.compose.material3.ExitUntilCollapsedScrollBehavior
+androidx.compose.material3.ExitUntilCollapsedScrollBehavior:
+    public synthetic void <init>(androidx.compose.material3.TopAppBarState,androidx.compose.animation.core.AnimationSpec,androidx.compose.animation.core.DecayAnimationSpec,kotlin.jvm.functions.Function0,int,kotlin.jvm.internal.DefaultConstructorMarker)
+    private static final boolean _init_$lambda$0()
+    public void setNestedScrollConnection(androidx.compose.ui.input.nestedscroll.NestedScrollConnection)
 androidx.compose.material3.ExperimentalMaterial3Api
 androidx.compose.material3.ExperimentalMaterial3ExpressiveApi
 androidx.compose.material3.ExposedDropdownMenuAnchorElement:
@@ -21958,7 +21967,6 @@ androidx.compose.material3.TopAppBarColors:
     public static final int $stable
     private void <init>(long,long,long,long,long)
     public synthetic void <init>(long,long,long,long,long,kotlin.jvm.internal.DefaultConstructorMarker)
-    public static synthetic androidx.compose.material3.TopAppBarColors copy-tNS2XkQ$default(androidx.compose.material3.TopAppBarColors,long,long,long,long,long,long,int,java.lang.Object)
     public final long getContainerColor-0d7_KjU()
     public final long getScrolledContainerColor-0d7_KjU()
 androidx.compose.material3.TopAppBarDefaults:
@@ -21968,10 +21976,6 @@ androidx.compose.material3.TopAppBarDefaults:
     public final androidx.compose.material3.TopAppBarScrollBehavior enterAlwaysScrollBehavior(androidx.compose.material3.TopAppBarState,kotlin.jvm.functions.Function0,androidx.compose.animation.core.AnimationSpec,androidx.compose.animation.core.DecayAnimationSpec,boolean,androidx.compose.runtime.Composer,int,int)
     private static final boolean enterAlwaysScrollBehavior$lambda$5$lambda$4()
     private static final boolean enterAlwaysScrollBehavior$lambda$7$lambda$6()
-    public final androidx.compose.material3.TopAppBarScrollBehavior exitUntilCollapsedScrollBehavior(androidx.compose.material3.TopAppBarState,kotlin.jvm.functions.Function0,androidx.compose.animation.core.AnimationSpec,androidx.compose.animation.core.DecayAnimationSpec,androidx.compose.runtime.Composer,int,int)
-    private static final boolean exitUntilCollapsedScrollBehavior$lambda$10$lambda$9()
-    public final float getLargeAppBarCollapsedHeight-D9Ej5fM()
-    public final float getLargeAppBarExpandedHeight-D9Ej5fM()
     public final float getLargeFlexibleAppBarWithSubtitleExpandedHeight-D9Ej5fM()
     public final float getLargeFlexibleAppBarWithoutSubtitleExpandedHeight-D9Ej5fM()
     public final float getMediumAppBarCollapsedHeight-D9Ej5fM()
@@ -21979,7 +21983,6 @@ androidx.compose.material3.TopAppBarDefaults:
     public final float getMediumFlexibleAppBarWithSubtitleExpandedHeight-D9Ej5fM()
     public final float getMediumFlexibleAppBarWithoutSubtitleExpandedHeight-D9Ej5fM()
     public final androidx.compose.material3.TopAppBarColors largeTopAppBarColors(androidx.compose.runtime.Composer,int)
-    public final androidx.compose.material3.TopAppBarColors largeTopAppBarColors-zjMxDiM(long,long,long,long,long,androidx.compose.runtime.Composer,int,int)
     public final androidx.compose.material3.TopAppBarColors mediumTopAppBarColors(androidx.compose.runtime.Composer,int)
     public final androidx.compose.material3.TopAppBarColors mediumTopAppBarColors-zjMxDiM(long,long,long,long,long,androidx.compose.runtime.Composer,int,int)
     public final androidx.compose.material3.TopAppBarScrollBehavior pinnedScrollBehavior(androidx.compose.material3.TopAppBarState,kotlin.jvm.functions.Function0,androidx.compose.runtime.Composer,int,int)
@@ -21991,27 +21994,11 @@ androidx.compose.material3.TopAppBarMeasurePolicy:
     public final int getTitleBottomPadding()
     public final androidx.compose.ui.Alignment$Horizontal getTitleHorizontalAlignment()
     public final androidx.compose.foundation.layout.Arrangement$Vertical getTitleVerticalArrangement()
-androidx.compose.material3.TopAppBarScrollBehavior:
-    public abstract androidx.compose.ui.input.nestedscroll.NestedScrollConnection getNestedScrollConnection()
-androidx.compose.material3.TopAppBarState$Companion
 androidx.compose.material3.TopAppBarState:
     public static final int $stable
-    public static final androidx.compose.material3.TopAppBarState$Companion Companion
-    private static final androidx.compose.runtime.saveable.Saver Saver
-    private androidx.compose.runtime.MutableFloatState _heightOffset
-    private final androidx.compose.runtime.MutableFloatState contentOffset$delegate
-    private float heightOffsetLimit
-    static void <clinit>()
-    public void <init>(float,float,float)
-    private static final java.util.List Saver$lambda$0(androidx.compose.runtime.saveable.SaverScope,androidx.compose.material3.TopAppBarState)
-    private static final androidx.compose.material3.TopAppBarState Saver$lambda$1(java.util.List)
-    public static final synthetic androidx.compose.runtime.saveable.Saver access$getSaver$cp()
-    public final float getContentOffset()
-    public final void setContentOffset(float)
 androidx.compose.material3.TopIconOrIconOnlyMeasurePolicy
-androidx.compose.material3.TwoRowsTopAppBarOverride:
-    public abstract void TwoRowsTopAppBar(androidx.compose.material3.TwoRowsTopAppBarOverrideScope,androidx.compose.runtime.Composer,int)
-androidx.compose.material3.TwoRowsTopAppBarOverrideScope
+androidx.compose.material3.TwoRowsTopAppBarOverrideScope:
+    public static final int $stable
 androidx.compose.material3.Typography:
     public static final int $stable
     public void <init>()
@@ -22434,7 +22421,6 @@ androidx.compose.material3.tokens.AppBarLargeFlexibleTokens:
     public final androidx.compose.material3.tokens.TypographyKeyTokens getTitleFont()
 androidx.compose.material3.tokens.AppBarLargeTokens:
     public static final int $stable
-    public final androidx.compose.material3.tokens.TypographyKeyTokens getTitleFont()
 androidx.compose.material3.tokens.AppBarMediumFlexibleTokens:
     public static final int $stable
     public final androidx.compose.material3.tokens.TypographyKeyTokens getSubtitleFont()
@@ -27895,19 +27881,18 @@ androidx.compose.ui.input.nestedscroll.NestedScrollConnection:
     public static synthetic long access$onPostScroll-DzOQY0M$jd(androidx.compose.ui.input.nestedscroll.NestedScrollConnection,long,long,int)
     public static synthetic java.lang.Object access$onPreFling-QWom1Mo$jd(androidx.compose.ui.input.nestedscroll.NestedScrollConnection,long,kotlin.coroutines.Continuation)
     public static synthetic long access$onPreScroll-OzD1aCk$jd(androidx.compose.ui.input.nestedscroll.NestedScrollConnection,long,int)
-    public static synthetic java.lang.Object onPostFling-RZ2iAVY$suspendImpl(androidx.compose.ui.input.nestedscroll.NestedScrollConnection,long,long,kotlin.coroutines.Continuation)
 androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher:
     public final kotlin.jvm.functions.Function0 getCalculateNestedScrollScope$ui_release()
     public final androidx.compose.ui.input.nestedscroll.NestedScrollNode getLastKnownParentNode$ui_release()
-androidx.compose.ui.input.nestedscroll.NestedScrollElement
-androidx.compose.ui.input.nestedscroll.NestedScrollModifierKt
+androidx.compose.ui.input.nestedscroll.NestedScrollElement:
+    public final androidx.compose.ui.input.nestedscroll.NestedScrollConnection getConnection()
+    public final androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher getDispatcher()
+    public void inspectableProperties(androidx.compose.ui.platform.InspectorInfo)
 androidx.compose.ui.input.nestedscroll.NestedScrollNode:
     public final androidx.compose.ui.input.nestedscroll.NestedScrollConnection getConnection()
     public final androidx.compose.ui.input.nestedscroll.NestedScrollNode getLastKnownParentNode$ui_release()
     public final void setConnection(androidx.compose.ui.input.nestedscroll.NestedScrollConnection)
     public final void setLastKnownParentNode$ui_release(androidx.compose.ui.input.nestedscroll.NestedScrollNode)
-    private final void updateDispatcher(androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher)
-    public final void updateNode$ui_release(androidx.compose.ui.input.nestedscroll.NestedScrollConnection,androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher)
 androidx.compose.ui.input.nestedscroll.NestedScrollSource$Companion:
     public final int getDrag-WNlRxjI()
     public static synthetic void getDrag-WNlRxjI$annotations()
@@ -30707,7 +30692,6 @@ androidx.compose.ui.text.font.FontWeight$Companion:
     public static synthetic void getLight$annotations()
     public static synthetic void getMedium$annotations()
     public static synthetic void getNormal$annotations()
-    public final androidx.compose.ui.text.font.FontWeight getSemiBold()
     public static synthetic void getSemiBold$annotations()
     public final androidx.compose.ui.text.font.FontWeight getThin()
     public static synthetic void getThin$annotations()
@@ -30732,7 +30716,6 @@ androidx.compose.ui.text.font.FontWeight:
     public static final synthetic androidx.compose.ui.text.font.FontWeight access$getBlack$cp()
     public static final synthetic androidx.compose.ui.text.font.FontWeight access$getExtraBold$cp()
     public static final synthetic androidx.compose.ui.text.font.FontWeight access$getExtraLight$cp()
-    public static final synthetic androidx.compose.ui.text.font.FontWeight access$getSemiBold$cp()
     public static final synthetic androidx.compose.ui.text.font.FontWeight access$getThin$cp()
     public static final synthetic java.util.List access$getValues$cp()
     public static final synthetic androidx.compose.ui.text.font.FontWeight access$getW100$cp()
@@ -57466,13 +57449,6 @@ androidx.compose.animation.core.TransitionKt$rememberTransition$1$1$$InternalSyn
 androidx.compose.animation.core.TransitionKt$rememberTransition$1$1$$InternalSyntheticThrowCCEIfNotNull$15$9207c11b83a67953eeeb80494bdde7c2d734e69a78520d8a36ac43f5c8cf98b0$3
 androidx.compose.animation.core.TransitionKt$rememberTransition$1$1$$InternalSyntheticThrowCCEIfNotNull$15$9207c11b83a67953eeeb80494bdde7c2d734e69a78520d8a36ac43f5c8cf98b0$4
 androidx.compose.animation.core.TransitionKt$rememberTransition$1$1
-androidx.compose.foundation.gestures.DefaultDraggableState$drag$2
-androidx.compose.foundation.gestures.DefaultDraggableState$dragScope$1
-androidx.compose.foundation.gestures.DefaultDraggableState
-androidx.compose.foundation.gestures.DraggableKt$rememberDraggableState$1$1
-androidx.compose.foundation.gestures.DraggableKt:
-    public static final androidx.compose.foundation.gestures.DraggableState DraggableState(kotlin.jvm.functions.Function1)
-    public static final androidx.compose.foundation.gestures.DraggableState rememberDraggableState(kotlin.jvm.functions.Function1,androidx.compose.runtime.Composer,int)
 androidx.compose.foundation.layout.FlowLayoutData:
     public abstract float getFillCrossAxisFraction()
     public abstract int hashCode()
@@ -57559,48 +57535,13 @@ androidx.compose.material.SnackbarKt$Snackbar$actionComposable$1:
 androidx.compose.material.ripple.UnprojectedRipple:
     public static boolean setMaxRadiusFetched
     public static java.lang.reflect.Method setMaxRadiusMethod
-androidx.compose.material3.AppBarKt$$InternalSyntheticLambda$1$9ab18e2c6514f1b869b727d64b22fa3500675a3cfdc746f5164231b57559ca69$0:
-    public final synthetic androidx.compose.material3.TopAppBarScrollBehavior f$7
-androidx.compose.material3.AppBarKt$$InternalSyntheticLambda$2$a5f5bb851f537f1c2c1e5970de202642a403d8817b279263ad608e072ddd7d6a$0:
-    public final synthetic androidx.compose.material3.TopAppBarScrollBehavior f$11
-androidx.compose.material3.AppBarKt$$InternalSyntheticLambda$4$9dd3187f9b8cef048db0973e4a8d00af84809099fcc9e2a24dce6e61445c9137$0
-androidx.compose.material3.AppBarKt$$InternalSyntheticLambda$4$d83e7bc02ef7da1816c1f600a2d3aefb6ad6a17f87b66ab386133d63078ec377$0
-androidx.compose.material3.AppBarKt$$InternalSyntheticLambda$4$d83e7bc02ef7da1816c1f600a2d3aefb6ad6a17f87b66ab386133d63078ec377$1
-androidx.compose.material3.AppBarKt$settleAppBar$1
-androidx.compose.material3.AppBarKt:
-    public static synthetic kotlin.Unit $r8$lambda$A8sQq0de_AphP3g-pa0lyYqG_q4(androidx.compose.material3.TopAppBarState,androidx.compose.animation.core.AnimationScope)
-    public static synthetic kotlin.Unit $r8$lambda$WDzzFRV-HGjnLGbZciay7eLhAzs(androidx.compose.material3.TopAppBarState,androidx.compose.ui.unit.IntSize)
-    public static synthetic kotlin.Unit $r8$lambda$bkLFBm4hQ6T2iz73L7LakmLrEWQ(kotlin.jvm.internal.Ref$FloatRef,androidx.compose.material3.TopAppBarState,kotlin.jvm.internal.Ref$FloatRef,androidx.compose.animation.core.AnimationScope)
-    public static final synthetic java.lang.Object access$settleAppBar(androidx.compose.material3.TopAppBarState,float,androidx.compose.animation.core.DecayAnimationSpec,androidx.compose.animation.core.AnimationSpec,kotlin.coroutines.Continuation)
-    public static final kotlin.Unit adjustHeightOffsetLimit$lambda$38$lambda$37(androidx.compose.material3.TopAppBarState,androidx.compose.ui.unit.IntSize)
-    public static final java.lang.Object settleAppBar(androidx.compose.material3.TopAppBarState,float,androidx.compose.animation.core.DecayAnimationSpec,androidx.compose.animation.core.AnimationSpec,kotlin.coroutines.Continuation)
-    public static final kotlin.Unit settleAppBar$lambda$54(kotlin.jvm.internal.Ref$FloatRef,androidx.compose.material3.TopAppBarState,kotlin.jvm.internal.Ref$FloatRef,androidx.compose.animation.core.AnimationScope)
-    public static final kotlin.Unit settleAppBar$lambda$55(androidx.compose.material3.TopAppBarState,androidx.compose.animation.core.AnimationScope)
 androidx.compose.material3.DatePickerKt$$InternalSyntheticLambda$9$1201a837c9ca991665b28f3a8e3264919ba34ae9bd8bff54e0acb9ea668328ac$0:
     public final synthetic androidx.compose.material3.SelectedRangeInfo f$0
 androidx.compose.material3.DatePickerKt$$InternalSyntheticLambda$9$1201a837c9ca991665b28f3a8e3264919ba34ae9bd8bff54e0acb9ea668328ac$2:
     public final synthetic androidx.compose.material3.SelectedRangeInfo f$5
-androidx.compose.material3.DefaultSingleRowTopAppBarOverride$$InternalSyntheticLambda$3$b31f44e77a64fa6c6ca13cf718ca94662d5bdd173973ca0cb2520cf928d9e816$0
-androidx.compose.material3.DefaultSingleRowTopAppBarOverride$SingleRowTopAppBar$appBarDragModifier$2$1
-androidx.compose.material3.DefaultSingleRowTopAppBarOverride:
-    public static synthetic kotlin.Unit $r8$lambda$DD0ClO-80LrsXGwdtZfDh7pujh0(androidx.compose.material3.SingleRowTopAppBarOverrideScope,float)
-    public static final kotlin.Unit SingleRowTopAppBar$lambda$4$lambda$3(androidx.compose.material3.SingleRowTopAppBarOverrideScope,float)
-androidx.compose.material3.SingleRowTopAppBarOverrideScope:
-    public final androidx.compose.material3.TopAppBarScrollBehavior scrollBehavior
 androidx.compose.material3.TextFieldLabelPosition$Above
 androidx.compose.material3.TextKt$$InternalSyntheticLambda$1$dd0618d6294270ddf63ca29a3364b90cbbee95e20d0058701bb3841114f5e22f$0:
     public final synthetic androidx.compose.foundation.text.TextAutoSize f$3
-androidx.compose.material3.TopAppBarScrollBehavior:
-    public abstract androidx.compose.animation.core.DecayAnimationSpec getFlingAnimationSpec()
-    public abstract androidx.compose.animation.core.AnimationSpec getSnapAnimationSpec()
-    public abstract boolean isPinned()
-androidx.compose.material3.TopAppBarState:
-    public abstract float getCollapsedFraction()
-    public abstract float getHeightOffset()
-    public abstract float getHeightOffsetLimit()
-    public abstract float getOverlappedFraction()
-    public abstract void setHeightOffset(float)
-    public abstract void setHeightOffsetLimit(float)
 androidx.compose.material3.internal.LegacyCalendarModelImpl$Companion
 androidx.compose.material3.internal.LegacyCalendarModelImpl
 androidx.compose.material3.internal.TextFieldImplKt$$InternalSyntheticThrowCCEIfNotNull$15$7cae76a44d14aaec1936b21353527f40dd44dde8450b4d8ced507884c193b290$0

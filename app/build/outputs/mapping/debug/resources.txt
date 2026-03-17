@@ -29,6 +29,7 @@ EmojiSupportMatch.All
 SHOW_TRANSLATED
 0
 textSelectionRange
+1
 Shown
 ACTION_PRESS_AND_HOLD
 size
@@ -194,6 +195,7 @@ foreignKeys
 initialState
 birthDateYear
 ACTION_SCROLL_IN_DIRECTION
+Restart
 %s.%sParcelizer
 LINE_RIGHT
 maxTextLength
@@ -343,6 +345,7 @@ internalQueryExecutor
 Normal
 childrenAlpha
 androidx.lifecycle.ViewModelProvider....
+Filled.NotificationsActive
 runnable
 dflt_value
 transactionExecutor
@@ -382,7 +385,9 @@ DIAGNOSTIC_PROFILE_IS_COMPRESSED
 FragmentManager
 HandlerCompat
 phoneNumber
+Filled.Notifications
 Enter
+Filled.Build
 INTERRUPTED_RCV
 SecondaryEditable
 font_variation_settings
@@ -544,6 +549,7 @@ DstOver
 mAttachInfo
 classes.dex
 _cur$volatile
+$this$SectionCard
 Left
 android.view.ViewStructure.extra.EXTR...
 insertInorderBarrier
@@ -685,6 +691,7 @@ Unrestricted
 arch_disk_io_
 StartEllipsis
 LocalClipboardManager
+ringAlpha
 ACTION_CLEAR_SELECTION
 TestTagsAsResourceId
 Right
@@ -734,6 +741,7 @@ invalidateOwnerFocusState
 mVisibleInsets
 isEditable
 UPCOMING
+Build
 fillParentMaxWidth
 Primary
 accelerate
@@ -742,6 +750,7 @@ selected
 snooze_minutes
 sendersAndCloseStatus$volatile
 birthDateMonth
+Filled.VolumeUp
 separator
 intermediateFile
 onWheelScrollStopped
@@ -771,6 +780,7 @@ Clear
 asyncTraceEnd
 transform
 systemBarsIgnoringVisibility
+$this$LargeTopAppBar
 STARTED
 Inactive
 Round
@@ -902,6 +912,7 @@ layout
 boundsOrigin
 debug.layout
 REMINDER_ID
+Filled.BatteryFull
 viewModelStoreOwner
 LocalResourceIdCache
 step
@@ -1011,6 +1022,7 @@ enqIdx$volatile
 SecondaryFixed
 android.speech.extra.PROMPT
 offset
+Outlined.NotificationsNone
 Strategy.Balanced
 bottom
 _exceptionsHolder$volatile
@@ -1069,9 +1081,9 @@ _state$volatile
 suggest_intent_data
 IsTraversalGroup
 androidx.core.view.extra.INPUT_CONTEN...
+Repeat
 androidx.activity.result.contract.ext...
 AutoMirrored.Filled.ArrowBack
-Repeat
 String
 ExitTransition.None
 actionIntent
@@ -1355,8 +1367,8 @@ choices
 REMOVE_FROZEN
 succeeded
 .tmp
-_Impl
 HH:mm
+_Impl
 PathParser
 S:
 PersonNameSuffix
@@ -1383,6 +1395,7 @@ streetAddress
 kotlin.Char
 android:backStackId
 RecyclerView
+Filled.Palette
 triggerType
 ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
 Sp
@@ -1399,6 +1412,7 @@ android.view.accessibility.extra.EXTR...
 closeIconVisible
 CreditCardExpirationYear
 kotlin.Double
+Filled.Repeat
 AppCompatDelegate
 lifecycle
 view
@@ -1445,6 +1459,7 @@ Tiramisu
 HideFromAccessibility
 SUSPEND_NO_WAITER
 SOURCE_CLIPBOARD
+Filled.Today
 Dispatchers.Main
 Paste
 TraversalIndex
@@ -1486,6 +1501,7 @@ newPassword
 Darken
 matcher
 smsOTPCode
+InfiniteTransition
 INVISIBLE
 getLocalLifecycleOwner
 kotlin.Short
@@ -1582,6 +1598,7 @@ Size.Unspecified
 CURRENT_MONTH_KEY
 ACTION_PREVIOUS_HTML_ELEMENT
 getDeclaredField
+$this$semantics
 CLOB
 http://schemas.android.com/apk/res/an...
 invalidateNodes
@@ -1859,6 +1876,7 @@ android.widget.Spinner
 MenuItemImpl
 _LifecycleAdapter
 SELECT_ALL
+pulse
 LineHeightStyle.Alignment.Top
 pk
 thumbPos
@@ -1867,6 +1885,7 @@ EditableText
 AnimatedContent
 suggest_icon_1
 suggest_icon_2
+Reverse
 invalidationTracker
 createAsync
 .Companion
@@ -1928,6 +1947,7 @@ store
 _next$volatile
 SELECT_RIGHT_CHAR
 Autofill
+com.hardreminder
 android.speech.action.WEB_SEARCH
 Words
 PhoneNumber
@@ -2001,7 +2021,6 @@ topLeft
 statusBarsIgnoringVisibility
 REMOVED_TASK
 SrcOut
-$this$TopAppBar
 ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY
 xx
 getInitialValue
@@ -2034,6 +2053,7 @@ PREVENT_WHEN_EMPTY
 isEnabled
 Next
 NOT_CROSSED
+Package
 DIMENSION_TYPE
 ACTION_FOCUS
 getOpticalInsets
@@ -2114,6 +2134,7 @@ leadingIcon
 alarm
 WEEKDAYS
 kotlin.collections.Set
+pulseScale
 windowInsetsPadding
 androidx.activity.result.contract.ext...
 WRAP_CONTENT

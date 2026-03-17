@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
@@ -12,13 +13,18 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.DateRange
+import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.Repeat
 import androidx.compose.material.icons.filled.Save
 import androidx.compose.material.icons.filled.Timer
+import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.lifecycleScope
@@ -280,13 +286,10 @@ class AddEditReminderActivity : ComponentActivity() {
                         )
 
                         // Date & Time Card
-                        Card(
-                            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
-                            modifier = Modifier.fillMaxWidth(),
-                            shape = MaterialTheme.shapes.large
+                        SectionCard(
+                            title = "Date & Time",
+                            icon = Icons.Default.DateRange
                         ) {
-                            Column(Modifier.padding(16.dp)) {
-                                Text("Date & Time", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurface)
                                 Spacer(modifier = Modifier.height(12.dp))
                                 Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                     FilledTonalButton(
@@ -315,7 +318,6 @@ class AddEditReminderActivity : ComponentActivity() {
                                         Text(tf.format(Date(triggerTime)))
                                     }
                                 }
-                            }
                         }
 
                         // M3 DatePickerDialog
@@ -388,13 +390,10 @@ class AddEditReminderActivity : ComponentActivity() {
                         }
 
                         // Repeat Card
-                        Card(
-                            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
-                            modifier = Modifier.fillMaxWidth(),
-                            shape = MaterialTheme.shapes.large
+                        SectionCard(
+                            title = "Repeat",
+                            icon = Icons.Default.Repeat
                         ) {
-                            Column(Modifier.padding(16.dp)) {
-                                Text("Repeat", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurface)
                                 Spacer(modifier = Modifier.height(8.dp))
                                 var repeatMenuExpanded by remember { mutableStateOf(false) }
                                 val repeatOptions = arrayOf("No Repeat", "Daily", "Weekdays (Mon-Fri)", "Weekends (Sat-Sun)", "Specific Days", "Custom Interval")
@@ -470,17 +469,13 @@ class AddEditReminderActivity : ComponentActivity() {
                                         shape = MaterialTheme.shapes.medium
                                     )
                                 }
-                            }
                         }
 
                         // Prior Notification Card
-                        Card(
-                            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
-                            modifier = Modifier.fillMaxWidth(),
-                            shape = MaterialTheme.shapes.large
+                        SectionCard(
+                            title = "Remind Before",
+                            icon = Icons.Default.Notifications
                         ) {
-                            Column(Modifier.padding(16.dp)) {
-                                Text("Remind Before", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurface)
                                 Spacer(modifier = Modifier.height(8.dp))
                                 var priorMenuExpanded by remember { mutableStateOf(false) }
 
@@ -511,22 +506,19 @@ class AddEditReminderActivity : ComponentActivity() {
                                         }
                                     }
                                 }
-                            }
                         }
 
                         // Sound & Vibration Card
-                        Card(
-                            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
-                            modifier = Modifier.fillMaxWidth(),
-                            shape = MaterialTheme.shapes.large
+                        SectionCard(
+                            title = "Sound & Vibration",
+                            icon = Icons.Default.VolumeUp
                         ) {
-                            Column(Modifier.padding(16.dp)) {
                                 Row(
                                     modifier = Modifier.fillMaxWidth(),
                                     verticalAlignment = Alignment.CenterVertically,
                                     horizontalArrangement = Arrangement.SpaceBetween
                                 ) {
-                                    Text("Sound", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurface)
+                                    Text("Sound", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
                                     Switch(checked = soundEnabled, onCheckedChange = { soundEnabled = it })
                                 }
                                 HorizontalDivider(
@@ -538,16 +530,50 @@ class AddEditReminderActivity : ComponentActivity() {
                                     verticalAlignment = Alignment.CenterVertically,
                                     horizontalArrangement = Arrangement.SpaceBetween
                                 ) {
-                                    Text("Vibration", style = MaterialTheme.typography.titleMedium, color = MaterialTheme.colorScheme.onSurface)
+                                    Text("Vibration", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.onSurface)
                                     Switch(checked = vibrationEnabled, onCheckedChange = { vibrationEnabled = it })
                                 }
-                            }
                         }
 
                         Spacer(modifier = Modifier.height(80.dp))
                     }
                 }
             }
+        }
+    }
+}
+
+@Composable
+private fun SectionCard(
+    title: String,
+    icon: ImageVector,
+    modifier: Modifier = Modifier,
+    content: @Composable ColumnScope.() -> Unit,
+) {
+    Card(
+        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerLow),
+        modifier = modifier.fillMaxWidth(),
+        shape = MaterialTheme.shapes.large
+    ) {
+        Column(Modifier.padding(16.dp)) {
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp)
+            ) {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = null,
+                    modifier = Modifier.size(20.dp),
+                    tint = MaterialTheme.colorScheme.primary
+                )
+                Text(
+                    text = title,
+                    style = MaterialTheme.typography.titleMedium,
+                    color = MaterialTheme.colorScheme.onSurface,
+                    fontWeight = FontWeight.SemiBold
+                )
+            }
+            content()
         }
     }
 }

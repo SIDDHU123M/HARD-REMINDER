@@ -11,22 +11,41 @@ import android.provider.Settings
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.Spring
+import androidx.compose.animation.core.spring
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.scaleOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.rememberLazyListState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Notifications
+import androidx.compose.material.icons.filled.NotificationsActive
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Today
+import androidx.compose.material.icons.outlined.NotificationsNone
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
@@ -86,10 +105,12 @@ class MainActivity : ComponentActivity() {
                 // Track scroll state for animated FAB
                 val listState = rememberLazyListState()
                 val isScrolling by remember { derivedStateOf { listState.isScrollInProgress } }
+                val scrollBehavior = TopAppBarDefaults.exitUntilCollapsedScrollBehavior()
 
                 Scaffold(
+                    modifier = Modifier.nestedScroll(scrollBehavior.nestedScrollConnection),
                     topBar = {
-                        TopAppBar(
+                        LargeTopAppBar(
                             title = {
                                 Column {
                                     val hour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
@@ -102,27 +123,29 @@ class MainActivity : ComponentActivity() {
                                     }
                                     Text(
                                         text = greeting,
-                                        style = MaterialTheme.typography.titleLarge,
+                                        style = MaterialTheme.typography.headlineMedium,
                                         fontWeight = FontWeight.Bold
                                     )
                                     val dateFmt = SimpleDateFormat("EEEE, MMM d", Locale.getDefault())
                                     Text(
                                         text = dateFmt.format(Date()),
-                                        style = MaterialTheme.typography.labelMedium,
-                                        modifier = Modifier.alpha(0.7f)
+                                        style = MaterialTheme.typography.labelLarge,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant
                                     )
                                 }
                             },
                             actions = {
                                 IconButton(onClick = {
-                    val opts = ActivityOptionsCompat.makeCustomAnimation(this@MainActivity, R.anim.slide_in_right, R.anim.slide_out_left)
-                    startActivity(Intent(this@MainActivity, SettingsActivity::class.java), opts.toBundle())
-                }) {
+                                    val opts = ActivityOptionsCompat.makeCustomAnimation(this@MainActivity, R.anim.slide_in_right, R.anim.slide_out_left)
+                                    startActivity(Intent(this@MainActivity, SettingsActivity::class.java), opts.toBundle())
+                                }) {
                                     Icon(Icons.Default.Settings, contentDescription = "Settings")
                                 }
                             },
-                            colors = TopAppBarDefaults.topAppBarColors(
+                            scrollBehavior = scrollBehavior,
+                            colors = TopAppBarDefaults.largeTopAppBarColors(
                                 containerColor = MaterialTheme.colorScheme.surface,
+                                scrolledContainerColor = MaterialTheme.colorScheme.surfaceContainer,
                                 titleContentColor = MaterialTheme.colorScheme.onSurface,
                                 actionIconContentColor = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -272,7 +295,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun StatsSection(reminders: List<Reminder>) {
+fun StatsSection(reminders: List<Reminder>, modifier: Modifier = Modifier) {
     val todayStart = Calendar.getInstance().apply {
         set(Calendar.HOUR_OF_DAY, 0)
         set(Calendar.MINUTE, 0)
@@ -287,35 +310,68 @@ fun StatsSection(reminders: List<Reminder>) {
     }
 
     Row(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .padding(16.dp),
-        horizontalArrangement = Arrangement.SpaceEvenly
+            .padding(horizontal = 16.dp, vertical = 12.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp)
     ) {
-        StatCard(title = "Active", count = active)
-        StatCard(title = "Today", count = today)
-        StatCard(title = "Total", count = reminders.size)
+        StatCard(
+            title = "Active",
+            count = active,
+            icon = Icons.Default.NotificationsActive,
+            modifier = Modifier.weight(1f)
+        )
+        StatCard(
+            title = "Today",
+            count = today,
+            icon = Icons.Default.Today,
+            modifier = Modifier.weight(1f)
+        )
+        StatCard(
+            title = "Total",
+            count = reminders.size,
+            icon = Icons.Default.Notifications,
+            modifier = Modifier.weight(1f)
+        )
     }
 }
 
 @Composable
-fun RowScope.StatCard(title: String, count: Int) {
+fun StatCard(
+    title: String,
+    count: Int,
+    icon: ImageVector,
+    modifier: Modifier = Modifier,
+) {
     Card(
-        modifier = Modifier
-            .weight(1f)
-            .padding(horizontal = 4.dp),
+        modifier = modifier,
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerHigh),
         shape = MaterialTheme.shapes.large
     ) {
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
+                .padding(vertical = 16.dp, horizontal = 12.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(4.dp)
         ) {
+            Box(
+                modifier = Modifier
+                    .size(36.dp)
+                    .clip(CircleShape)
+                    .background(MaterialTheme.colorScheme.primaryContainer),
+                contentAlignment = Alignment.Center
+            ) {
+                Icon(
+                    imageVector = icon,
+                    contentDescription = null,
+                    modifier = Modifier.size(18.dp),
+                    tint = MaterialTheme.colorScheme.onPrimaryContainer
+                )
+            }
             Text(
                 text = count.toString(),
-                color = MaterialTheme.colorScheme.primary,
+                color = MaterialTheme.colorScheme.onSurface,
                 style = MaterialTheme.typography.headlineMedium,
                 fontWeight = FontWeight.Bold
             )
@@ -329,28 +385,48 @@ fun RowScope.StatCard(title: String, count: Int) {
 }
 
 @Composable
-fun EmptyState(onCreateClick: () -> Unit) {
+fun EmptyState(
+    onCreateClick: () -> Unit,
+    modifier: Modifier = Modifier,
+) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .padding(top = 80.dp),
-        horizontalAlignment = Alignment.CenterHorizontally
+            .fillMaxHeight()
+            .padding(horizontal = 32.dp),
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement = Arrangement.Center
     ) {
+        Box(
+            modifier = Modifier
+                .size(88.dp)
+                .clip(CircleShape)
+                .background(MaterialTheme.colorScheme.surfaceContainerHighest),
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                imageVector = Icons.Outlined.NotificationsNone,
+                contentDescription = null,
+                modifier = Modifier.size(44.dp),
+                tint = MaterialTheme.colorScheme.onSurfaceVariant
+            )
+        }
+        Spacer(modifier = Modifier.height(24.dp))
         Text(
             text = "No reminders yet",
             style = MaterialTheme.typography.headlineSmall,
             fontWeight = FontWeight.Bold,
             color = MaterialTheme.colorScheme.onSurface
         )
+        Spacer(modifier = Modifier.height(8.dp))
         Text(
-            text = "Your day is clear — add one to get started",
+            text = "Your day is clear \u2014 add one to get started",
             style = MaterialTheme.typography.bodyMedium,
-            color = MaterialTheme.colorScheme.onSurfaceVariant,
-            modifier = Modifier.padding(top = 8.dp)
+            color = MaterialTheme.colorScheme.onSurfaceVariant
         )
+        Spacer(modifier = Modifier.height(24.dp))
         FilledTonalButton(
             onClick = onCreateClick,
-            modifier = Modifier.padding(top = 24.dp),
             shape = MaterialTheme.shapes.large
         ) {
             Icon(Icons.Default.Add, contentDescription = null, modifier = Modifier.padding(end = 8.dp))
@@ -365,51 +441,99 @@ fun ReminderCard(
     reminder: Reminder,
     onToggle: (Boolean) -> Unit,
     onClick: () -> Unit,
-    onDelete: () -> Unit
+    onDelete: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
     val alpha = if (reminder.isEnabled) 1.0f else 0.5f
+    val isPast = !reminder.isEnabled || reminder.triggerTimeMillis < System.currentTimeMillis()
 
     Card(
         onClick = onClick,
-        modifier = Modifier
+        modifier = modifier
             .fillMaxWidth()
-            .alpha(alpha),
-        colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceContainerHigh),
+            .alpha(alpha)
+            .animateContentSize(
+                animationSpec = spring(stiffness = Spring.StiffnessMediumLow)
+            ),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceContainerHigh
+        ),
         shape = MaterialTheme.shapes.large
     ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
-                .padding(16.dp),
+                .padding(start = 16.dp, end = 8.dp, top = 14.dp, bottom = 14.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Column(modifier = Modifier.weight(1f)) {
+            // Time badge
+            val timeFmt = SimpleDateFormat("hh:mm\na", Locale.getDefault())
+            val containerColor = if (isPast)
+                MaterialTheme.colorScheme.surfaceContainerHighest
+            else
+                MaterialTheme.colorScheme.primaryContainer
+            val contentColor = if (isPast)
+                MaterialTheme.colorScheme.onSurfaceVariant
+            else
+                MaterialTheme.colorScheme.onPrimaryContainer
+
+            Box(
+                modifier = Modifier
+                    .size(56.dp)
+                    .clip(MaterialTheme.shapes.medium)
+                    .background(containerColor)
+                    .semantics { contentDescription = "Reminder time" },
+                contentAlignment = Alignment.Center
+            ) {
+                Text(
+                    text = timeFmt.format(Date(reminder.triggerTimeMillis)),
+                    style = MaterialTheme.typography.labelSmall,
+                    fontWeight = FontWeight.Bold,
+                    color = contentColor,
+                    maxLines = 2,
+                    lineHeight = MaterialTheme.typography.labelSmall.lineHeight
+                )
+            }
+
+            Spacer(modifier = Modifier.width(14.dp))
+
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.spacedBy(2.dp)
+            ) {
                 Text(
                     text = reminder.title,
-                    style = MaterialTheme.typography.titleLarge,
+                    style = MaterialTheme.typography.titleMedium,
                     color = MaterialTheme.colorScheme.onSurface,
-                    fontWeight = FontWeight.Bold
+                    fontWeight = FontWeight.SemiBold,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis
                 )
                 if (reminder.message.isNotEmpty()) {
                     Text(
                         text = reminder.message,
-                        style = MaterialTheme.typography.bodyMedium,
+                        style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant,
                         maxLines = 1,
-                        modifier = Modifier.padding(vertical = 4.dp)
+                        overflow = TextOverflow.Ellipsis
                     )
                 }
 
-                val fmt = SimpleDateFormat("MMM dd, hh:mm a", Locale.getDefault())
+                val dateFmt = SimpleDateFormat("EEE, MMM d", Locale.getDefault())
+                val repeatLabel = reminder.repeatType.name.lowercase().replaceFirstChar { it.uppercase() }
                 Text(
-                    text = "${fmt.format(Date(reminder.triggerTimeMillis))} • ${reminder.repeatType.name.lowercase().replaceFirstChar { it.uppercase() }}",
-                    style = MaterialTheme.typography.labelMedium,
+                    text = "${dateFmt.format(Date(reminder.triggerTimeMillis))} \u2022 $repeatLabel",
+                    style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.primary
                 )
             }
 
             IconButton(onClick = onDelete) {
-                Icon(Icons.Default.Delete, contentDescription = "Delete", tint = MaterialTheme.colorScheme.error)
+                Icon(
+                    Icons.Default.Delete,
+                    contentDescription = "Delete reminder",
+                    tint = MaterialTheme.colorScheme.error.copy(alpha = 0.7f)
+                )
             }
             Switch(
                 checked = reminder.isEnabled,
